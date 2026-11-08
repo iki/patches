@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index fdaeef5..d50b30f 100644
+--- a/package.json
++++ b/package.json
+@@ -9,7 +9,7 @@
+   "main": "./dist/zstddec.mjs",
+   "exports": {
+     ".": {
+-      "types": "./dist/zstddec.d.ts",
++      "types": "./dist/zstddec.d.mts",
+       "default": "./dist/zstddec.mjs"
+     },
+     "./stream": {

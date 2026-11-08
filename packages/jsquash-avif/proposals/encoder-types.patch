@@ -1,0 +1,63 @@
+diff --git i/packages/avif/codec/enc/avif_enc.d.ts w/packages/avif/codec/enc/avif_enc.d.ts
+index 2a19ca1..af34c2f 100644
+--- i/packages/avif/codec/enc/avif_enc.d.ts
++++ w/packages/avif/codec/enc/avif_enc.d.ts
+@@ -1,3 +1,5 @@
++/// <reference path="../../emscripten-types.d.ts" />
++
+ export const enum AVIFTune {
+   auto,
+   psnr,
+diff --git i/packages/avif/emscripten-types.d.ts w/packages/avif/emscripten-types.d.ts
+index 690ce36..925738f 100644
+--- i/packages/avif/emscripten-types.d.ts
++++ w/packages/avif/emscripten-types.d.ts
+@@ -10,6 +10,7 @@ declare namespace EmscriptenWasm {
+   // Options object for modularized Emscripten files. Shoe-horned by @surma.
+   // FIXME: This an incomplete definition!
+   interface ModuleOpts {
++    wasmBinary?: ArrayBuffer | Uint8Array;
+     mainScriptUrlOrBlob?: string;
+     noInitialRun?: boolean;
+     locateFile?:
+diff --git i/test/package.json w/test/package.json
+index 20b0a31..68a6248 100644
+--- i/test/package.json
++++ w/test/package.json
+@@ -1,7 +1,7 @@
+ {
+   "name": "integration-tests",
+   "scripts": {
+-    "test": "rm -rf dist && tsc && ava dist/node/*.test.js"
++    "test": "rm -rf dist && tsc && tsc -p types/tsconfig.json && ava dist/node/*.test.js"
+   },
+   "devDependencies": {
+     "@jsquash/avif": "file:../packages/avif/dist",
+diff --git a/test/types/avif-factory.ts b/test/types/avif-factory.ts
+new file mode 100644
+--- /dev/null
++++ b/test/types/avif-factory.ts
+@@ -0,0 +1,5 @@
++import create from '../../packages/avif/codec/enc/avif_enc.js';
++
++void create({ wasmBinary: new Uint8Array(), noInitialRun: true });
++// @ts-expect-error wasmBinary must contain bytes, not a path.
++void create({ wasmBinary: 'encoder.wasm' });
+diff --git a/test/types/tsconfig.json b/test/types/tsconfig.json
+new file mode 100644
+--- /dev/null
++++ b/test/types/tsconfig.json
+@@ -0,0 +1,13 @@
++{
++  "compilerOptions": {
++    "strict": true,
++    "noEmit": true,
++    "skipLibCheck": false,
++    "target": "ESNext",
++    "module": "ESNext",
++    "moduleResolution": "Bundler",
++    "types": [],
++    "lib": ["ESNext", "DOM"]
++  },
++  "files": ["avif-factory.ts"]
++}

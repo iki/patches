@@ -1,0 +1,7 @@
+# Portless history
+
+- 0.15.7 → 0.15.8: generated chunk/declaration rebase; TLS behavior remained active. The optional refreshTlsContexts type was restored. This was not upstream resolution.
+- 0.15.8 → 0.15.12: TLS part rebased without semantic changes. The independent Windows OpenSSL fix shipped in [0.15.11](https://github.com/vercel-labs/portless/releases/tag/v0.15.11) through [PR #502](https://github.com/vercel-labs/portless/pull/502), commit 71a02600d2afa28f07ee6aa18a75bab1a748904d. Matching [PR #428](https://github.com/vercel-labs/portless/pull/428) closed in favor of #502 with author attribution; [issue #222](https://github.com/vercel-labs/portless/issues/222) closed. Published synchronous/asynchronous helpers were observed passing windowsHide:true to real OpenSSL; this was not a repeat process-window trace. [Release follow-up](https://github.com/vercel-labs/portless/pull/502#issuecomment-6451316490).
+- 0.16.0: adaptation adds pooled-connection cleanup and fails early for the unsupported Bun loopbackOnly HTTPS route. The retained 0.15.12 fork is [5ffe9ea](https://github.com/iki/portless/commit/5ffe9ead3435e672c7ca815ed1cc7d0c64ed25c5), comparison base 0c0ff893a5a481d3d1b53d0b4766e32cd35dd5e3. Both installed-package versions remain selectable; never substitute one version's bundle for the other.
+
+These are recorded observations through 2026-11-06. No fresh package or service validation is claimed. Keep a shared proxy's CA, state, routes and independent owner installation intact during any separately authorized upgrade.
