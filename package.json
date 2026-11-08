@@ -1,0 +1,15 @@
+{
+  "name": "@iki/patches",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "aube@2.5.1",
+  "engines": {
+    "bun": "1.4.2"
+  },
+  "scripts": {
+    "check": "bun app/check.mjs",
+    "step:check": "bun test --timeout 30000 test/catalog.test.mjs",
+    "review:check": "bun test --timeout 30000 test/catalog.test.mjs"
+  }
+}
