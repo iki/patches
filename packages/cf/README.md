@@ -2,7 +2,7 @@
 
 Related packages: cf, @cloudflare/config, @cloudflare/build-output-utils, bun. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-On 2026-11-20 npm listed cf 1.0.0-rc.2 as latest. Its native config loader rejected local object and function configs on Windows x64 under Bun 1.4.2 and 1.4.5. The release candidate uses Build Output v1. [Release](https://github.com/cloudflare/cf/releases/tag/cf%401.0.0-rc.2) · [Verification](HISTORY.md)
+On 2026-11-20 npm listed cf 1.0.0-rc.2 as latest. Its native config loader rejected local object and function configs on Windows x64 under Bun 1.4.2 and 1.4.5. The v1 prebuilt helper passed on both runtimes with the CLI’s own output reader. [Release](https://github.com/cloudflare/cf/releases/tag/cf%401.0.0-rc.2) · [Verification](HISTORY.md)
 
 ## Cloudflare Config and Build Output
 

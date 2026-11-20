@@ -8,7 +8,7 @@ The npm `latest` tag still selected 2.1.1 on 2026-11-20. Its direct encoder impo
 
 The AVIF encoder factory declaration does not describe the direct byte-buffer initialization used by strict TypeScript callers. The declaration adapter and separate upstream proposal describe that factory without casts or skipped library checking.
 
-- Kind: declaration-adapter. Packages: @jsquash/avif 2.1.1. Runtime: Bun 1.4.2.
+- Declaration adapter for @jsquash/avif 2.1.1. The frozen web profile type-checked the adapter and ran the published WASM encoder and decoder on Bun 1.4.5. The earlier runtime was Bun 1.4.2.
 - Prerequisites: none.
 - Upstream: iki's [PR #115](https://github.com/jamsinclair/jSquash/pull/115) was open and mergeable at the recorded fork head on 2026-11-20. GitHub reported a failed [CI run](https://github.com/jamsinclair/jSquash/actions/runs/38879100744) with no jobs available for diagnosis.
 - Reusable fork: [codex/fix-avif-factory-types](https://github.com/iki/jSquash/tree/codex/fix-avif-factory-types), head [c343c9af6ff0377080b6d0bb09bc0ad6551d7dc2](https://github.com/iki/jSquash/commit/c343c9af6ff0377080b6d0bb09bc0ad6551d7dc2), comparison base da47a2be3b302beb5a5ae164a2ab7aa21a041d90.

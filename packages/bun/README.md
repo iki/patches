@@ -2,7 +2,7 @@
 
 Related packages: bun, undici, wrangler, miniflare. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-On November 20, 2026, the two adapter regressions passed with Undici 8.13.0 on Windows x64 under Bun 1.4.2. A native check on the latest published Bun 1.4.5 reproduced both defects with the same Undici version. [Bun release](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.5) · [Wrangler package checks](../workers-sdk/HISTORY.md)
+Both adapters passed with Undici 8.13.0 on Windows x64 under Bun 1.4.2 and 1.4.5. Both runtimes reproduced the original bare-Pool and global-fetch dispatcher defects. [Bun release](https://github.com/oven-sh/bun/releases/tag/bun-v1.4.5) · [Wrangler package checks](../workers-sdk/HISTORY.md)
 
 ## Undici compatibility
 
@@ -14,7 +14,7 @@ both before their verified-fetch route can be enabled.
 
 Bun resolves a bare Undici import to its built-in shim, which does not provide the installed package behavior required by the tooling. The adapter loads the exact installed Undici entry and exposes it through that shim.
 
-- Tested host adapter for Undici 8.13.0 and Wrangler 4.165.0 on Bun 1.4.2. The preceding selection used Undici 8.12.4 and Wrangler 4.158.0.
+- Tested with Undici 8.13.0 and Wrangler 4.165.0 on Bun 1.4.2 and 1.4.5. The mobile profile passed with Undici 8.12.4 and Wrangler 4.158.0 on Bun 1.4.2.
 - Prerequisites: none.
 - robobun closed the installed-package proposal unmerged on November 17 after conflicts with main. The resolution request remains open. [Closure on PR #36102](https://github.com/oven-sh/bun/pull/36102#issuecomment-6943950827) · [Issue #17799](https://github.com/oven-sh/bun/issues/17799)
 - Reusable fork: [codex/bun-undici-resolution](https://github.com/iki/workers-sdk/tree/codex/bun-undici-resolution), head [f2160e3f8dd97b388d98b247445f3951f7a91ab1](https://github.com/iki/workers-sdk/commit/f2160e3f8dd97b388d98b247445f3951f7a91ab1), comparison base ec6edddadd8395b4991b23c5300ea68b701ce720.
@@ -29,7 +29,7 @@ Removal: Pinned Bun resolves installed Undici and Worker startup, requests, reco
 
 Bun's native global fetch does not honor the Undici dispatchers required by local Worker requests. The adapter supplies dispatcher-aware Undici fetch inside the affected tooling subprocess.
 
-- Tested host adapter for Undici 8.13.0 and Wrangler 4.165.0 on Bun 1.4.2. The preceding selection used Undici 8.12.4 and Wrangler 4.158.0.
+- Tested with Undici 8.13.0 and Wrangler 4.165.0 on Bun 1.4.2 and 1.4.5. The mobile profile passed with Undici 8.12.4 and Wrangler 4.158.0 on Bun 1.4.2.
 - Prerequisites: bun-undici-resolution.
 - robobun’s open proposal implements the built-in Undici dispatchers and dispatcher-aware Undici fetch. Native global fetch has its own acceptance test. [PR #39250](https://github.com/oven-sh/bun/pull/39250) · [Issue #39247](https://github.com/oven-sh/bun/issues/39247)
 - Reusable fork: [codex/bun-dispatcher-fetch](https://github.com/iki/workers-sdk/tree/codex/bun-dispatcher-fetch), head [943d97d3b5d148d2ab9f88a2cc3f0bea21df18a4](https://github.com/iki/workers-sdk/commit/943d97d3b5d148d2ab9f88a2cc3f0bea21df18a4), comparison base af29a6e53f361bde5d14e5ec0f36295b42bd52b5.

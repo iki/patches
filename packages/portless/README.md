@@ -2,7 +2,7 @@
 
 Related packages: portless, bun. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-The 2026-11-20 review checked the published [Portless 0.18.1 package](https://registry.npmjs.org/portless/0.18.1) against Bun 1.4.2 and 1.4.5 on Windows x64. The installable catalog bundles target Portless 0.15.12 and 0.16.0 on Bun 1.4.2.
+The 2026-11-20 review checked the published [Portless 0.18.1 package](https://registry.npmjs.org/portless/0.18.1) against Bun 1.4.2 and 1.4.5 on Windows x64. The web profile runs 0.18.1 unpatched on Bun 1.4.5. The installable catalog bundles target 0.15.12 and 0.16.0 on Bun 1.4.2.
 
 ## portless-bun-tls
 

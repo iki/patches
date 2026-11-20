@@ -15,7 +15,7 @@ guard below checks that exact registered fetch implementation remains in place.
 
 Wrangler rejects the Bun fetch route even after the installed Undici and dispatcher adapters are present. The patch admits only the registered, verified fetch implementation and continues to reject an unregistered or replaced fetch.
 
-- Tested package patch for Wrangler 4.165.0 with Undici 8.13.0, Miniflare 5.20261118.0-beta and Bun 1.4.2.
+- The 4.165.0 patch passed with Undici 8.13.0 and Miniflare 5.20261118.0-beta on Bun 1.4.2 and 1.4.5. The 4.158.0 patch passed with Undici 8.12.4 and Miniflare 5.20261104.0-beta on Bun 1.4.2.
 - Prerequisites: bun-undici-resolution, bun-undici-fetch.
 - Upstream: [recorded disposition](https://github.com/cloudflare/workers-sdk/pull/15846#pullrequestreview-5573853511), downstream-only.
 - The 4.165.0 fork branch [codex/bun-local-fetch-capability-4.165.0](https://github.com/iki/workers-sdk/tree/codex/bun-local-fetch-capability-4.165.0) points to [8a26b5b15b17a2e4fd05722994ebe9269b855588](https://github.com/iki/workers-sdk/commit/8a26b5b15b17a2e4fd05722994ebe9269b855588), based on upstream release commit [5b44e5e2f9df23b38b17903d6f4194919042828e](https://github.com/cloudflare/workers-sdk/commit/5b44e5e2f9df23b38b17903d6f4194919042828e). [Setup and test commands](https://github.com/iki/workers-sdk/blob/8a26b5b15b17a2e4fd05722994ebe9269b855588/downstream/VERIFIED-BUN-FETCH.md)
