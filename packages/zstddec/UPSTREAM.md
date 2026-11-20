@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Retained from the source observation through 2026-11-06. These links are not a fresh remote status check; current disposition and limitations are in the package summary.
+Issue, PR and fork references reviewed on 2026-11-20. The [package history](HISTORY.md#2026-11-20) records the release and regression evidence.
 
 - https://github.com/donmccurdy/zstddec-wasm
 - https://github.com/donmccurdy/zstddec-wasm/actions/runs/38879077443
@@ -13,3 +13,5 @@ Retained from the source observation through 2026-11-06. These links are not a f
 - https://github.com/donmccurdy/zstddec-wasm/pull/77#issuecomment-6278259293
 - https://github.com/iki/zstddec-wasm/commit/ece451503f1da5ba5cca020cbb63eb817d630aac
 - https://github.com/iki/zstddec-wasm/tree/codex/fix-types-export
+- https://github.com/donmccurdy/zstddec-wasm/commit/ff24d680cc36af645d1e06d027f861e16ff79bf0
+- https://www.npmjs.com/package/zstddec/v/0.3.4

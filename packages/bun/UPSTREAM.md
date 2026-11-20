@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Retained from the source observation through 2026-11-06. These links are not a fresh remote status check; current disposition and limitations are in the package summary.
+Reviewed November 20, 2026. Bun #36098 and #42084 are closed as duplicates. The resolution request #17799 and shim issues #38840, #39247 and #48972 are open. PR #36102 closed unmerged as stale. PRs #27338, #38855, #39250 and #48985 remain open. The 2024 discussion #14859 is closed and answered. The [package record](README.md) gives the measured behavior.
 
 - https://github.com/cloudflare/workers-sdk/issues/15717
 - https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-6451763734
@@ -35,3 +35,11 @@ Retained from the source observation through 2026-11-06. These links are not a f
 - https://github.com/oven-sh/bun/pull/38855
 - https://github.com/oven-sh/bun/pull/39250
 - https://github.com/oven-sh/bun/pull/39250#issuecomment-6211618949
+
+- https://github.com/oven-sh/bun/issues/17799
+- https://github.com/oven-sh/bun/issues/48972
+- https://github.com/oven-sh/bun/pull/36102#issuecomment-6943950827
+- https://github.com/oven-sh/bun/pull/48985
+- https://github.com/oven-sh/bun/releases/tag/bun-v1.4.5
+- https://github.com/oven-sh/bun/blob/a7733435cf40429e3b35c36072769df2052b80f1/src/resolve_builtins/HardcodedModule.rs#L300
+- https://github.com/oven-sh/bun/issues/39247#issuecomment-7037359402

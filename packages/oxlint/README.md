@@ -2,7 +2,7 @@
 
 Related packages: oxlint, @oxlint/plugins. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-Status and measurements below are retained source observations through 2026-11-06, not fresh remote or package verification.
+On 2026-11-20 npm listed Oxlint and its matching plugins at 1.94.0. The hold covers the consuming project's unsuppressed type-aware lint and review checks. See the [package regression results](HISTORY.md). [Oxlint 1.94.0](https://registry.npmjs.org/oxlint/1.94.0) · [Matching plugins](https://registry.npmjs.org/@oxlint%2fplugins/1.94.0)
 
 ## Oxlint and matching plugins
 

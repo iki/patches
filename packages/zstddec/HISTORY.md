@@ -8,4 +8,8 @@ The one-line source correction changes the missing dist/zstddec.d.ts target to p
 
 The earlier proposal [ece4515](https://github.com/iki/zstddec-wasm/commit/ece451503f1da5ba5cca020cbb63eb817d630aac) included a built-file test. The [maintainer requested removal](https://github.com/donmccurdy/zstddec-wasm/pull/77#issuecomment-6219911279) and suggested a separate attw check; [the response](https://github.com/donmccurdy/zstddec-wasm/pull/77#issuecomment-6222109027) records compliance. This retired the proposal's test, not the fix. Upstream CI runs 38879077443 and 38947638755 subsequently passed; no outstanding approval blocker was recorded.
 
-The [retained source patch](history/types-export.patch) is historical, not an installable active series. Full consumer validation remains with the original consumer. No fresh regression is claimed here.
+The [retained source patch](history/types-export.patch) is historical, not an installable active series. Full consumer validation remains with the original consumer.
+
+## 2026-11-20
+
+The integrity-verified 0.3.4 npm tarball names `./dist/zstddec.d.mts` in its root `exports.types` entry and contains that exact file. The release tag still resolves to `ff24d680cc36af645d1e06d027f861e16ff79bf0`. The two recorded CI runs passed and PR #77 remains merged. The strict decoder and compiled-WASM results above belong to the original removal test. [Published package](https://www.npmjs.com/package/zstddec/v/0.3.4) · [Release commit](https://github.com/donmccurdy/zstddec-wasm/commit/ff24d680cc36af645d1e06d027f861e16ff79bf0) · [PR #77](https://github.com/donmccurdy/zstddec-wasm/pull/77)

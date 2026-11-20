@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Retained from the source observation through 2026-11-06. These links are not a fresh remote status check; current disposition and limitations are in the package summary.
+Reviewed November 20, 2026. Workers SDK #15717 is closed after #15846 merged with an explicit Bun rejection. Miniflare #16644 remains open. Its proposed bundler change #16645 closed unmerged. The upstream policy and maintainer review still apply. The three historical fork branches resolve to their recorded commits. See the [package record](README.md) for the versioned distribution patch and local results.
 
 - https://github.com/cloudflare/workers-sdk/issues/15717
 - https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-6451763734
@@ -35,3 +35,10 @@ Retained from the source observation through 2026-11-06. These links are not a f
 - https://github.com/oven-sh/bun/pull/38855
 - https://github.com/oven-sh/bun/pull/39250
 - https://github.com/oven-sh/bun/pull/39250#issuecomment-6211618949
+
+- https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.165.0
+- https://github.com/cloudflare/workers-sdk/commit/5b44e5e2f9df23b38b17903d6f4194919042828e
+- https://github.com/iki/workers-sdk/tree/codex/bun-local-fetch-capability-4.165.0
+- https://github.com/iki/workers-sdk/commit/8a26b5b15b17a2e4fd05722994ebe9269b855588
+- https://github.com/iki/workers-sdk/blob/8a26b5b15b17a2e4fd05722994ebe9269b855588/downstream/VERIFIED-BUN-FETCH.md
+- https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-7037361124
