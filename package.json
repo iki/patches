@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "packageManager": "aube@2.5.1",
+  "packageManager": "aube@2.10.1",
   "engines": {
-    "bun": "1.4.2"
+    "bun": "1.4.5"
   },
   "scripts": {
     "check": "bun app/check.mjs",

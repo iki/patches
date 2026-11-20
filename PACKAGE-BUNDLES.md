@@ -1,7 +1,6 @@
 # Check package bundles locally
 
-From the Patches root, run `bun app/check-package-bundles.mjs` after installing the
-dependency labs. The command verifies the catalog, discovers each registered
+Install the dependency labs and supply the pristine Portless 0.16.0 package from the earlier web profile, as shown below. Run the check from the Patches root. The command verifies the catalog, discovers each registered
 Aube selector, and checks its ordered installable bundle against matching local
 package installations in `.cache/dependency-labs`. Automatic discovery resolves
 symlinks within the generated labs or the project's physical `node_modules` tree.
@@ -14,7 +13,7 @@ copies of that exact package/version. Explicit sources replace lab discovery
 for that selector only. All other registered selectors are still checked.
 
 ```text
-bun app/check-package-bundles.mjs --source tinypool@2.2.0 <unpacked-package-directory>
+bun app/check-package-bundles.mjs --source portless@0.16.0 <unpacked-portless-0.16.0-directory>
 bun test/check-package-bundles.mjs
 ```
 

@@ -47,8 +47,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Patched lock resolution failed.' }
 & $bunExe environments/install.mjs setup
 ```
 
-The web and mobile profiles retain distinct Wrangler and Portless versions.
-Select the bundle registered for the exact installed version.
+Web selects pristine Portless 0.18.1 with Bun 1.4.5. Mobile retains the 0.15.12 selector for its Bun 1.4.2 baseline. Select the matching Wrangler bundle in each patched profile and the Tinypool 2.2.0 bundle for formatter tests. The retained Portless 0.16.0 bundle requires a separate 0.16.0 installation. Register only selectors with a direct edge in the workspace under test.
 
 | Exact selector | Registered bundle |
 | --- | --- |

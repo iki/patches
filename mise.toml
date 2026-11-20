@@ -3,10 +3,10 @@ min_version = "2026.10.7"
 
 [tools]
 ## Tools.Runtimes
-bun = "1.4.2"
+bun = "1.4.5"
 
 ## Tools.Packages
-aube = "2.5.1"
+aube = "2.10.1"
 
 [settings]
 auto_install = false

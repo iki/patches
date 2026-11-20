@@ -31,7 +31,7 @@ test("published catalog validates local provenance, exact artifacts, series and 
   assert.ok(result.dependencyEntries > 0);
   assert.equal(result.fixes,8);
   assert.equal(result.packageSeries,5);
-  assert.equal(result.artifacts,72);
+  assert.equal(result.artifacts,74);
 });
 test("rejects corrupt imported bytes", () => fixture(async (directory) => {
   await writeFile(join(directory,"patches/tinypool@2.2.0.patch"),"corrupt\n");
@@ -56,6 +56,17 @@ test("rejects unknown fields and unsupported versions", () => fixture(async (dir
   value.format = "shared-patch-registry-v2";
   await save(directory,"registry.json",value);
   await assert.rejects(verifyCatalog(directory), /Unsupported catalog schema/);
+}));
+test("release holds require the evidence for their own kind", () => fixture(async (directory) => {
+  const value = await json(directory,"registry.json");
+  const hold = value.releaseHolds.find((entry) => entry.kind === "publication-provenance-hold");
+  hold.fixedReleaseRecorded = hold.attestedRelease;
+  await save(directory,"registry.json",value);
+  await assert.rejects(verifyCatalog(directory), /Unknown field/);
+  delete hold.fixedReleaseRecorded;
+  delete hold.attestedRelease;
+  await save(directory,"registry.json",value);
+  await assert.rejects(verifyCatalog(directory), /Missing required field/);
 }));
 test("rejects malformed external JSON and UTF8", () => fixture(async (directory) => {
   await writeFile(join(directory,"registry.json"),'{"format":');

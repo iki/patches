@@ -14,6 +14,8 @@ An exact pin can represent an observation, an installable test target, or an act
 
 ## Choosing a version
 
+Every dependency refresh covers the JavaScript, Cargo and Python environments and every tool in both Mise manifests. Check each declared backend, release channel and target OS, including platform-filtered aliases. Update exact pins unless an explicit hold gives the reason and switch condition. Keep older runtimes selectable for the regressions that require them.
+
 1. Check the latest published release on the supported channel for the package, its companion packages and the relevant runtime. A repository head alone does not establish a release. Use the existing prerelease channel when stable has no matching published feature. Record the release, source and observation date.
 2. Run the existing regression against pristine published bytes, in the intended environment. If the failure remains, adapt the smallest central fix, run the same regression again, then test the real consuming operation. Independent fixes retain separate IDs and prerequisites. Record the tested upstream archive, package and runtime versions, platform, local artifact hashes, test commands, results and limitations.
 3. If latest cannot be adopted, record the affected target and platform, exact supported and blocked versions, concrete reason, evidence, and a measurable condition for switching. The condition must state which release property or behavior to verify and which regression and acceptance checks must pass. Revisit the hold when a newer release meets its trigger. Record the result even if the hold must stay.

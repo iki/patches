@@ -4,7 +4,7 @@
   "migration": "migration.json",
   "observation": {
     "recordedDate": "2026-11-20",
-    "basis": "GitHub issues, PRs, forks and npm release channels reviewed on 2026-11-20. Package histories identify the exact Windows package regressions and outstanding acceptance checks. Earlier source observations and original license notices remain bound to their recorded revisions.",
+    "basis": "GitHub issues, PRs, forks and npm release channels reviewed on 2026-11-20. Package histories identify the exact Windows package regressions and outstanding acceptance checks. Earlier source observations and original license notices remain bound to their recorded revisions. The dependency refresh also tested the documented release and runtime pairs on Bun 1.4.5. Supported pairs and historical controls are identified in the package histories.",
     "sources": [
       {
         "repository": "https://github.com/donmccurdy/zstddec-wasm",
@@ -49,6 +49,10 @@
       {
         "repository": "https://github.com/iki/workers-sdk",
         "revision": "8a26b5b15b17a2e4fd05722994ebe9269b855588"
+      },
+      {
+        "repository": "https://github.com/iki/patches",
+        "revision": "31b650e755b08e05e41a053cb8f65daee148455d"
       }
     ]
   },
@@ -128,7 +132,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [
@@ -184,7 +189,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [],
@@ -232,7 +238,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [
@@ -289,7 +296,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [],
@@ -333,7 +341,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [],
@@ -377,7 +386,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [],
@@ -418,7 +428,8 @@
       ],
       "runtime": {
         "bun": [
-          "1.4.2"
+          "1.4.2",
+          "1.4.5"
         ]
       },
       "requires": [],
@@ -522,6 +533,23 @@
       "record": "packages/oxlint/README.md#oxlint-immutability-1-91",
       "removal": "Select an eligible containing release under the actual consumer release-age policy, matching plugins, unsuppressed type-aware lint and normal verification. The recorded date alone never retires the hold.",
       "upstream": "https://github.com/oxc-project/oxc/pull/28820"
+    },
+    {
+      "id": "color-space-publication-provenance",
+      "kind": "publication-provenance-hold",
+      "packages": [
+        {
+          "name": "color-space",
+          "versions": [
+            "3.5.0"
+          ]
+        }
+      ],
+      "affectedRelease": "3.6.0",
+      "attestedRelease": "3.0.0",
+      "record": "packages/color-space/README.md#color-space-publication-provenance",
+      "removal": "Select a release accepted by Aube under its default provenance policy and complete the web-native workspace solve and frozen install.",
+      "upstream": "https://github.com/colorjs/color-space"
     }
   ],
   "history": [
@@ -568,6 +596,10 @@
       ],
       "resolvedIn": "0.3.4",
       "record": "packages/zstddec/HISTORY.md#zstddec-types-export"
+    },
+    {
+      "record": "packages/color-space/HISTORY.md",
+      "summary": "Aube rejected the latest release under its default publication provenance policy."
     }
   ],
   "consumerSelection": {
@@ -707,6 +739,19 @@
       "fixes": [],
       "record": "packages/oxlint/README.md",
       "history": "packages/oxlint/HISTORY.md"
+    },
+    {
+      "id": "color-space",
+      "title": "color-space publication provenance",
+      "relatedPackages": [
+        "color-space"
+      ],
+      "upstreamRepositories": [
+        "https://github.com/colorjs/color-space"
+      ],
+      "fixes": [],
+      "record": "packages/color-space/README.md",
+      "history": "packages/color-space/HISTORY.md"
     },
     {
       "id": "zstddec",

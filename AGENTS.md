@@ -22,10 +22,11 @@ removal criteria. Keep retired fixes and superseded pins in package history.
 Every package remains discoverable after its final active fix retires. Follow
 [the package policy](CATALOG.md) for latest-version selection, explicit holds,
 versioned patch directories and separate cleanup commits following two calendar
-months of deprecation. Default to a maintainer prompt for downstream requests.
+months of deprecation. Refresh all dependency environments and all declared Mise tools
+unless an explicit hold applies. Default to a maintainer prompt for downstream requests.
 Open a central PR only when the user explicitly requests one.
 
-Bun 1.4.2 runs this dependency-free host verifier. Aube 2.5.1 owns JavaScript
+Bun 1.4.5 runs this dependency-free host verifier. Aube 2.10.1 owns JavaScript
 dependencies and the sole lockfile. Use frozen installation, step:check after a
 completed implementation step and review:check before publication. Normal gates
 remain offline, bounded and separate from upstream/consumer regressions. Preserve

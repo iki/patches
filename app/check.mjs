@@ -443,9 +443,11 @@ export async function verifyCatalog(directory) {
   }), "package selector");
   for (const fix of fixes.values()) ensure(fix.kind !== "package-patch" || coveredFixes.has(fix.id), "Uncovered package-patch fix");
   for (const hold of array(registry.releaseHolds)) {
-    object(hold, ["id","kind","packages","affectedRelease","fixedReleaseRecorded","record","removal","upstream"]);
-    text(hold.id); ensure(hold.kind === "unmodified-release-hold" && !fixes.has(hold.id), "Invalid release hold");
-    packages(hold.packages); version(hold.affectedRelease); version(hold.fixedReleaseRecorded);
+    const provenance = hold.kind === "publication-provenance-hold";
+    const evidence = provenance ? "attestedRelease" : "fixedReleaseRecorded";
+    object(hold, ["id","kind","packages","affectedRelease",evidence,"record","removal","upstream"]);
+    text(hold.id); ensure((provenance || hold.kind === "unmodified-release-hold") && !fixes.has(hold.id), "Invalid release hold");
+    packages(hold.packages); version(hold.affectedRelease); version(hold[evidence]);
     reference(hold.record,true); text(hold.removal); url(hold.upstream);
   }
   unique(registry.releaseHolds.map((hold) => hold.id),"release hold");

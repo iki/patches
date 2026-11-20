@@ -14,6 +14,7 @@ consumer; retain their prerequisites, exact versions, notices and local checks.
 | jSquash | AVIF | [Current](packages/jsquash-avif/README.md) · [History](packages/jsquash-avif/HISTORY.md) |
 | Tinypool | Oxfmt | [Current](packages/tinypool/README.md) · [History](packages/tinypool/HISTORY.md) |
 | Oxc | Oxlint, plugins | [Release hold](packages/oxlint/README.md) · [History](packages/oxlint/HISTORY.md) |
+| color-space | npm publication provenance | [Release hold](packages/color-space/README.md) · [History](packages/color-space/HISTORY.md) |
 | zstddec | declaration exports | [Current](packages/zstddec/README.md) · [History](packages/zstddec/HISTORY.md) |
 
 The [package policy](CATALOG.md) governs version selection and deprecation.
@@ -37,5 +38,5 @@ the Bun step and review checks. Catalog verification is offline. Package
 and platform regressions require separate execution.
 
 The 2026-11-20 refresh checked upstream threads and release channels for all
-nine groups. Each package history identifies the versions exercised on Windows
+nine groups then on record. The dependency refresh also recorded the color-space publication hold. Each package history identifies the versions exercised on Windows
 x64 and any outstanding removal criteria. [Verification boundaries](VERIFICATION.md)

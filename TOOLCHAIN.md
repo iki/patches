@@ -12,7 +12,7 @@ the reviewed file and explicitly install its two project tools.
 
 ```sh
 mise trust mise.toml
-mise install bun@1.4.2 aube@2.5.1
+mise install bun@1.4.5 aube@2.10.1
 ```
 
 For PowerShell, resolve the installed Bun once and use it to start commands.
@@ -21,7 +21,7 @@ For PowerShell, resolve the installed Bun once and use it to start commands.
 $bunExe = & (Get-Process -Id $PID).Path -NoProfile -NonInteractive -Command {
   $env:MISE_OFFLINE = 'true'
   $env:MISE_AUTO_INSTALL = 'false'
-  mise --no-config which bun --tool bun@1.4.2
+  mise --no-config which bun --tool bun@1.4.5
   exit $LASTEXITCODE
 }
 if ($LASTEXITCODE -ne 0 -or -not $bunExe) { throw 'Mise could not resolve the project Bun.' }
@@ -37,7 +37,7 @@ The same commands work in a POSIX shell.
 ```sh
 (
   set -e
-  bun_exe=$(MISE_OFFLINE=true MISE_AUTO_INSTALL=false mise --no-config which bun --tool bun@1.4.2)
+  bun_exe=$(MISE_OFFLINE=true MISE_AUTO_INSTALL=false mise --no-config which bun --tool bun@1.4.5)
   "$bun_exe" environments/install.mjs setup
   "$bun_exe" app/toolchain.mjs aube run --no-install step:check
   "$bun_exe" app/toolchain.mjs aube run --no-install review:check
@@ -53,7 +53,7 @@ probes. The launcher resolves filesystem links, checks names and versions, and p
 physical binary directories first on the child PATH. The original PATH follows
 in its existing order so other tools, including shim-managed tools, remain
 available. Aube can then invoke the same Bun from a package script. The launcher passes arguments directly and propagates the
-child's exit status. Missing tools require an explicit `mise install bun@1.4.2 aube@2.5.1`.
+child's exit status. Missing tools require an explicit `mise install bun@1.4.5 aube@2.10.1`.
 
 Use `app/toolchain.mjs bun <arguments>` for standalone Bun work. To inspect
 the actual child runtime, pass `bun -e 'console.log(process.execPath)'`

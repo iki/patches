@@ -57,6 +57,30 @@
         {
           "kind": "patch-catalog",
           "sha256": "0b8a6295d2aa34088337c79d35bad97ae1565e410c6d362090924deed8ab8ff5"
+        },
+        {
+          "kind": "js-lock",
+          "sha256": "586c5393a8c4e32b2435f30d6ce8283d3fbdd2e6a0479c7e5470267afaa49e2b"
+        },
+        {
+          "kind": "mise-config",
+          "sha256": "eccbe397b0a61d4a11f634f36d5d0b43c39580a55d5b92b30e4deb68b3ab79b7"
+        },
+        {
+          "kind": "package-manifest",
+          "sha256": "293c77920415006b53bf54abad0dfcdca4e4a7b5a84a4c93c31ac735d1f83621"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "f43a0292c674542a2d676a0f4f588a7ffbe1cbac25090df344b12ff1279f7820"
+        },
+        {
+          "kind": "patch-catalog",
+          "sha256": "c2ce7257cbf59ca8f5a47497a58bdb39d800af40b8e7b89d313308dafd3934ad"
+        },
+        {
+          "kind": "patch-catalog",
+          "sha256": "2e588f4a7feb6fabe081c077838fa9495b68ab86e53d9f9f613ea533653604fe"
         }
       ]
     },
@@ -74,6 +98,14 @@
         {
           "kind": "runtime-config",
           "sha256": "ea20dbdde62a1118c58f7d160632610a241862472713c7adb4503bedc13a5b26"
+        },
+        {
+          "kind": "python-lock",
+          "sha256": "c64617003c30f1076847f51a2e5c7e0256cc2ab0ef60828568ead224cf0793b5"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "4f4c88910b6d485ae689143880e5e81b595a48a51ecb391b2f14feaec106d180"
         }
       ]
     },
@@ -87,6 +119,14 @@
         {
           "kind": "runtime-config",
           "sha256": "e489923e47271cd602fbfb9255ddda0fe0aa8e43e29e92c36063eb666295f6b5"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "031547121bc5fd26226e8f6334ee53d67cba70dca62553759d7560902260f11e"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "4f4c88910b6d485ae689143880e5e81b595a48a51ecb391b2f14feaec106d180"
         }
       ]
     },
@@ -104,6 +144,14 @@
         {
           "kind": "runtime-config",
           "sha256": "e489923e47271cd602fbfb9255ddda0fe0aa8e43e29e92c36063eb666295f6b5"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "4af188c74c3fd4dcab5ae56bdca8cf59337876457129a1a3be5f6c71695e464c"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "57de572f10b591d6dcd9e25db9f59db260aa11f7afa3d6a4ddec4f00bb5f8838"
         }
       ]
     },
@@ -117,6 +165,14 @@
         {
           "kind": "runtime-config",
           "sha256": "e489923e47271cd602fbfb9255ddda0fe0aa8e43e29e92c36063eb666295f6b5"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "ace04850ea0dfe9cc8ea99fbace184e4707714aa4b575c217ffcee0c9f804277"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "4f4c88910b6d485ae689143880e5e81b595a48a51ecb391b2f14feaec106d180"
         }
       ]
     },
@@ -130,6 +186,18 @@
         {
           "kind": "runtime-config",
           "sha256": "e489923e47271cd602fbfb9255ddda0fe0aa8e43e29e92c36063eb666295f6b5"
+        },
+        {
+          "kind": "mise-config",
+          "sha256": "3d1bdb880656aa6b0f3460d23a8fc4c1eb70e056f967543e0e4ffa67729c46a8"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "b606ebc7ef16a696f2ac975482e5b6ff2c95634399c2a1c5b9e68f7ad950b28c"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "673e2ba07f95bfcfe0a543258b8e267954e403d1f466481c546f467f86b31d46"
         }
       ]
     },
@@ -143,6 +211,10 @@
         {
           "kind": "runtime-config",
           "sha256": "e489923e47271cd602fbfb9255ddda0fe0aa8e43e29e92c36063eb666295f6b5"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "343f9a54c2bf7fadf4e8e936c23b2b2e12b37c176a917910e65cd7587cba038d"
         }
       ]
     },
@@ -172,6 +244,18 @@
         {
           "kind": "runtime-config",
           "sha256": "b99b4c7cdf236f59bc9f65d963deaecae3b16a7dad87939cacb9057f7664daee"
+        },
+        {
+          "kind": "package-manifest",
+          "sha256": "42d184a7e33b95654d3d90bc22619902066c13ab4c220a8226340a6d279d5add"
+        },
+        {
+          "kind": "js-lock",
+          "sha256": "586c5393a8c4e32b2435f30d6ce8283d3fbdd2e6a0479c7e5470267afaa49e2b"
+        },
+        {
+          "kind": "mise-config",
+          "sha256": "3d1bdb880656aa6b0f3460d23a8fc4c1eb70e056f967543e0e4ffa67729c46a8"
         }
       ]
     },
@@ -229,6 +313,18 @@
         {
           "kind": "workflow-config",
           "sha256": "be8fe03459a964141d3fd5b58bc166d25f3cc2048d5d0df56470742e612a7890"
+        },
+        {
+          "kind": "package-manifest",
+          "sha256": "217a9ecbfc7d55cc36689832e92d5fa268198dd18517fd258afe0f83accf3116"
+        },
+        {
+          "kind": "js-lock",
+          "sha256": "586c5393a8c4e32b2435f30d6ce8283d3fbdd2e6a0479c7e5470267afaa49e2b"
+        },
+        {
+          "kind": "mise-config",
+          "sha256": "3d1bdb880656aa6b0f3460d23a8fc4c1eb70e056f967543e0e4ffa67729c46a8"
         }
       ]
     },
@@ -242,6 +338,14 @@
         {
           "kind": "cargo-manifest",
           "sha256": "ab5c2b59b9980ba297015f997cde155f68c1b4b10ff1361268eccb330cd1b30c"
+        },
+        {
+          "kind": "cargo-manifest",
+          "sha256": "74aa76870027148b858613accf2dccc38f5f2032eace7780ef054240c49fd1a7"
+        },
+        {
+          "kind": "cargo-lock",
+          "sha256": "eae8f28b18ace08d02f32f5aac7b07f5a009ef5f0d13e8e3340c08f2e0fb56ee"
         }
       ]
     },
@@ -259,6 +363,14 @@
         {
           "kind": "runtime-config",
           "sha256": "af99e6ad0be904fd614ae39bb393dcac8c0b9a456da482b22f35bebec28642a1"
+        },
+        {
+          "kind": "python-lock",
+          "sha256": "32095725a418af328a80ea71aaf3f86e20281f7386a3a3fd3b1e28a386f2af99"
+        },
+        {
+          "kind": "runtime-config",
+          "sha256": "4f4c88910b6d485ae689143880e5e81b595a48a51ecb391b2f14feaec106d180"
         }
       ]
     },
@@ -357,6 +469,18 @@
         {
           "kind": "js-lock",
           "sha256": "e290d32079c66273f991937e32b6876fdddcdefeafd17783f4ff38167fbb8e18"
+        },
+        {
+          "kind": "package-manifest",
+          "sha256": "3bcf8c1b30ee0a64aebdbb5938c893296a10fcb9a0b1d59f295ee2834c85ad2d"
+        },
+        {
+          "kind": "js-lock",
+          "sha256": "586c5393a8c4e32b2435f30d6ce8283d3fbdd2e6a0479c7e5470267afaa49e2b"
+        },
+        {
+          "kind": "mise-config",
+          "sha256": "3d1bdb880656aa6b0f3460d23a8fc4c1eb70e056f967543e0e4ffa67729c46a8"
         }
       ]
     }
@@ -669,6 +793,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.14.1",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -714,6 +846,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "3.4.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.5.0",
           "platforms": [
             "all"
           ]
@@ -1129,6 +1269,14 @@
         {
           "profile": "native-reproduction",
           "role": "locked",
+          "version": "0.11.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
           "version": "0.8.0",
           "platforms": [
             "all"
@@ -1162,6 +1310,14 @@
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.8.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.10.2",
           "platforms": [
             "all"
           ]
@@ -1287,6 +1443,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.12.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.10.4",
@@ -1391,6 +1555,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "9.1.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "9.0.0",
@@ -1426,6 +1598,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "6.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "6.3.2",
           "platforms": [
             "all"
           ]
@@ -1506,6 +1686,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "3.20.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.20.4",
           "platforms": [
             "all"
           ]
@@ -1626,6 +1814,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.12.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.12.2",
           "platforms": [
             "all"
           ]
@@ -1905,6 +2101,14 @@
         {
           "profile": "native-reproduction",
           "role": "locked",
+          "version": "1.11.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
           "version": "1.6.0",
           "platforms": [
             "all"
@@ -2151,6 +2355,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "4.6.9",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "4.6.8",
@@ -2178,6 +2390,22 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.5.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "const-oid",
+      "uses": [
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.10.3",
           "platforms": [
             "all"
           ]
@@ -2415,6 +2643,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.17",
@@ -2450,6 +2686,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.5.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.5.5",
           "platforms": [
             "all"
           ]
@@ -2575,6 +2819,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.1.7",
@@ -2610,6 +2862,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.37.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.38.0",
           "platforms": [
             "all"
           ]
@@ -2690,6 +2950,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.0.13",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.14",
           "platforms": [
             "all"
           ]
@@ -3015,6 +3283,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.5.9",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.5.8",
@@ -3130,6 +3406,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.10.7",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.3",
           "platforms": [
             "all"
           ]
@@ -3415,6 +3699,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.29.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.28.0",
@@ -3655,6 +3947,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.0.12",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "3.0.11",
@@ -3807,6 +4107,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.2",
@@ -3847,6 +4155,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.4.11",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.4.10",
@@ -3874,6 +4190,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.3.14",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.15",
           "platforms": [
             "all"
           ]
@@ -4079,6 +4403,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.1.15",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.1.14",
@@ -4114,6 +4446,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.10",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.11",
           "platforms": [
             "all"
           ]
@@ -5759,6 +6099,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.40.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.39.0",
@@ -5932,6 +6280,22 @@
     },
     {
       "ecosystem": "cargo",
+      "name": "hybrid-array",
+      "uses": [
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.4.15",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "cargo",
       "name": "hyper",
       "uses": [
         {
@@ -5954,6 +6318,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.11.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.12.0",
           "platforms": [
             "all"
           ]
@@ -6119,6 +6491,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.6.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.5.0",
@@ -6154,6 +6534,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
           "platforms": [
             "all"
           ]
@@ -6199,6 +6587,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.3.0",
@@ -6234,6 +6630,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
           "platforms": [
             "all"
           ]
@@ -6279,6 +6683,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.3.0",
@@ -6314,6 +6726,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
           "platforms": [
             "all"
           ]
@@ -6359,6 +6779,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.3.0",
@@ -6394,6 +6822,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.3.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.4.0",
           "platforms": [
             "all"
           ]
@@ -6759,6 +7195,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.19",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.18",
@@ -6879,6 +7323,22 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.46",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.37",
@@ -6914,6 +7374,22 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.1.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.1.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.1",
           "platforms": [
             "all"
           ]
@@ -6959,6 +7435,22 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.46",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.37",
@@ -6993,7 +7485,23 @@
         {
           "profile": "native-reproduction",
           "role": "locked",
+          "version": "0.1.10",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
           "version": "0.1.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.0",
           "platforms": [
             "all"
           ]
@@ -7034,6 +7542,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.1.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.0",
           "platforms": [
             "all"
           ]
@@ -7226,6 +7742,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.3.106",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.107",
           "platforms": [
             "all"
           ]
@@ -7471,6 +7995,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.191",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.189",
@@ -7594,6 +8126,22 @@
           "profile": "web-native",
           "role": "locked",
           "version": "0.1.25",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "link-section",
+      "uses": [
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.19.4",
           "platforms": [
             "all"
           ]
@@ -7735,6 +8283,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.4.35",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.4.34",
@@ -7770,6 +8326,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.39.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.40.0",
           "platforms": [
             "all"
           ]
@@ -7895,6 +8459,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.18",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.3.17",
@@ -8002,6 +8574,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.2.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.2.5",
           "platforms": [
             "all"
           ]
@@ -9117,6 +9697,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "5.4.5",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -9439,6 +10027,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.14.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.13.1",
@@ -9474,6 +10070,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.13.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.14.0",
           "platforms": [
             "all"
           ]
@@ -9519,6 +10123,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.14.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.13.1",
@@ -9554,6 +10166,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.13.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.14.0",
           "platforms": [
             "all"
           ]
@@ -9599,6 +10219,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.14.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.13.1",
@@ -9634,6 +10262,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.2.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.18",
           "platforms": [
             "all"
           ]
@@ -9738,6 +10374,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.10.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.10.4",
           "platforms": [
             "all"
           ]
@@ -9994,6 +10638,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.2.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.1",
           "platforms": [
             "all"
           ]
@@ -10655,6 +11307,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.13.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.13.1",
@@ -10695,6 +11355,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.4.19",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.4.18",
@@ -10730,6 +11398,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.8.11",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.8.12",
           "platforms": [
             "all"
           ]
@@ -10882,6 +11558,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.6",
           "platforms": [
             "all"
           ]
@@ -11047,6 +11731,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.2.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.8.22",
@@ -11178,6 +11870,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.38.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.41.0",
           "platforms": [
             "all"
           ]
@@ -11488,8 +12188,24 @@
         },
         {
           "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.154",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
           "role": "runtime",
           "version": "1.0.151",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "runtime",
+          "version": "1.0.154",
           "platforms": [
             "all"
           ]
@@ -11599,6 +12315,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.6.9",
@@ -11647,6 +12371,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.25.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "3.24.0",
@@ -11682,6 +12414,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "3.24.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.25.0",
           "platforms": [
             "all"
           ]
@@ -11807,6 +12547,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.5.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.4.3",
@@ -11842,6 +12590,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.10.9",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.1",
           "platforms": [
             "all"
           ]
@@ -12071,6 +12827,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.16.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.16.2",
@@ -12284,6 +13048,22 @@
     },
     {
       "ecosystem": "cargo",
+      "name": "static_vcruntime",
+      "uses": [
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.0.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "cargo",
       "name": "string_cache",
       "uses": [
         {
@@ -12298,6 +13078,14 @@
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.9.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.0",
           "platforms": [
             "all"
           ]
@@ -12338,6 +13126,14 @@
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.6.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.2",
           "platforms": [
             "all"
           ]
@@ -12431,6 +13227,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.9",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.8",
@@ -12506,6 +13310,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.0.119",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "3.0.10",
           "platforms": [
             "all"
           ]
@@ -12695,6 +13507,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.37.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.37.1",
@@ -12832,8 +13652,24 @@
         },
         {
           "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.12.7",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
           "role": "runtime",
           "version": "2.12.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "runtime",
+          "version": "2.12.7",
           "platforms": [
             "all"
           ]
@@ -12904,8 +13740,24 @@
         },
         {
           "profile": "native-reproduction",
+          "role": "build",
+          "version": "2.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
           "role": "locked",
           "version": "2.7.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.7.6",
           "platforms": [
             "all"
           ]
@@ -12959,6 +13811,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.7.1",
@@ -12999,6 +13859,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.7.1",
@@ -13031,6 +13899,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.7.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.7.1",
@@ -13056,8 +13932,25 @@
         },
         {
           "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.5.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
           "role": "runtime",
           "version": "2.4.1",
+          "platforms": [
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "runtime",
+          "version": "2.5.0",
           "platforms": [
             "android",
             "ios"
@@ -13114,8 +14007,24 @@
         },
         {
           "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.7.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
           "role": "runtime",
           "version": "2.5.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "runtime",
+          "version": "2.7.3",
           "platforms": [
             "all"
           ]
@@ -13148,6 +14057,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "2.12.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.12.4",
           "platforms": [
             "all"
           ]
@@ -13193,6 +14110,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.12.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.12.1",
@@ -13233,6 +14158,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "2.10.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.10.1",
@@ -13268,6 +14201,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.3.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.7",
           "platforms": [
             "all"
           ]
@@ -13641,6 +14582,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.8.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.8.4",
@@ -13721,6 +14670,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.54.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.53.1",
@@ -13756,6 +14713,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.7.19",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.7.20",
           "platforms": [
             "all"
           ]
@@ -13820,6 +14785,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.6+spec-1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.2.1+spec-1.1.0",
           "platforms": [
             "all"
           ]
@@ -13892,6 +14865,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.1+spec-1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.3+spec-1.1.0",
           "platforms": [
             "all"
           ]
@@ -13993,6 +14974,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.25.19+spec-1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.19.15",
@@ -14049,6 +15038,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.5+spec-1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.1.3+spec-1.1.0",
@@ -14084,6 +15081,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.2+spec-1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.2.0+spec-1.1.0",
           "platforms": [
             "all"
           ]
@@ -14577,6 +15582,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.27",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.26",
@@ -14753,9 +15766,33 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.4",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "utf_types",
+      "uses": [
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.0",
           "platforms": [
             "all"
           ]
@@ -14788,6 +15825,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.27.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.29.3",
           "platforms": [
             "all"
           ]
@@ -15033,6 +16078,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.3.1",
@@ -15153,6 +16206,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.130",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.129",
@@ -15188,6 +16249,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.4.79",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.4.80",
           "platforms": [
             "all"
           ]
@@ -15233,6 +16302,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.130",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.129",
@@ -15273,6 +16350,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.130",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.2.129",
@@ -15308,6 +16393,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.2.129",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.2.130",
           "platforms": [
             "all"
           ]
@@ -15393,6 +16486,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.107",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.3.106",
@@ -15468,6 +16569,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.2.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.3.0",
           "platforms": [
             "all"
           ]
@@ -17281,6 +18390,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.0.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.5.40",
@@ -17324,6 +18441,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.55.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.56.0",
           "platforms": [
             "all"
           ]
@@ -17449,6 +18574,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.57.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.57.0",
@@ -17564,6 +18697,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.8.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.8.4",
           "platforms": [
             "all"
           ]
@@ -17687,6 +18828,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "4.3.5",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -17708,6 +18857,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "1.1.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "1.3.0",
           "platforms": [
             "all"
           ]
@@ -17865,6 +19022,14 @@
           ]
         },
         {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.9",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "0.11.8",
@@ -17900,6 +19065,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "0.11.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "0.11.7",
           "platforms": [
             "all"
           ]
@@ -18015,6 +19188,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "5.15.1",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -18036,6 +19217,14 @@
           "profile": "native-reproduction",
           "role": "locked",
           "version": "5.15.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "native-reproduction",
+          "role": "locked",
+          "version": "5.15.1",
           "platforms": [
             "all"
           ]
@@ -18295,6 +19484,23 @@
           "platforms": [
             "windows"
           ]
+        },
+        {
+          "profile": "extractor-xberg",
+          "role": "tool",
+          "version": "1.4.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-xberg",
+          "role": "reference",
+          "version": "1.4.2",
+          "platforms": [
+            "linux",
+            "macos"
+          ]
         }
       ],
       "fixIds": [],
@@ -18377,9 +19583,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "2.105.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "2.102.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "2.105.0",
           "platforms": [
             "all"
           ]
@@ -18395,7 +19617,23 @@
         {
           "profile": "catalog-verifier",
           "role": "tool",
+          "version": "2.10.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "tool",
           "version": "2.5.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "tool",
+          "version": "2.10.1",
           "platforms": [
             "all"
           ]
@@ -18411,7 +19649,23 @@
         {
           "profile": "mobile-studio",
           "role": "tool",
+          "version": "2.10.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "tool",
           "version": "2.5.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "2.10.1",
           "platforms": [
             "all"
           ]
@@ -18449,9 +19703,25 @@
           ]
         },
         {
+          "profile": "catalog-verifier",
+          "role": "tool",
+          "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "host-runtime",
           "role": "tool",
           "version": "1.4.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "tool",
+          "version": "1.4.5",
           "platforms": [
             "all"
           ]
@@ -18465,11 +19735,35 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "1.4.2",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "1.4.5",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -18495,6 +19789,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -18513,9 +19815,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "0.171.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "0.162.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "0.171.0",
           "platforms": [
             "all"
           ]
@@ -18571,9 +19889,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "10.5.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "10.5.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "10.5.2",
           "platforms": [
             "all"
           ]
@@ -18603,9 +19937,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "1.50.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "1.39.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "1.50.0",
           "platforms": [
             "all"
           ]
@@ -18659,7 +20009,31 @@
           ]
         },
         {
+          "profile": "extractor-opendataloader",
+          "role": "tool",
+          "version": "temurin-27.0.1+0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
+          "role": "tool",
+          "version": "temurin-21.0.12+8.0.LTS",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "temurin-21.0.13+9.0.LTS",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "tool",
           "version": "temurin-21.0.12+8.0.LTS",
           "platforms": [
@@ -18669,7 +20043,7 @@
         {
           "profile": "web-native",
           "role": "tool",
-          "version": "temurin-21.0.12+8.0.LTS",
+          "version": "temurin-27.0.1+0",
           "platforms": [
             "all"
           ]
@@ -18741,6 +20115,14 @@
         {
           "profile": "mobile-studio",
           "role": "tool",
+          "version": "1.100.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "tool",
           "version": "1.99.0",
           "platforms": [
             "all"
@@ -18750,6 +20132,14 @@
           "profile": "native-reproduction",
           "role": "minimum",
           "version": "1.90",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "1.100.0",
           "platforms": [
             "all"
           ]
@@ -18779,9 +20169,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "tool",
+          "version": "2.48.0",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "tool",
           "version": "2.46.0",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "tool",
+          "version": "2.48.0",
           "platforms": [
             "macos"
           ]
@@ -19120,12 +20526,76 @@
     },
     {
       "ecosystem": "npm",
+      "name": "@babel/helper-string-parser",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.29.14",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-validator-identifier",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.29.7",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/parser",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.29.14",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "@babel/runtime",
       "uses": [
         {
           "profile": "host-runtime",
           "role": "locked",
           "version": "7.29.7",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/types",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.29.14",
           "platforms": [
             "all"
           ]
@@ -19147,9 +20617,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19171,9 +20657,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19195,9 +20697,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19219,9 +20737,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19243,9 +20777,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19267,9 +20817,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19291,9 +20857,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -19855,6 +21437,14 @@
       "name": "@cloudflare/workers-types",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "5.20261120.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "development",
           "version": "5.20261104.1",
@@ -19864,8 +21454,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "5.20261120.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "5.20261104.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "5.20261120.1",
           "platforms": [
             "all"
           ]
@@ -20024,8 +21630,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.5.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "1.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "1.5.2",
           "platforms": [
             "all"
           ]
@@ -20048,8 +21670,40 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.5.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "1.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "1.5.2",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@earendil-works/pi-schema",
+      "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.5.2",
           "platforms": [
             "all"
           ]
@@ -20167,6 +21821,14 @@
       "name": "@esbuild/android-arm",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20190,6 +21852,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/android-arm64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "android"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20215,6 +21885,14 @@
       "name": "@esbuild/android-x64",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20239,6 +21917,14 @@
       "name": "@esbuild/darwin-arm64",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20262,6 +21948,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/darwin-x64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "macos"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20335,6 +22029,14 @@
       "name": "@esbuild/linux-arm",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20358,6 +22060,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/linux-arm64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20383,6 +22093,14 @@
       "name": "@esbuild/linux-ia32",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20406,6 +22124,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/linux-loong64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20431,6 +22157,14 @@
       "name": "@esbuild/linux-mips64el",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20454,6 +22188,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/linux-ppc64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20479,6 +22221,14 @@
       "name": "@esbuild/linux-riscv64",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20503,6 +22253,14 @@
       "name": "@esbuild/linux-s390x",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20526,6 +22284,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/linux-x64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "linux"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20695,6 +22461,14 @@
       "name": "@esbuild/win32-arm64",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20719,6 +22493,14 @@
       "name": "@esbuild/win32-ia32",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.28.2",
@@ -20742,6 +22524,14 @@
       "ecosystem": "npm",
       "name": "@esbuild/win32-x64",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "windows"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -20936,8 +22726,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "3.5.23",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "3.5.22",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "3.5.23",
           "platforms": [
             "all"
           ]
@@ -20952,8 +22758,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "3.5.23",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "3.5.22",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "3.5.23",
           "platforms": [
             "all"
           ]
@@ -20975,9 +22797,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.1.13",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "2.1.12",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "2.1.13",
           "platforms": [
             "all"
           ]
@@ -21740,6 +23578,150 @@
     },
     {
       "ecosystem": "npm",
+      "name": "@inquirer/ansi",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.0.2",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/checkbox",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.3.2",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/confirm",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "5.1.21",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/core",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "10.3.2",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/figures",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.0.15",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/input",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.3.1",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/password",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.0.23",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/select",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.4.2",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@inquirer/type",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "3.0.10",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "@isaacs/fs-minipass",
       "uses": [
         {
@@ -22465,11 +24447,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "android"
           ]
         },
         {
@@ -22497,11 +24495,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "android"
           ]
         },
         {
@@ -22529,11 +24543,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "macos"
           ]
         },
         {
@@ -22561,11 +24591,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "macos"
           ]
         },
         {
@@ -22625,11 +24671,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22657,11 +24719,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22689,11 +24767,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22721,11 +24815,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22753,11 +24863,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22785,11 +24911,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22817,11 +24959,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22849,11 +25007,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22881,11 +25055,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22913,11 +25103,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -22977,11 +25183,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -23009,11 +25231,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -23041,11 +25279,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "0.76.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -23073,6 +25327,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23081,11 +25343,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
           ]
         }
       ],
@@ -23105,6 +25383,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23113,11 +25399,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "macos"
           ]
         }
       ],
@@ -23137,6 +25439,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23145,11 +25455,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
           ]
         }
       ],
@@ -23169,6 +25495,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23177,11 +25511,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "linux"
           ]
         }
       ],
@@ -23201,6 +25551,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23209,11 +25567,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -23233,6 +25607,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
@@ -23241,11 +25623,27 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -23262,6 +25660,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "android"
           ]
         },
         {
@@ -23297,6 +25703,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "android"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23329,6 +25743,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23358,6 +25780,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "macos"
           ]
         },
         {
@@ -23425,6 +25855,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23454,6 +25892,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -23489,6 +25935,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23518,6 +25972,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -23553,6 +26015,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23582,6 +26052,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -23617,6 +26095,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23646,6 +26132,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -23681,6 +26175,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23710,6 +26212,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -23777,6 +26287,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23809,6 +26327,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.90.0",
@@ -23838,6 +26364,14 @@
           "version": "1.89.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -23889,6 +26423,14 @@
           ]
         },
         {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "1.94.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "host-runtime",
           "role": "development",
           "version": "1.89.0",
@@ -23898,8 +26440,32 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "1.89.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.94.0",
           "platforms": [
             "all"
           ]
@@ -23908,6 +26474,14 @@
           "profile": "mobile-studio",
           "role": "locked",
           "version": "1.86.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.94.0",
           "platforms": [
             "all"
           ]
@@ -23937,11 +26511,11 @@
           ]
         },
         {
-          "profile": "catalog-verifier",
-          "role": "reference",
+          "profile": "web-native",
+          "role": "locked",
           "version": "1.94.0",
           "platforms": [
-            "windows"
+            "all"
           ]
         }
       ],
@@ -23964,8 +26538,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "1.64.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.65.1",
           "platforms": [
             "all"
           ]
@@ -23980,8 +26570,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "1.64.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.65.1",
           "platforms": [
             "all"
           ]
@@ -23996,8 +26602,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "1.64.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.65.1",
           "platforms": [
             "all"
           ]
@@ -24240,6 +26862,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "@puckeditor/cli",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.25.0-canary.8b6e0f33",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "@puckeditor/core",
       "uses": [
         {
@@ -24252,8 +26890,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "0.24.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "0.24.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.24.1",
           "platforms": [
             "all"
           ]
@@ -25708,8 +28362,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "2.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "2.12.5",
           "platforms": [
             "all"
           ]
@@ -25724,8 +28394,24 @@
         },
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "2.12.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "runtime",
           "version": "2.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "runtime",
+          "version": "2.12.5",
           "platforms": [
             "all"
           ]
@@ -25752,6 +28438,14 @@
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -25788,8 +28482,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "2.12.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "2.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
           "platforms": [
             "all"
           ]
@@ -25804,8 +28514,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "2.12.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
           "platforms": [
             "all"
           ]
@@ -25820,24 +28546,16 @@
         },
         {
           "profile": "web-native",
-          "role": "locked",
-          "version": "2.12.4",
+          "role": "development",
+          "version": "2.12.6",
           "platforms": [
             "all"
           ]
         },
         {
-          "profile": "catalog-verifier",
-          "role": "patch-evidence",
-          "version": "2.12.6",
-          "platforms": [
-            "windows"
-          ]
-        },
-        {
           "profile": "web-native",
-          "role": "development",
-          "version": "2.12.6",
+          "role": "locked",
+          "version": "2.12.4",
           "platforms": [
             "all"
           ]
@@ -25869,11 +28587,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "macos"
           ]
         },
         {
@@ -25901,11 +28635,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "macos"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "macos"
           ]
         },
         {
@@ -25933,11 +28683,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -25965,11 +28731,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -25997,11 +28779,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -26029,11 +28827,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -26061,11 +28875,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -26093,11 +28923,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "linux"
           ]
         },
         {
@@ -26125,11 +28971,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -26157,11 +29019,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -26189,11 +29067,27 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "2.12.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -26614,8 +29508,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "1.4.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.4.5",
           "platforms": [
             "all"
           ]
@@ -26750,6 +29660,14 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "26.6.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "26.6.3",
           "platforms": [
@@ -26760,6 +29678,14 @@
           "profile": "host-runtime",
           "role": "locked",
           "version": "26.6.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "26.6.6",
           "platforms": [
             "all"
           ]
@@ -27266,6 +30192,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "@vercel/detect-agent",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.2.7",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "@vitejs/plugin-react",
       "uses": [
         {
@@ -27278,6 +30220,14 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "6.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "6.1.2",
           "platforms": [
@@ -27285,6 +30235,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "6.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "development",
           "version": "6.2.1",
@@ -27294,8 +30252,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "6.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "6.2.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "6.3.0",
           "platforms": [
             "all"
           ]
@@ -27310,8 +30284,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "6.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "6.2.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "6.3.0",
           "platforms": [
             "all"
           ]
@@ -27381,6 +30371,14 @@
       "name": "ansi-regex",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "5.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "6.4.0",
@@ -27396,6 +30394,14 @@
       "ecosystem": "npm",
       "name": "ansi-styles",
       "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.3.0",
+          "platforms": [
+            "all"
+          ]
+        },
         {
           "profile": "web-native",
           "role": "locked",
@@ -27486,8 +30492,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "runtime",
           "version": "1.7.18",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "runtime",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -27502,8 +30524,24 @@
         },
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "1.7.26",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "runtime",
           "version": "1.7.17",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "runtime",
+          "version": "1.7.26",
           "platforms": [
             "all"
           ]
@@ -27525,9 +30563,25 @@
           ]
         },
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.4.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.4.6",
           "platforms": [
             "all"
           ]
@@ -27651,6 +30705,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.4.5",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [],
@@ -27686,8 +30748,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "4.0.0-rc.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "4.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "4.0.0-rc.4",
           "platforms": [
             "all"
           ]
@@ -27900,6 +30978,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "cli-width",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.1.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "cliui",
       "uses": [
         {
@@ -27932,6 +31026,38 @@
     },
     {
       "ecosystem": "npm",
+      "name": "color-convert",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.0.1",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "color-name",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.1.4",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "color-space",
       "uses": [
         {
@@ -27949,10 +31075,28 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "3.5.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "3.6.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
-      "holdIds": []
+      "holdIds": [
+        "color-space-publication-provenance"
+      ]
     },
     {
       "ecosystem": "npm",
@@ -28524,6 +31668,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "dotenv",
+      "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "16.3.1",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "ecdsa-sig-formatter",
       "uses": [
         {
@@ -28552,6 +31712,14 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "4.1.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "4.0.6",
           "platforms": [
@@ -28559,6 +31727,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "4.1.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "locked",
           "version": "4.1.2",
@@ -28568,8 +31744,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.1.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "runtime",
           "version": "4.1.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "runtime",
+          "version": "4.1.5",
           "platforms": [
             "all"
           ]
@@ -28584,8 +31776,24 @@
         },
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "4.1.5",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "runtime",
           "version": "4.1.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "runtime",
+          "version": "4.1.5",
           "platforms": [
             "all"
           ]
@@ -28608,8 +31816,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "0.5.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "0.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.5.1",
           "platforms": [
             "all"
           ]
@@ -28624,8 +31848,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "0.5.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "0.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.5.1",
           "platforms": [
             "all"
           ]
@@ -28640,8 +31880,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "0.5.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "0.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.5.1",
           "platforms": [
             "all"
           ]
@@ -28711,6 +31967,14 @@
       "name": "emoji-regex",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "8.0.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "10.6.0",
@@ -28766,6 +32030,14 @@
       "ecosystem": "npm",
       "name": "esbuild",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.28.2",
+          "platforms": [
+            "all"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -29231,6 +32503,14 @@
       "name": "giget",
       "uses": [
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "3.3.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "3.3.1",
@@ -29392,8 +32672,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "0.9.72",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "0.9.15",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.9.72",
           "platforms": [
             "all"
           ]
@@ -29448,8 +32744,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "locked",
+          "version": "12.2.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "runtime",
           "version": "12.1.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "runtime",
+          "version": "12.2.0",
           "platforms": [
             "all"
           ]
@@ -29464,8 +32776,24 @@
         },
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "12.2.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "runtime",
           "version": "12.1.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "runtime",
+          "version": "12.2.0",
           "platforms": [
             "all"
           ]
@@ -29480,6 +32808,22 @@
       "uses": [
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "3.0.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-fullwidth-code-point",
+      "uses": [
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "3.0.0",
           "platforms": [
@@ -30406,6 +33750,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "mute-stream",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.0.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "nanoid",
       "uses": [
         {
@@ -30502,6 +33862,38 @@
     },
     {
       "ecosystem": "npm",
+      "name": "nostics",
+      "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.4.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.4.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "object-hash",
       "uses": [
         {
@@ -30585,75 +33977,107 @@
           ]
         },
         {
-          "profile": "host-runtime",
-          "role": "development",
-          "version": "0.74.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "host-runtime",
-          "role": "locked",
-          "version": "0.74.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "mobile-studio",
-          "role": "development",
-          "version": "0.76.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "mobile-studio",
-          "role": "locked",
-          "version": "0.76.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "development",
-          "version": "0.76.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "locked",
-          "version": "0.76.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "development",
-          "version": "0.79.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "locked",
-          "version": "0.79.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
           "profile": "catalog-verifier",
           "role": "reference",
           "version": "0.79.0",
           "platforms": [
             "windows"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "development",
+          "version": "0.74.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "development",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.74.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "development",
+          "version": "0.76.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "development",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.76.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "0.76.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.76.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
           ]
         }
       ],
@@ -30689,59 +34113,75 @@
           ]
         },
         {
-          "profile": "host-runtime",
-          "role": "development",
-          "version": "1.89.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "host-runtime",
-          "role": "locked",
-          "version": "1.89.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "mobile-studio",
-          "role": "development",
-          "version": "1.90.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "mobile-studio",
-          "role": "locked",
-          "version": "1.90.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "development",
-          "version": "1.90.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "locked",
-          "version": "1.90.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
           "profile": "catalog-verifier",
           "role": "reference",
           "version": "1.94.0",
           "platforms": [
             "windows"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "development",
+          "version": "1.89.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "development",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.89.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "development",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.90.0",
+          "platforms": [
+            "all"
           ]
         }
       ],
@@ -30764,8 +34204,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "7.0.2007",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "7.0.2005",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "7.0.2007",
           "platforms": [
             "all"
           ]
@@ -30780,8 +34236,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "7.0.2007",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "7.0.2006",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "7.0.2007",
           "platforms": [
             "all"
           ]
@@ -30796,8 +34268,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "7.0.2007",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "7.0.2005",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "7.0.2007",
           "platforms": [
             "all"
           ]
@@ -31091,7 +34579,31 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.64.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "1.64.1",
           "platforms": [
@@ -31101,7 +34613,7 @@
         {
           "profile": "web-native",
           "role": "locked",
-          "version": "1.64.1",
+          "version": "1.65.1",
           "platforms": [
             "all"
           ]
@@ -31123,7 +34635,31 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.64.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.65.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "1.64.1",
           "platforms": [
@@ -31133,7 +34669,7 @@
         {
           "profile": "web-native",
           "role": "locked",
-          "version": "1.64.1",
+          "version": "1.65.1",
           "platforms": [
             "all"
           ]
@@ -31203,42 +34739,62 @@
           ]
         },
         {
-          "profile": "mobile-studio",
-          "role": "development",
-          "version": "0.15.12",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "mobile-studio",
-          "role": "locked",
-          "version": "0.15.12",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "development",
-          "version": "0.16.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "locked",
-          "version": "0.16.0",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
           "profile": "catalog-verifier",
           "role": "reference",
           "version": "0.18.1",
           "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "development",
+          "version": "0.15.12",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "0.15.12",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "0.16.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "0.18.1",
+          "platforms": [
+            "linux",
+            "macos",
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.16.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.18.1",
+          "platforms": [
+            "linux",
+            "macos",
             "windows"
           ]
         }
@@ -31302,8 +34858,24 @@
         },
         {
           "profile": "web-native",
+          "role": "locked",
+          "version": "2.23.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "runtime",
           "version": "2.22.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "runtime",
+          "version": "2.23.0",
           "platforms": [
             "all"
           ]
@@ -32130,6 +35702,22 @@
     },
     {
       "ecosystem": "npm",
+      "name": "signal-exit",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.1.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
       "name": "skills",
       "uses": [
         {
@@ -32142,8 +35730,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "1.9.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "1.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.9.0",
           "platforms": [
             "all"
           ]
@@ -32158,8 +35762,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "1.9.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "1.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "1.9.0",
           "platforms": [
             "all"
           ]
@@ -32174,8 +35794,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "1.9.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "1.7.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.9.0",
           "platforms": [
             "all"
           ]
@@ -32277,6 +35913,14 @@
       "name": "string-width",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "4.2.3",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.2.0",
@@ -32301,6 +35945,14 @@
       "name": "strip-ansi",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "6.0.1",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "7.2.0",
@@ -32316,6 +35968,14 @@
       "ecosystem": "npm",
       "name": "supports-color",
       "uses": [
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "10.2.2",
+          "platforms": [
+            "all"
+          ]
+        },
         {
           "profile": "mobile-studio",
           "role": "locked",
@@ -32648,8 +36308,24 @@
         },
         {
           "profile": "host-runtime",
+          "role": "locked",
+          "version": "1.4.7",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "runtime",
           "version": "1.3.27",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "runtime",
+          "version": "1.4.7",
           "platforms": [
             "all"
           ]
@@ -32720,6 +36396,14 @@
         },
         {
           "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "8.13.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
           "role": "reference",
           "version": "8.12.1",
           "platforms": [
@@ -32751,6 +36435,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "8.13.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "development",
           "version": "8.12.4",
@@ -32778,6 +36470,14 @@
           "profile": "web-native",
           "role": "development",
           "version": "8.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "8.13.0",
           "platforms": [
             "all"
           ]
@@ -32802,22 +36502,6 @@
           "profile": "web-native",
           "role": "locked",
           "version": "8.12.4",
-          "platforms": [
-            "all"
-          ]
-        },
-        {
-          "profile": "catalog-verifier",
-          "role": "patch-evidence",
-          "version": "8.13.0",
-          "platforms": [
-            "windows"
-          ]
-        },
-        {
-          "profile": "web-native",
-          "role": "development",
-          "version": "8.13.0",
           "platforms": [
             "all"
           ]
@@ -33004,6 +36688,14 @@
         },
         {
           "profile": "host-runtime",
+          "role": "development",
+          "version": "8.3.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
           "role": "locked",
           "version": "8.3.5",
           "platforms": [
@@ -33011,6 +36703,14 @@
           ]
         },
         {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "8.3.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "mobile-studio",
           "role": "development",
           "version": "8.3.6",
@@ -33020,8 +36720,24 @@
         },
         {
           "profile": "mobile-studio",
+          "role": "development",
+          "version": "8.3.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
           "role": "locked",
           "version": "8.3.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "8.3.8",
           "platforms": [
             "all"
           ]
@@ -33036,8 +36752,24 @@
         },
         {
           "profile": "web-native",
+          "role": "development",
+          "version": "8.3.8",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
           "role": "locked",
           "version": "8.3.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "8.3.8",
           "platforms": [
             "all"
           ]
@@ -33327,6 +37059,14 @@
       "name": "wrap-ansi",
       "uses": [
         {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "6.2.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
           "profile": "web-native",
           "role": "locked",
           "version": "9.0.2",
@@ -33346,6 +37086,14 @@
           "profile": "host-runtime",
           "role": "locked",
           "version": "8.22.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "host-runtime",
+          "role": "locked",
+          "version": "8.23.0",
           "platforms": [
             "all"
           ]
@@ -33522,6 +37270,22 @@
           "profile": "web-native",
           "role": "locked",
           "version": "3.4.0",
+          "platforms": [
+            "all"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "yoctocolors-cjs",
+      "uses": [
+        {
+          "profile": "mobile-studio",
+          "role": "locked",
+          "version": "2.1.3",
           "platforms": [
             "all"
           ]
@@ -33848,8 +37612,24 @@
         },
         {
           "profile": "document-extraction",
+          "role": "environment",
+          "version": "3.14.10",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "document-extraction",
           "role": "observed",
           "version": "3.12.16",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "observed",
+          "version": "3.14.10",
           "platforms": [
             "windows"
           ]
@@ -33863,9 +37643,25 @@
           ]
         },
         {
+          "profile": "extractor-docling",
+          "role": "reference",
+          "version": "3.14.10",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-marker",
           "role": "observed",
           "version": "3.12.14",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-marker",
+          "role": "reference",
+          "version": "3.13.18",
           "platforms": [
             "windows"
           ]
@@ -33879,9 +37675,25 @@
           ]
         },
         {
+          "profile": "extractor-mineru",
+          "role": "reference",
+          "version": "3.14.10",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-opendataloader",
           "role": "observed",
           "version": "3.12.15",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-opendataloader",
+          "role": "observed",
+          "version": "3.15.2",
           "platforms": [
             "windows"
           ]
@@ -33896,8 +37708,24 @@
         },
         {
           "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "3.14.10",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
           "role": "observed",
           "version": "3.12.15",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "observed",
+          "version": "3.14.10",
           "platforms": [
             "windows"
           ]
@@ -34141,6 +37969,30 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "3.14.5",
+          "platforms": [
+            "windows"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "aiohttp-retry",
+      "uses": [
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.9.1",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -34228,6 +38080,14 @@
           "version": "0.0.5",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.0.7",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -34364,6 +38224,14 @@
           "version": "4.15.1",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "4.16.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -34553,6 +38421,14 @@
         {
           "profile": "document-extraction",
           "role": "environment",
+          "version": "2026.10.23",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
           "version": "2026.7.22",
           "platforms": [
             "all"
@@ -34586,6 +38462,14 @@
           "profile": "extractor-opendataloader",
           "role": "observed",
           "version": "2026.7.22",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2026.10.23",
           "platforms": [
             "windows"
           ]
@@ -34701,6 +38585,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.5.9",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -34716,6 +38608,14 @@
           "version": "8.5.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "8.5.1",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -34756,6 +38656,14 @@
           "version": "8.5.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "8.5.1",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -35159,6 +39067,14 @@
           ]
         },
         {
+          "profile": "extractor-docling",
+          "role": "runtime",
+          "version": "2.151.1",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-opendataloader",
           "role": "observed",
           "version": "2.132.0",
@@ -35412,6 +39328,14 @@
           "version": "4.0.10",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "4.2.12",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -35701,6 +39625,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.76.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -35764,6 +39696,14 @@
           "version": "1.84.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.85.3",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -35877,6 +39817,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.8.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -35932,6 +39880,22 @@
     },
     {
       "ecosystem": "pypi",
+      "name": "httpcore2",
+      "uses": [
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.16.2",
+          "platforms": [
+            "windows"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "pypi",
       "name": "httptools",
       "uses": [
         {
@@ -35940,6 +39904,14 @@
           "version": "0.8.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.9.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -36012,6 +39984,22 @@
     },
     {
       "ecosystem": "pypi",
+      "name": "httpx2",
+      "uses": [
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.16.2",
+          "platforms": [
+            "windows"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "pypi",
       "name": "huggingface-hub",
       "uses": [
         {
@@ -36052,6 +40040,14 @@
           "version": "1.9.1",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.4.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -36397,6 +40393,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "37.0.3",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -36575,6 +40579,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "1.0.3",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-mineru",
           "role": "observed",
           "version": "1.0.3",
@@ -36623,6 +40635,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "1.13.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-marker",
           "role": "observed",
           "version": "1.12.1",
@@ -36652,6 +40672,14 @@
           "version": "4.0.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "4.3.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -36693,6 +40721,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "4.3.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -36727,6 +40763,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "1.2.4",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-marker",
           "role": "observed",
           "version": "1.2.3",
@@ -36757,6 +40801,14 @@
           "platforms": [
             "windows"
           ]
+        },
+        {
+          "profile": "extractor-marker",
+          "role": "runtime",
+          "version": "2.2.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -36772,6 +40824,14 @@
           "version": "0.1.8",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "0.1.9",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -36946,6 +41006,14 @@
           "profile": "extractor-mineru",
           "role": "runtime",
           "version": "4.0.10",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-mineru",
+          "role": "runtime",
+          "version": "4.2.3",
           "platforms": [
             "windows"
           ]
@@ -37165,6 +41233,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "7.2.1",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37303,6 +41379,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "2.5.5",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-docling",
           "role": "observed",
           "version": "2.5.3",
@@ -37341,6 +41425,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.5.5",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37356,6 +41448,14 @@
           "version": "4.0.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "4.0.1",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37431,6 +41531,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "1.32.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-docling",
           "role": "observed",
           "version": "1.30.0",
@@ -37452,6 +41560,14 @@
           "version": "1.24.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.32.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37600,8 +41716,24 @@
         },
         {
           "profile": "extractor-opendataloader",
+          "role": "observed",
+          "version": "2.5.23",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-opendataloader",
           "role": "runtime",
           "version": "2.5.12",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-opendataloader",
+          "role": "runtime",
+          "version": "2.5.23",
           "platforms": [
             "windows"
           ]
@@ -37669,6 +41801,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.45.2",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37684,6 +41824,14 @@
           "version": "0.66b0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.66b2",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37701,6 +41849,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.45.2",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37716,6 +41872,14 @@
           "version": "1.45.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.45.2",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37733,6 +41897,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.45.2",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37749,6 +41921,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.45.2",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -37764,6 +41944,14 @@
           "version": "0.66b0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.66b2",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37788,6 +41976,14 @@
           "version": "3.12.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "3.13.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -37876,6 +42072,14 @@
           "version": "3.0.6",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "3.1.1",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -37996,6 +42200,14 @@
           "version": "12.3.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "13.0.0",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -38277,6 +42489,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "1.5.2",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -38324,6 +42544,14 @@
           "version": "3.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "3.12",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -38389,6 +42617,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.14.4",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -38437,6 +42673,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.50.5",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -38476,6 +42720,14 @@
           "version": "2.15.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2.16.3",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -38607,6 +42859,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "7.1.1",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-mineru",
           "role": "observed",
           "version": "6.19.0",
@@ -38628,6 +42888,14 @@
           "version": "5.13.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "5.15.2",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -38783,6 +43051,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "4.0.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-docling",
           "role": "observed",
           "version": "2.9.0.post0",
@@ -38812,6 +43088,14 @@
           "version": "2.9.0.post0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "4.0.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -39461,6 +43745,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2026.9.1",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -39903,6 +44195,14 @@
           ]
         },
         {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "4.1.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
           "profile": "extractor-docling",
           "role": "observed",
           "version": "2.10",
@@ -39978,6 +44278,14 @@
           "profile": "extractor-marker",
           "role": "runtime",
           "version": "0.22.1",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "extractor-marker",
+          "role": "runtime",
+          "version": "0.23.0",
           "platforms": [
             "windows"
           ]
@@ -40084,6 +44392,14 @@
           "version": "9.1.4",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "9.2.1",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -40244,6 +44560,14 @@
           "version": "0.22.2",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.23.3",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -40588,6 +44912,22 @@
     },
     {
       "ecosystem": "pypi",
+      "name": "truststore",
+      "uses": [
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.10.5",
+          "platforms": [
+            "windows"
+          ]
+        }
+      ],
+      "fixIds": [],
+      "holdIds": []
+    },
+    {
+      "ecosystem": "pypi",
       "name": "typer",
       "uses": [
         {
@@ -40628,6 +44968,14 @@
           "version": "0.27.2",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.29.2",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -40733,6 +45081,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "0.4.5",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -40748,6 +45104,14 @@
           "version": "2026.5",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "2026.6",
+          "platforms": [
+            "windows"
           ]
         },
         {
@@ -40770,6 +45134,14 @@
           "profile": "extractor-opendataloader",
           "role": "observed",
           "version": "2026.4",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "2026.6",
           "platforms": [
             "windows"
           ]
@@ -41005,6 +45377,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "retrieval-benchmark",
+          "role": "environment",
+          "version": "17.4",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -41052,6 +45432,14 @@
           "version": "3.2.9",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "document-extraction",
+          "role": "environment",
+          "version": "3.3.3",
+          "platforms": [
+            "windows"
           ]
         },
         {
