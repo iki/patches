@@ -36,6 +36,6 @@ Use the [project tool setup](TOOLCHAIN.md) for a frozen Aube installation and
 the Bun step and review checks. Catalog verification is offline. Package
 and platform regressions require separate execution.
 
-Upstream status in this snapshot was observed on 2026-11-06. Curating the catalog
-does not refresh remote status, prove a release contains a fix, or rerun earlier
-regressions. See [verification boundaries](VERIFICATION.md).
+The 2026-11-20 refresh checked upstream threads and release channels for all
+nine groups. Each package history identifies the versions exercised on Windows
+x64 and any outstanding removal criteria. [Verification boundaries](VERIFICATION.md)

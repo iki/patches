@@ -49,6 +49,14 @@
         {
           "kind": "runtime-config",
           "sha256": "b99b4c7cdf236f59bc9f65d963deaecae3b16a7dad87939cacb9057f7664daee"
+        },
+        {
+          "kind": "patch-catalog",
+          "sha256": "6446fe74f315ae987d9f06462fc038838e4a593aaa1141cf0157ad7a6f2ad3c9"
+        },
+        {
+          "kind": "patch-catalog",
+          "sha256": "0b8a6295d2aa34088337c79d35bad97ae1565e410c6d362090924deed8ab8ff5"
         }
       ]
     },
@@ -341,6 +349,14 @@
         {
           "kind": "workflow-config",
           "sha256": "f83f205df8b386ba1e35aa28e11061be35284e18d3da4c654fc9d128a84b6b2a"
+        },
+        {
+          "kind": "package-manifest",
+          "sha256": "9b08008a0ea2c0523824bf40304d78db11f2918c90778d63d254a1673ff916a9"
+        },
+        {
+          "kind": "js-lock",
+          "sha256": "e290d32079c66273f991937e32b6876fdddcdefeafd17783f4ff38167fbb8e18"
         }
       ]
     }
@@ -19393,6 +19409,38 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.0.0-rc.1",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [
@@ -19488,6 +19536,38 @@
           "profile": "web-native",
           "role": "locked",
           "version": "0.30.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.0.0-rc.1",
           "platforms": [
             "all"
           ]
@@ -23855,6 +23935,14 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "1.94.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -25734,6 +25822,30 @@
           "profile": "web-native",
           "role": "locked",
           "version": "2.12.4",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "2.12.6",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "2.12.6",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "2.12.6",
           "platforms": [
             "all"
           ]
@@ -27648,6 +27760,30 @@
           "profile": "web-native",
           "role": "locked",
           "version": "1.0.0-beta.27",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "1.0.0-rc.2",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "1.0.0-rc.2",
           "platforms": [
             "all"
           ]
@@ -30109,6 +30245,38 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "5.20261118.0-beta",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "5.20261118.0-beta",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "5.20261118.0-beta",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "5.20261117.0-beta",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [
@@ -30463,6 +30631,30 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "0.79.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "0.79.0",
+          "platforms": [
+            "windows"
+          ]
         }
       ],
       "fixIds": [],
@@ -30542,6 +30734,14 @@
           "version": "1.90.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "1.94.0",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -31032,6 +31232,14 @@
           "version": "0.16.0",
           "platforms": [
             "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "reference",
+          "version": "0.18.1",
+          "platforms": [
+            "windows"
           ]
         }
       ],
@@ -32597,6 +32805,30 @@
           "platforms": [
             "all"
           ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "8.13.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "8.13.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "8.13.0",
+          "platforms": [
+            "all"
+          ]
         }
       ],
       "fixIds": [
@@ -33054,6 +33286,30 @@
           "profile": "web-native",
           "role": "locked",
           "version": "4.158.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "catalog-verifier",
+          "role": "patch-evidence",
+          "version": "4.165.0",
+          "platforms": [
+            "windows"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "development",
+          "version": "4.165.0",
+          "platforms": [
+            "all"
+          ]
+        },
+        {
+          "profile": "web-native",
+          "role": "locked",
+          "version": "4.165.0",
           "platforms": [
             "all"
           ]

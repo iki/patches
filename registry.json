@@ -3,8 +3,8 @@
   "repository": "https://github.com/iki/patches",
   "migration": "migration.json",
   "observation": {
-    "recordedDate": "2026-11-08",
-    "basis": "Consumer-neutral curation of source observations through 2026-11-06. Exact copied upstream files retain their origins. Maintained representations bind to the preceding signed catalog artifact snapshot. No fresh remote status, signature, package or platform regression is claimed by preparation.",
+    "recordedDate": "2026-11-20",
+    "basis": "GitHub issues, PRs, forks and npm release channels reviewed on 2026-11-20. Package histories identify the exact Windows package regressions and outstanding acceptance checks. Earlier source observations and original license notices remain bound to their recorded revisions.",
     "sources": [
       {
         "repository": "https://github.com/donmccurdy/zstddec-wasm",
@@ -37,6 +37,18 @@
       {
         "repository": "https://github.com/iki/workers-sdk",
         "revision": "31806d8588cfe225f499474c90c42736733488ce"
+      },
+      {
+        "repository": "https://github.com/iki/patches",
+        "revision": "083a78415760ae72811109b80bbecb291472d7fe"
+      },
+      {
+        "repository": "https://github.com/iki/cf",
+        "revision": "c8da7f85f82ba18dbd02e7037eb7e5dc6b2bcc95"
+      },
+      {
+        "repository": "https://github.com/iki/workers-sdk",
+        "revision": "8a26b5b15b17a2e4fd05722994ebe9269b855588"
       }
     ]
   },
@@ -64,11 +76,12 @@
         "patches/portless@0.16.0.patch",
         "patches/portless/0.15.12/bun-tls-contexts.patch",
         "patches/portless@0.15.12.patch",
-        "packages/portless/tests/verify-package.mjs"
+        "packages/portless/tests/verify-package.mjs",
+        "packages/portless/tests/0.18.1/verify-native.mjs"
       ],
       "upstream": {
         "repository": "https://github.com/vercel-labs/portless",
-        "disposition": "own-pr-open-in-source-record",
+        "disposition": "own-pr-open",
         "url": "https://github.com/vercel-labs/portless/pull/470",
         "reviewedHead": "0c0ff893a5a481d3d1b53d0b4766e32cd35dd5e3"
       },
@@ -81,10 +94,11 @@
       "record": "packages/portless/README.md#portless-bun-tls",
       "regressions": [
         "packages/portless/tests/verify-package.mjs",
-        "packages/portless/README.md"
+        "packages/portless/README.md",
+        "packages/portless/tests/0.18.1/verify-native.mjs"
       ],
       "removal": "An unpatched published Portless or Bun release passes verified certificates, registered names, refresh/retry, pooling/cleanup and loopback-only rejection.",
-      "limitations": "Two distinct package series are retained. The portable package verifier targets 0.16.0 and requires Bun 1.4.2 and OpenSSL. HTTP/1.1 only; unregistered TLS names and plain HTTP on the TLS port are unsupported. Bun HTTPS rejects loopbackOnly before allocation. The source-record Node run had 15 matching baseline CLI failures and frozen upstream installation had trust-downgrade blockers. No new full upstream or consumer acceptance is claimed."
+      "limitations": "Two distinct package series are retained. The portable package verifier targets 0.16.0 and requires Bun 1.4.2 and OpenSSL. HTTP/1.1 only; unregistered TLS names and plain HTTP on the TLS port are unsupported. Bun HTTPS rejects loopbackOnly before allocation. The source-record Node run had 15 matching baseline CLI failures and frozen upstream installation had trust-downgrade blockers. No new full upstream or consumer acceptance is claimed. The 0.18.1 unpatched native regression passed on Bun 1.4.5 and failed hostname verification on Bun 1.4.2. No 0.18.1 package patch is registered."
     },
     {
       "id": "wrangler-verified-bun-fetch",
@@ -93,19 +107,22 @@
         {
           "name": "wrangler",
           "versions": [
-            "4.158.0"
+            "4.158.0",
+            "4.165.0"
           ]
         },
         {
           "name": "undici",
           "versions": [
-            "8.12.4"
+            "8.12.4",
+            "8.13.0"
           ]
         },
         {
           "name": "miniflare",
           "versions": [
-            "5.20261104.0-beta"
+            "5.20261104.0-beta",
+            "5.20261118.0-beta"
           ]
         }
       ],
@@ -123,7 +140,9 @@
         "patches/wrangler@4.158.0.patch",
         "packages/workers-sdk/adapters/verified-bun-fetch.mjs",
         "packages/workers-sdk/adapters/verified-bun-fetch.test.mjs",
-        "packages/workers-sdk/adapters/wrangler-local.test.mjs"
+        "packages/workers-sdk/adapters/wrangler-local.test.mjs",
+        "patches/wrangler/4.165.0/verified-bun-fetch.patch",
+        "patches/wrangler@4.165.0.patch"
       ],
       "upstream": {
         "repository": "https://github.com/cloudflare/workers-sdk",
@@ -132,9 +151,9 @@
       },
       "fork": {
         "repository": "https://github.com/iki/workers-sdk",
-        "branch": "codex/bun-local-fetch-capability",
-        "base": "2c623aa91d1dac5d43b8c66830d3e4b38c4ae32b",
-        "head": "31806d8588cfe225f499474c90c42736733488ce"
+        "branch": "codex/bun-local-fetch-capability-4.165.0",
+        "base": "5b44e5e2f9df23b38b17903d6f4194919042828e",
+        "head": "8a26b5b15b17a2e4fd05722994ebe9269b855588"
       },
       "record": "packages/workers-sdk/README.md#wrangler-verified-bun-fetch",
       "regressions": [
@@ -151,13 +170,15 @@
         {
           "name": "undici",
           "versions": [
-            "8.12.4"
+            "8.12.4",
+            "8.13.0"
           ]
         },
         {
           "name": "wrangler",
           "versions": [
-            "4.158.0"
+            "4.158.0",
+            "4.165.0"
           ]
         }
       ],
@@ -173,7 +194,7 @@
       ],
       "upstream": {
         "repository": "https://github.com/oven-sh/bun",
-        "disposition": "matching-third-party-pr-open-in-source-record",
+        "disposition": "matching-third-party-pr-closed-unmerged",
         "url": "https://github.com/oven-sh/bun/pull/36102",
         "reviewedHead": "7b56d60ba487286f1137242b83fc39cf286f6493"
       },
@@ -197,13 +218,15 @@
         {
           "name": "undici",
           "versions": [
-            "8.12.4"
+            "8.12.4",
+            "8.13.0"
           ]
         },
         {
           "name": "wrangler",
           "versions": [
-            "4.158.0"
+            "4.158.0",
+            "4.165.0"
           ]
         }
       ],
@@ -221,9 +244,9 @@
       ],
       "upstream": {
         "repository": "https://github.com/oven-sh/bun",
-        "disposition": "matching-third-party-pr-open-in-source-record",
+        "disposition": "matching-third-party-pr-open",
         "url": "https://github.com/oven-sh/bun/pull/39250",
-        "reviewedHead": "01b6a718a7a2a8ef81f067288d1be7cd8d450030"
+        "reviewedHead": "7fd4b00e3214132c85a0e77b7f161c7b878f5aaf"
       },
       "fork": {
         "repository": "https://github.com/iki/workers-sdk",
@@ -245,19 +268,22 @@
         {
           "name": "cf",
           "versions": [
-            "1.0.0-beta.27"
+            "1.0.0-beta.27",
+            "1.0.0-rc.2"
           ]
         },
         {
           "name": "@cloudflare/config",
           "versions": [
-            "0.30.2"
+            "0.30.2",
+            "1.0.0-rc.2"
           ]
         },
         {
           "name": "@cloudflare/build-output-utils",
           "versions": [
-            "0.9.10"
+            "0.9.10",
+            "1.0.0-rc.2"
           ]
         }
       ],
@@ -269,7 +295,9 @@
       "requires": [],
       "files": [
         "packages/cf/adapters/bun-prebuilt.mjs",
-        "packages/cf/adapters/bun-prebuilt.test.mjs"
+        "packages/cf/adapters/bun-prebuilt.test.mjs",
+        "packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.mjs",
+        "packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.test.mjs"
       ],
       "upstream": {
         "repository": "https://github.com/cloudflare/cf",
@@ -278,16 +306,17 @@
       },
       "fork": {
         "repository": "https://github.com/iki/cf",
-        "branch": "codex/bun-prebuilt-config",
-        "base": "6808c0f8449e0dfe9d2c41ef0143485265432ed1",
-        "head": "b6c20a32e18f618adbbb05e3a3d300896bfd2a83"
+        "branch": "codex/bun-prebuilt-config-1.0.0-rc.2",
+        "base": "87e509e317dcd36dbe7e4b7e095dda628b91285c",
+        "head": "c8da7f85f82ba18dbd02e7037eb7e5dc6b2bcc95"
       },
       "record": "packages/cf/README.md#cf-bun-config",
       "regressions": [
-        "packages/cf/adapters/bun-prebuilt.test.mjs"
+        "packages/cf/adapters/bun-prebuilt.test.mjs",
+        "packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.test.mjs"
       ],
       "removal": "Pinned upstream supports validated object/function configs, modes, Windows file URLs/spaces and upward search under Bun. Retain the supported prebuilt interface independently if useful.",
-      "limitations": "This portable example preserves config and Build Output validation but covers a narrower matrix than full application integrations. Callers retain compilation, exact WASM/module inventory, channels, authentication, output evidence and recovery. Upstream loader support remains declined. The source-record focused test passed; full upstream frozen installation was blocked by trust-downgrade checks."
+      "limitations": "The rc.2 adapter covers explicit object/function configs, one compiled Worker and assets in v1 Build Output. The retained beta.27 variant writes v0. Native module-hook loading remains declined and full application integration stays with the caller."
     },
     {
       "id": "tauri-native-lifetime",
@@ -297,7 +326,8 @@
           "name": "@tauri-apps/cli",
           "versions": [
             "2.12.1",
-            "2.12.4"
+            "2.12.4",
+            "2.12.6"
           ]
         }
       ],
@@ -312,7 +342,8 @@
         "packages/tauri/adapters/tauri-cli.ts",
         "packages/tauri/adapters/native-lifetime.mjs",
         "packages/tauri/adapters/bun-tauri.mjs",
-        "packages/tauri/adapters/native-lifetime.test.mjs"
+        "packages/tauri/adapters/native-lifetime.test.mjs",
+        "packages/tauri/tests/2.12.6/native-callbacks.test.mjs"
       ],
       "upstream": {
         "repository": "https://github.com/tauri-apps/tauri",
@@ -327,10 +358,11 @@
       },
       "record": "packages/tauri/README.md#tauri-native-lifetime",
       "regressions": [
-        "packages/tauri/adapters/native-lifetime.test.mjs"
+        "packages/tauri/adapters/native-lifetime.test.mjs",
+        "packages/tauri/tests/2.12.6/native-callbacks.test.mjs"
       ],
       "removal": "Identify the resolving upstream change and verify deterministic success/rejection/cleanup and actual native CLI completion without the guard.",
-      "limitations": "Historical unguarded CLI 2.12.1 failed 10/160 launches; unguarded 2.12.3 and 2.12.4 completed 160/160 without an identified resolving change. Retention is conservative. The portable regression covers 160 native launches, rejection and callback cleanup. Upstream requires current reproduction and personal human coordination before proposing a contribution."
+      "limitations": "Historical unguarded CLI 2.12.1 failed 10/160 launches; unguarded 2.12.3 and 2.12.4 completed 160/160 without an identified resolving change. Retention is conservative. The portable regression covers 160 native launches, rejection and callback cleanup. Upstream requires current reproduction and personal human coordination before proposing a contribution. Unguarded CLI 2.12.6 completed 160 native commands and propagated a genuine rejection on both Bun 1.4.2 and 1.4.5. Packaged acceptance and the resolving change remain outstanding."
     },
     {
       "id": "avif-encoder-types",
@@ -355,7 +387,7 @@
       ],
       "upstream": {
         "repository": "https://github.com/jamsinclair/jSquash",
-        "disposition": "own-pr-open-in-source-record",
+        "disposition": "own-pr-open",
         "url": "https://github.com/jamsinclair/jSquash/pull/115",
         "reviewedHead": "c343c9af6ff0377080b6d0bb09bc0ad6551d7dc2"
       },
@@ -371,7 +403,7 @@
         "packages/jsquash-avif/tests/types/tsconfig.json"
       ],
       "removal": "Unpatched strict direct-factory consumer accepts byte buffers, rejects string paths and passes real raster encoding without ambient shim, casts or skipLibCheck.",
-      "limitations": "The source proposal targets the upstream source tree, not an installed-package Aube selector. The declaration adapter is a separate representation. The retained type fixture requires its original upstream layout and pinned TypeScript; no standalone catalog execution is claimed."
+      "limitations": "The source proposal targets the upstream source layout. Strict TypeScript 5.8.3 checks against the direct npm import passed with the two PR-head declarations. The published 2.1.1 declarations failed the same check. See package history for distinct pristine WASM encode/decode results."
     },
     {
       "id": "tinypool-windows-hide-process-workers",
@@ -396,7 +428,7 @@
       ],
       "upstream": {
         "repository": "https://github.com/tinylibs/tinypool",
-        "disposition": "own-pr-open-in-source-record",
+        "disposition": "own-pr-open",
         "url": "https://github.com/tinylibs/tinypool/pull/146",
         "reviewedHead": "c8bdd12c549d988dafd523d66396ab70f91d6c51"
       },
@@ -411,7 +443,7 @@
         "packages/tinypool/REGRESSION.md"
       ],
       "removal": "Unpatched published Tinypool contains windowsHide; exact transitive Oxfmt resolution, fork interception, real worker task/teardown and formatting checks pass.",
-      "limitations": "The source fork uses a typed options object while the installed 2.2.0 diff adds the same hiding flag after the option spread. They are not byte-identical source expressions. Recorded consumers used Oxfmt 0.74.0 and 0.76.0; each must verify its actual transitive resolution and real process worker cleanup."
+      "limitations": "The source fork uses a typed options object while the installed 2.2.0 diff adds the same hiding flag after the option spread. They are not byte-identical source expressions. Recorded consumers used Oxfmt 0.74.0 and 0.76.0; each must verify its actual transitive resolution and real process worker cleanup. Oxfmt 0.79.0's transitive Tinypool 2.2.0 was verified on Windows x64 with intercepted fork options, a real task and joined child exit, and formatter output."
     }
   ],
   "aliases": [],
@@ -433,6 +465,16 @@
         {
           "id": "portless-bun-tls",
           "path": "patches/portless/0.15.12/bun-tls-contexts.patch"
+        }
+      ]
+    },
+    {
+      "selector": "wrangler@4.165.0",
+      "bundle": "patches/wrangler@4.165.0.patch",
+      "parts": [
+        {
+          "id": "wrangler-verified-bun-fetch",
+          "path": "patches/wrangler/4.165.0/verified-bun-fetch.patch"
         }
       ]
     },

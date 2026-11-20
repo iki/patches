@@ -47,7 +47,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Patched lock resolution failed.' }
 & $bunExe environments/install.mjs setup
 ```
 
-These profiles use the following four registered bundles.
+The web and mobile profiles retain distinct Wrangler and Portless versions.
+Select the bundle registered for the exact installed version.
 
 | Exact selector | Registered bundle |
 | --- | --- |
@@ -55,5 +56,6 @@ These profiles use the following four registered bundles.
 | `portless@0.16.0` | `patches/portless@0.16.0.patch` |
 | `tinypool@2.2.0` | `patches/tinypool@2.2.0.patch` |
 | `wrangler@4.158.0` | `patches/wrangler@4.158.0.patch` |
+| `wrangler@4.165.0` | `patches/wrangler@4.165.0.patch` |
 
 The solve copies each selected bundle after checking its canonical registration and migration SHA-256. Aube generates the root lock and patch hashes. The command verifies each selected direct edge, its snapshot and the fresh `node_modules/.aube-applied-patches.json` marker. Compare the same package regressions on the pristine and patched installations. Native, browser and upstream behavior require their respective tests.

@@ -30,8 +30,8 @@ test("published catalog validates local provenance, exact artifacts, series and 
   assert.equal(result.ok,true);
   assert.ok(result.dependencyEntries > 0);
   assert.equal(result.fixes,8);
-  assert.equal(result.packageSeries,4);
-  assert.equal(result.artifacts,66);
+  assert.equal(result.packageSeries,5);
+  assert.equal(result.artifacts,72);
 });
 test("rejects corrupt imported bytes", () => fixture(async (directory) => {
   await writeFile(join(directory,"patches/tinypool@2.2.0.patch"),"corrupt\n");

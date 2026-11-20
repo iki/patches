@@ -19,6 +19,19 @@ The catalog gate verifies registered artifacts and provenance. Run the package r
 
 ## Upstream fixtures and procedures
 
+The November 20 web profile installs Wrangler 4.165.0, Miniflare
+5.20261118.0-beta and Undici 8.13.0. Stage the same Wrangler fixtures listed
+above. Compare the pristine install with the 4.165.0 bundle and both Bun
+preloads. The mobile profile retains Wrangler 4.158.0.
+
+For cf 1.0.0-rc.2, stage [the v1 writer and its test](../packages/cf/adapters/1.0.0-rc.2/)
+under the installed web profile. Run `bun test ./regression-fixtures/packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.test.mjs`.
+The historical cf fixture checks the v0 output layout. For Tauri CLI 2.12.6
+use the guarded fixture and the [native completion results](../packages/tauri/HISTORY.md).
+The [Portless 0.18.1 native fixture](../packages/portless/tests/0.18.1/verify-native.mjs)
+takes the pristine published package directory and a clean source checkout
+at the release commit for its certificate signer.
+
 | Catalog entry | Where to run it | Required evidence |
 | --- | --- | --- |
 | [`avif-encoder-types`](../packages/jsquash-avif/README.md#avif-encoder-types) | Use the recorded jSquash fork and its pinned compiler. The [type fixture](../packages/jsquash-avif/tests/types/avif-factory.ts) and [strict config](../packages/jsquash-avif/tests/types/tsconfig.json) belong in upstream `test/types/`, next to its `packages/avif/` tree at the expected relative depth. From upstream `test/` run its installed `tsc -p types/tsconfig.json`. | For @jsquash/avif 2.1.1 test byte-buffer acceptance and rejection of filename strings, with library checking enabled. The [declaration adapter](../packages/jsquash-avif/adapters/encoder.d.ts) and [source proposal](../packages/jsquash-avif/proposals/encoder-types.patch) have different installation layouts. Run a real WASM raster encode against the published candidate without the adapter before retirement. |

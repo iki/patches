@@ -35,5 +35,5 @@ The report lists the corresponding package regressions. Independently run
 those tests on the relevant published package, runtime and platform. In
 particular, a reversible package diff does not test TLS, actual worker process
 creation/teardown, native callbacks, or TypeScript declaration compatibility.
-The four installable selectors currently cover three independently removable
+The five installable selectors currently cover three independently removable
 package fixes. Host and declaration adapters have their own regression files.
