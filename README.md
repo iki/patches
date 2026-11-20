@@ -16,6 +16,11 @@ consumer; retain their prerequisites, exact versions, notices and local checks.
 | Oxc | Oxlint, plugins | [Release hold](packages/oxlint/README.md) · [History](packages/oxlint/HISTORY.md) |
 | zstddec | declaration exports | [Current](packages/zstddec/README.md) · [History](packages/zstddec/HISTORY.md) |
 
+The [package policy](CATALOG.md) governs version selection and deprecation.
+The [dependency inventory](inventory/dependencies.json) records package versions
+and tools. Use the [standalone environments](environments/README.md) to prepare
+a regression target. Use the [central setup procedure](environments/INSTALL.md), the [bundle applicability check](PACKAGE-BUNDLES.md) and the [regression matrix](docs/regressions.md) to install and exercise the selected package versions.
+
 [registry.json](registry.json) is the machine-readable catalog.
 [migration.json](migration.json) binds exact artifact bytes and source snapshots.
 [The data contract](MIGRATION.md) explains curated provenance and consumer-owned
@@ -27,10 +32,9 @@ and [maintenance](skills/patch-maintenance/SKILL.md). The complete
 to diffs, forks, preloads, declaration shims and bypasses of upstream defects.
 Installing a skill grants no publication, communication or hook-trust authority.
 
-Run `aube install --frozen-lockfile`, then `aube run --no-install step:check`
-and `aube run --no-install review:check`. Bun 1.4.2 and Aube 2.5.1 are pinned.
-The ordinary catalog gate is offline and does not execute imported adapters.
-Package and consumer/platform regressions are separately required evidence.
+Use the [project tool setup](TOOLCHAIN.md) for a frozen Aube installation and
+the Bun step and review checks. Catalog verification is offline. Package
+and platform regressions require separate execution.
 
 Upstream status in this snapshot was observed on 2026-11-06. Curating the catalog
 does not refresh remote status, prove a release contains a fix, or rerun earlier

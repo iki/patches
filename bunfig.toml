@@ -1,0 +1,5 @@
+# Keep environment loading explicit and dependency installation in Aube.
+env = false
+
+[install]
+auto = "disable"

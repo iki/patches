@@ -1,0 +1,33 @@
+min_version = "2026.10.7"
+
+[env]
+PLAYWRIGHT_SKIP_BROWSER_GC = "1"
+
+[tool_alias]
+gh = "aqua:cli/cli"
+xz = "github:tukaani-project/xz"
+zstd = "github:facebook/zstd"
+xz-unix = "conda:xz-tools"
+zstd-unix = "conda:zstd"
+
+[tools]
+bun = "1.4.2"
+rust = "1.99.0"
+java = "temurin-21.0.12+8.0.LTS"
+aube = "2.5.1"
+cloudflare-cf = "1.0.0-beta.27"
+xcodegen = { version = "2.46.0", os = ["macos"] }
+fnox = "1.39.0"
+age = "1.3.2"
+gh = "2.102.0"
+codex = "0.162.1"
+fd = "10.5.0"
+ripgrep = "15.2.0"
+xz = { version = "5.8.4", os = ["windows"], asset_pattern = "xz-{{version}}-windows.zip", bin_path = "bin_x86-64" }
+zstd = { version = "1.5.7", os = ["windows"], asset_pattern = "zstd-v{{version}}-win64.zip" }
+xz-unix = { version = "5.8.3", os = ["linux", "macos"] }
+zstd-unix = { version = "1.5.7", os = ["linux", "macos"] }
+python = ["3.12.16", "3.12.15", "3.12.14"]
+
+[settings]
+auto_install = false

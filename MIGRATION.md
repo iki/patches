@@ -26,6 +26,11 @@ equal the exact ordered concatenation of the registered parts beneath
 installed version, preserving its local mapping and package-manager lockfile.
 Source proposals and retired patches are not installed package bundles.
 
+The central dependency and tool inventory is a separate projection. Existing
+version-one selection and migration records continue to identify the historical
+bytes. The [package policy](CATALOG.md) defines checkout provisioning, version
+selection and migration of consumer materialization without dropping coverage.
+
 Whole application build/configuration wrappers are consumer-owned integrations,
 not canonical patch artifacts. Keep their original provenance and exact local
 hashes in the consumer. Bind each integration to selected generic fix IDs and

@@ -1,7 +1,7 @@
 # Patches
 
-This repository contains only dependency-fix catalog material and its reusable
-procedures. Organize records by the upstream that owns the defect, then related
+This repository owns dependency and tool knowledge, isolated regression
+environments, shared fixes and their reusable procedures. Organize records by the upstream that owns the defect, then related
 packages. Keep consumer names, repository URLs, deployment identifiers, full
 application integrations, private setup and conversation transcripts in their
 owners. Do not copy them into catalog prose, paths, source records or Git history.
@@ -19,7 +19,11 @@ Read the applicable source skill and its linked lifecycle or integration rules.
 Use stable independently removable fix IDs, exact package/runtime versions,
 prerequisites, source/fork base and head, regression evidence, limitations and
 removal criteria. Keep retired fixes and superseded pins in package history.
-Every package remains discoverable after its final active fix retires.
+Every package remains discoverable after its final active fix retires. Follow
+[the package policy](CATALOG.md) for latest-version selection, explicit holds,
+versioned patch directories and separate cleanup commits following two calendar
+months of deprecation. Default to a maintainer prompt for downstream requests.
+Open a central PR only when the user explicitly requests one.
 
 Bun 1.4.2 runs this dependency-free host verifier. Aube 2.5.1 owns JavaScript
 dependencies and the sole lockfile. Use frozen installation, step:check after a

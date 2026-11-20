@@ -1,10 +1,11 @@
+import "./deprecations.test.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { cp, mkdir, mkdtemp, readFile, rename, rm, symlink, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { test } from "bun:test";
-import { verifyCatalog } from "../app/check.mjs";
+import { verifyCatalog, verifyDependencyInventory } from "../app/check.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const scratchRoot = join(root, ".cache", "catalog-tests");
@@ -14,7 +15,7 @@ async function fixture(action) {
   await mkdir(scratchRoot, { recursive: true });
   const directory = await mkdtemp(join(scratchRoot, "case-"));
   try {
-    for (const name of ["registry.json","migration.json","packages","licenses","patches","skills"]) {
+    for (const name of ["registry.json","migration.json","inventory","packages","licenses","patches","skills"]) {
       await cp(join(root,name), join(directory,name), { recursive:true, errorOnExist:true, force:false });
     }
     return await action(directory);
@@ -27,6 +28,7 @@ async function fixture(action) {
 test("published catalog validates local provenance, exact artifacts, series and skill frontmatter", async () => {
   const result = await verifyCatalog(root);
   assert.equal(result.ok,true);
+  assert.ok(result.dependencyEntries > 0);
   assert.equal(result.fixes,8);
   assert.equal(result.packageSeries,4);
   assert.equal(result.artifacts,66);
@@ -197,3 +199,104 @@ test("rejects consumer aliases in the upstream-owned catalog", () => fixture(asy
   await save(directory,"registry.json",value);
   await assert.rejects(verifyCatalog(directory), /Consumer aliases belong in consuming repositories/);
 }));
+
+
+function inventoryFixture() {
+  return {
+    format:"dependency-tool-inventory-v1", observedOn:"2026-11-20", defaultTarget:"latest",
+    profiles:[{id:"sample",evidence:[{kind:"js-lock",sha256:"f".repeat(64)}]}],
+    entries:[
+      {ecosystem:"npm",name:"oxlint",uses:[{profile:"sample",role:"development",version:"1.90.0",platforms:["all"]},{profile:"sample",role:"patch-evidence",version:"1.90.0",platforms:["all"]}],fixIds:[],holdIds:["oxlint-immutability-1-91"]},
+      {ecosystem:"npm",name:"tinypool",uses:[{profile:"sample",role:"locked",version:"2.2.0",platforms:["all"]},{profile:"sample",role:"patch-evidence",version:"2.2.0",platforms:["all"]}],fixIds:["tinypool-windows-hide-process-workers"],holdIds:[]},
+    ],
+    installGroups:[{id:"sample-npm",profile:"sample",ecosystem:"npm",manager:"aube",roles:["development"],platforms:["all"]}],
+  };
+}
+const inventoryRegistry = {
+  fixes:[{id:"tinypool-windows-hide-process-workers",packages:[{name:"tinypool",versions:["2.2.0"]}]}],
+  releaseHolds:[{id:"oxlint-immutability-1-91",packages:[{name:"oxlint",versions:["1.90.0"]}]}],
+};
+test("dependency inventory validates observed resolutions and scoped installation groups", () => {
+  const data = inventoryFixture();
+  assert.equal(verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),2);
+  data.entries[0].uses.push({...data.entries[0].uses[0],version:"1.89.0",role:"locked"});
+  assert.equal(verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),2);
+});
+test("dependency inventory rejects duplicate JSON members, including escaped names", () => {
+  const json = JSON.stringify(inventoryFixture()).replace('"format":','"fo\\u0072mat":"old","format":');
+  assert.throws(() => verifyDependencyInventory(json,inventoryRegistry), /Duplicate inventory JSON field/);
+});
+test("dependency inventory rejects mistaken policy, evidence, versions and ownership", () => {
+  const failures = [
+    [(d) => {d.defaultTarget="pinned";}, /update policy/],
+    [(d) => {d.profiles[0].evidence[0].sha256="abc";}, /Invalid hash/],
+    [(d) => {d.observedOn="2026-02-31";}, /observation date/],
+    [(d) => {d.entries[0].uses[0].version="^1.90.0";}, /version/],
+    [(d) => {d.entries[0].name="../oxlint";}, /text format/],
+    [(d) => {d.entries[0].uses[0].profile="missing";}, /profile or role/],
+    [(d) => {d.entries[0].fixIds.push("tinypool-windows-hide-process-workers");}, /fixIds package mismatch/],
+    [(d) => {d.entries[0].holdIds=[];}, /holdIds package mismatch/],
+    [(d) => {d.entries[1].uses.pop();}, /canonical package version evidence/],
+    [(d) => {d.entries[1].holdIds=["oxlint-immutability-1-91"];}, /holdIds package mismatch/],
+    [(d) => {d.profiles[0].evidence[0].unverified=true;}, /Unknown field/],
+  ];
+  for (const [change,expected] of failures) {
+    const data = inventoryFixture();
+    change(data);
+    assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),expected);
+  }
+});
+test("dependency inventory rejects overlapping platform uses and ambiguous package identities", () => {
+  const data = inventoryFixture();
+  data.entries[0].uses.push({...data.entries[0].uses[0],platforms:["windows"]});
+  assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),/Duplicate inventory use/);
+  data.entries[0].uses.pop();
+  const extra = {...data.entries[1],ecosystem:"pypi",name:"sample_tools",fixIds:[]};
+  data.entries.push(extra,{...extra,name:"Sample.Tools"});
+  assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),/Duplicate inventory package/);
+});
+test("dependency inventory ties every installation selector to observed installable roles and platforms", () => {
+  const failures = [
+    [(d) => {d.installGroups[0].roles=["locked"];}, /install role/],
+    [(d) => {d.installGroups[0].manager="pip";}, /ownership mismatch/],
+    [(d) => {d.installGroups[0].id="other-npm";}, /ownership mismatch/],
+    [(d) => {d.installGroups[0].platforms=["windows"];}, /platform coverage/],
+    [(d) => {d.installGroups.push(d.installGroups[0]);}, /Duplicate inventory install group/],
+    [(d) => {d.installGroups=[];}, /Invalid array|Missing inventory install group/],
+  ];
+  for (const [change,expected] of failures) {
+    const data = inventoryFixture();
+    change(data);
+    assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),expected);
+  }
+});
+test("pinned upstream tools are installable while historical observations stay separate", () => {
+  const data = inventoryFixture();
+  const base = {profile:"sample",platforms:["linux"]};
+  data.entries.push(
+    {ecosystem:"github-release",name:"upstream/tool",fixIds:[],holdIds:[],uses:[{...base,role:"tool",version:"b11146"}]},
+    {ecosystem:"github-source",name:"upstream/source",fixIds:[],holdIds:[],uses:[{...base,role:"reference",version:"a".repeat(40)}]},
+    {ecosystem:"pypi",name:"observed-wheel",fixIds:[],holdIds:[],uses:[{...base,role:"observed",version:"1.2.0"}]},
+  );
+  data.installGroups.push({id:"sample-github-release",profile:"sample",ecosystem:"github-release",manager:"upstream-release",roles:["tool"],platforms:["linux"]});
+  assert.equal(verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),5);
+  data.entries[3].uses.push({...base,role:"runtime",version:"0.2.1"});
+  data.installGroups.push({id:"sample-github-source",profile:"sample",ecosystem:"github-source",manager:"git",roles:["runtime"],platforms:["linux"]});
+  assert.equal(verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),5);
+  data.entries[3].uses[0].version="main";
+  assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),/Invalid hash/);
+  data.entries[3].uses[0].version="a".repeat(40);
+  data.entries[2].name="upstream/tool/../../outside";
+  assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),/text format/);
+  data.entries[2].name="upstream/tool";
+  data.entries[2].uses[0].version="latest";
+  assert.throws(() => verifyDependencyInventory(JSON.stringify(data),inventoryRegistry),/release tag/);
+});
+test("catalog gate requires the dependency inventory at its canonical path", () => fixture(async (directory) => {
+  await rm(join(directory,"inventory/dependencies.json"));
+  await assert.rejects(verifyCatalog(directory),/Missing or case-mismatched file: inventory\/dependencies\.json/);
+}));
+
+test("checks local patch bundles on isolated package fixtures", async () => {
+  await import("./check-package-bundles.mjs");
+});

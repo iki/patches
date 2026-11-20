@@ -9,7 +9,11 @@
   },
   "scripts": {
     "check": "bun app/check.mjs",
-    "step:check": "bun test --timeout 30000 test/catalog.test.mjs",
-    "review:check": "bun test --timeout 30000 test/catalog.test.mjs"
+    "step:check": "bun test --timeout 30000 test/catalog.test.mjs test/toolchain.test.mjs environments/install.test.mjs",
+    "review:check": "bun test --timeout 30000 test/catalog.test.mjs test/toolchain.test.mjs environments/install.test.mjs",
+    "environments:solve": "bun environments/install.mjs solve",
+    "environments:setup": "bun environments/install.mjs setup",
+    "test:package-bundles": "bun test/check-package-bundles.mjs",
+    "check:package-bundles": "bun app/check-package-bundles.mjs"
   }
 }

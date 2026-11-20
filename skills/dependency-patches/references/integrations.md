@@ -21,14 +21,26 @@ drift, directory escapes/links, and uncovered runtime integration paths. An
 integration cannot satisfy a package-patch bundle requirement. Its existing
 application checks remain live; a catalog receipt does not replace them.
 
-Keep canonical byte copies and consumer integrations in separate manifest
-collections. Never call an integration byte-identical to a portable example.
+Keep verified canonical selections and consumer integrations in separate
+manifest collections. The consumer's committed selection identifies the
+publisher, exact catalog commit, package/version, ordered prerequisites, artifact
+paths and hashes. Verify the selected bytes from the cached catalog or the
+read-only external checkout described in the [consumer skill](../SKILL.md).
+Materialize the registered bundle in the consumer's owned cache before invoking
+Aube. Keep the stable cache-relative selector and matching digest in the local
+install contract. A local checkout override belongs only in untracked, ignored
+configuration. Never tie portable install paths to the override. Never call an integration byte-identical to a portable example.
 The migration must compare complete before/after coverage, proving that each old
 canonical mapping is either still exact or represented by an explicit checked
 integration binding. Require fresh consumer verification after changing either
 collection. Preserve local installed package paths, ordering and version pins
 unless the user separately requested an upgrade.
 
-Consumers pin the new published catalog and install these procedure skills through
-their existing reviewed workflow. Do not copy another checkout's success receipts,
+Migrate existing committed artifacts only after both a clean bootstrap and an
+older frozen install can reproduce their selected bytes. A later cleanup of
+deprecated versions on the catalog's main branch leaves historical catalog
+revisions available. The skills are the downstream distribution. The catalog
+and its test environments stay independently managed in Patches. Report
+missing or conflicting coverage using the default maintenance prompt. Opening a
+catalog PR requires an explicit request for that action. Do not copy another checkout's success receipts,
 private environment, trust configuration or signing keys.

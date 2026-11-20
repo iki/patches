@@ -1,3 +1,4 @@
+import { reviewDeprecations } from "./deprecations.mjs";
 import { createHash } from "node:crypto";
 import { lstat, open, opendir, realpath } from "node:fs/promises";
 import { resolve, join } from "node:path";
@@ -60,6 +61,183 @@ function packages(value) {
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const blob = (bytes) => createHash("sha1").update("blob " + bytes.length + "\0").update(bytes).digest("hex");
 const physical = (value) => process.platform === "win32" ? value.toLowerCase() : value;
+
+
+const inventoryKinds = ["package-manifest","js-lock","cargo-manifest","cargo-lock","mise-config","python-lock","platform-config","patch-catalog","runtime-config","workflow-config"];
+const inventoryRoles = ["runtime","development","build","locked","tool","minimum","patch-evidence","environment","observed","reference"];
+const installableRoles = new Set(["runtime","development","build","tool","environment"]);
+const inventoryPlatforms = ["all","windows","linux","macos","android","ios"];
+const installManagers = new Map([
+  ["npm","aube"], ["cargo","cargo"], ["pypi","pip"], ["mise","mise"],
+  ["platform-sdk","platform-sdk"], ["github-action","github-actions"],
+  ["github-release","upstream-release"], ["github-source","git"],
+]);
+const inventoryId = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;
+const packageName = /^[a-z0-9][a-z0-9._-]*$/iu;
+const qualifiedName = /^[a-z0-9][a-z0-9._-]*(?:\/[a-z0-9][a-z0-9._-]*)*$/iu;
+const semver = /^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)(?:-(?:[\da-z-]+(?:\.[\da-z-]+)*))?(?:\+(?:[\da-z-]+(?:\.[\da-z-]+)*))?$/iu;
+
+function inventoryJson(source) {
+  // JSON.parse first enforces JSON grammar. Reading member names from the original
+  // tokens preserves duplicate keys that JSON.parse would silently discard.
+  const value = JSON.parse(source);
+  const stack = [];
+  for (const token of source.matchAll(/"(?:\\.|[^"\\])*"(\s*:)?|[[\]{}]/gu)) {
+    if (token[1]) {
+      const key = JSON.parse(token[0].slice(0, -token[1].length));
+      const names = stack.at(-1);
+      ensure(!names.has(key), "Duplicate inventory JSON field");
+      names.add(key);
+    } else if (token[0] === "{" || token[0] === "[") {
+      ensure(stack.length < 24, "Inventory nesting bound exceeded");
+      stack.push(token[0] === "{" ? new Set() : null);
+    } else if (token[0] === "}" || token[0] === "]") {
+      stack.pop();
+    }
+  }
+  return value;
+}
+
+function inventoryValues(values, allowed, label) {
+  const members = array(values,true);
+  ensure(members.every((value) => allowed.includes(value)), "Unexpected inventory " + label);
+  unique(members, "inventory " + label);
+  return members;
+}
+function platformsOf(record) {
+  const platforms = inventoryValues(record.platforms,inventoryPlatforms,"platform");
+  ensure(!platforms.includes("all") || platforms.length === 1, "Overlapping inventory platforms");
+  return platforms;
+}
+function inventoryName(ecosystem, name) {
+  if (ecosystem === "npm") text(name,/^(?:@[a-z0-9][a-z0-9._-]*\/)?[a-z0-9][a-z0-9._-]*$/u);
+  else if (ecosystem.startsWith("github-")) {
+    text(name,qualifiedName);
+    const parts = name.split("/");
+    ensure(ecosystem === "github-action" ? parts.length >= 2 : parts.length === 2, "Invalid GitHub inventory name");
+  } else if (ecosystem === "mise") {
+    const parts = text(name).split(":");
+    ensure(parts.length <= 2 && parts.every((part) => qualifiedName.test(part)), "Invalid Mise tool name");
+  } else text(name,packageName);
+  ensure(name.length <= 214, "Inventory name bound exceeded");
+  const lower = name.toLowerCase();
+  if (ecosystem === "pypi") return lower.replace(/[-_.]+/gu,"-");
+  if (ecosystem === "cargo") return lower.replaceAll("_","-");
+  return lower;
+}
+function inventoryVersion(ecosystem, role, value) {
+  text(value);
+  ensure(value.length <= 128,"Inventory version bound exceeded");
+  if (ecosystem === "github-action" || (ecosystem === "github-source" && role === "reference")) hash(value,40);
+  else if (ecosystem === "github-source") {
+    ensure(semver.test(value) || /^[a-f0-9]{40}$/u.test(value),"Expected source package version or commit");
+  }
+  else if (ecosystem === "github-release") {
+    ensure(/^[a-z0-9][a-z0-9.+_-]*$/iu.test(value) && /\d/u.test(value), "Expected concrete upstream release tag");
+  }
+  else if (ecosystem === "npm" || ecosystem === "cargo") {
+    ensure(semver.test(value),"Expected exact inventory package version");
+    const prerelease = value.split("+")[0].split("-").slice(1).join("-");
+    ensure(prerelease.split(".").every((part) => !/^0\d+$/u.test(part)),"Invalid numeric SemVer prerelease");
+  } else if (ecosystem === "pypi") {
+    ensure(/^(?:\d+!)?\d+(?:\.\d+)*(?:(?:a|b|rc)\d+)?(?:\.post\d+)?(?:\.dev\d+)?(?:\+[a-z0-9]+(?:[.-][a-z0-9]+)*)?$/iu.test(value), "Expected concrete Python release");
+  } else {
+    ensure(/^(?:[a-z][a-z0-9.-]*-)?\d+(?:\.\d+)*(?:[-+][a-z0-9]+(?:[.\-+][a-z0-9]+)*)?$/iu.test(value),"Invalid observed inventory version");
+  }
+}
+function inventoryReferences(entry, field, records) {
+  const ids = array(entry[field]);
+  unique(ids,"inventory " + field);
+  const related = entry.ecosystem === "npm" ? records.filter((item) =>
+    item.packages.some((pkg) => pkg.name === entry.name)) : [];
+  ensure(related.length === ids.length && related.every((item) => ids.includes(item.id)),
+    "Inventory " + field + " package mismatch");
+  for (const record of related) {
+    const pkg = record.packages.find((item) => item.name === entry.name);
+    ensure(pkg.versions.every((pin) =>
+      entry.uses.some((use) => use.role === "patch-evidence" && use.version === pin)),
+      "Inventory omits canonical package version evidence");
+  }
+}
+
+export function verifyDependencyInventory(source, registry) {
+  const data = inventoryJson(source);
+  object(data,["format","observedOn","defaultTarget","profiles","entries","installGroups"]);
+  ensure(data.format === "dependency-tool-inventory-v1" && data.defaultTarget === "latest", "Unsupported inventory format or update policy");
+  text(data.observedOn,/^\d{4}-\d{2}-\d{2}$/u);
+  const date = new Date(data.observedOn + "T00:00:00Z");
+  ensure(Number.isFinite(date.getTime()) && date.toISOString().slice(0,10) === data.observedOn,"Invalid inventory observation date");
+  const profiles = new Set();
+  for (const profile of array(data.profiles,true)) {
+    object(profile,["id","evidence"]);
+    text(profile.id,inventoryId);
+    ensure(!profiles.has(profile.id), "Duplicate inventory profile");
+    profiles.add(profile.id);
+    unique(array(profile.evidence,true).map((evidence) => {
+      object(evidence,["kind","sha256"]);
+      ensure(inventoryKinds.includes(evidence.kind), "Unknown inventory evidence kind");
+      return evidence.kind + ":" + hash(evidence.sha256);
+    }),"inventory evidence");
+  }
+  // The committed graph includes transitive resolutions from several ecosystems.
+  ensure(Array.isArray(data.entries) && data.entries.length > 0 && data.entries.length <= 8192,"Inventory entry bound exceeded");
+  const entryIds = new Set();
+  const selectors = new Map();
+  for (const entry of data.entries) {
+    object(entry,["ecosystem","name","uses","fixIds","holdIds"]);
+    ensure(installManagers.has(entry.ecosystem), "Unknown inventory ecosystem");
+    const id = entry.ecosystem + ":" + inventoryName(entry.ecosystem,entry.name);
+    ensure(!entryIds.has(id), "Duplicate inventory package");
+    entryIds.add(id);
+    const uses = new Map();
+    for (const use of array(entry.uses,true)) {
+      object(use,["profile","role","version","platforms"]);
+      ensure(profiles.has(use.profile) && inventoryRoles.includes(use.role), "Unknown inventory use profile or role");
+      inventoryVersion(entry.ecosystem,use.role,use.version);
+      const platforms = platformsOf(use);
+      const key = [use.profile,use.role,use.version].join(":");
+      const seen = uses.get(key) ?? new Set();
+      for (const platform of platforms) {
+        ensure(!seen.has(platform) && !seen.has("all") && (platform !== "all" || !seen.size), "Duplicate inventory use");
+        seen.add(platform);
+      }
+      uses.set(key,seen);
+      if (installableRoles.has(use.role)) {
+        const selector = use.profile + "-" + entry.ecosystem;
+        const observedRoles = selectors.get(selector) ?? new Map();
+        const observedPlatforms = observedRoles.get(use.role) ?? new Set();
+        for (const platform of platforms) observedPlatforms.add(platform);
+        observedRoles.set(use.role,observedPlatforms);
+        selectors.set(selector,observedRoles);
+      }
+    }
+    inventoryReferences(entry,"fixIds",registry.fixes);
+    inventoryReferences(entry,"holdIds",registry.releaseHolds);
+  }
+  for (const record of [...registry.fixes,...registry.releaseHolds]) {
+    for (const pkg of record.packages) ensure(entryIds.has("npm:" + pkg.name), "Missing canonical inventory package");
+  }
+  const groups = new Set();
+  for (const group of array(data.installGroups,true)) {
+    object(group,["id","profile","ecosystem","manager","roles","platforms"]);
+    ensure(profiles.has(group.profile) && installManagers.has(group.ecosystem) &&
+      installManagers.get(group.ecosystem) === group.manager && group.id === group.profile + "-" + group.ecosystem,
+      "Inventory install group ownership mismatch");
+    ensure(!groups.has(group.id), "Duplicate inventory install group");
+    groups.add(group.id);
+    const roles = inventoryValues(group.roles,[...installableRoles],"install role");
+    const platforms = platformsOf(group);
+    const observed = selectors.get(group.id);
+    ensure(observed && roles.length === observed.size && roles.every((role) => observed.has(role)),
+      "Inventory install role coverage mismatch");
+    const observedPlatforms = new Set(roles.flatMap((role) => [...observed.get(role)]));
+    if (observedPlatforms.has("all")) ensure(platforms.includes("all"),"Inventory install platform coverage mismatch");
+    else ensure(platforms.length === observedPlatforms.size && platforms.every((platform) => observedPlatforms.has(platform)),
+      "Inventory install platform coverage mismatch");
+  }
+  ensure(groups.size === selectors.size,"Missing inventory install group");
+  return data.entries.length;
+}
 
 export async function verifyCatalog(directory) {
   const root = resolve(directory);
@@ -279,18 +457,22 @@ export async function verifyCatalog(directory) {
     if (record.resolvedIn !== undefined) version(record.resolvedIn);
     if (record.artifacts !== undefined) for (const item of array(record.artifacts,true)) reference(item);
   }
+  const deprecationPath = "inventory/deprecations.json";
+  const deprecations = reviewDeprecations(inventoryJson((await read(deprecationPath)).decoded),series,reference,new Date().toISOString());
+  const dependencyPath = "inventory/dependencies.json";
+  const dependencyEntries = verifyDependencyInventory((await read(dependencyPath)).decoded,registry);
   for (const name of inventory.values()) {
     ensure(name.split("/").at(-1)?.toLowerCase() !== "skill.md" || maintained.includes(name), "Unexpected discoverable skill");
     if (importedRoots.includes(name.split("/")[0])) {
       ensure(artifacts.get(name.toLowerCase())?.path === name, "Unregistered imported file: " + name);
       ensure(!name.endsWith("/SKILL.md"), "Historical skill must not be discoverable");
-    } else if (!["registry.json","migration.json"].includes(name)) await read(name);
+    } else if (!["registry.json","migration.json",dependencyPath,deprecationPath].includes(name)) await read(name);
   }
   for (const name of maintained) {
     const skill = (await read(name)).decoded;
     ensure(skill.startsWith("---\nname: " + name.split("/")[1] + "\ndescription: ") && skill.includes("\n---\n"), "Invalid maintained skill frontmatter");
   }
-  return { ok:true, artifacts:artifacts.size, fixes:fixes.size, packageSeries:series.length, importedBytes:[...artifacts.values()].reduce((sum,item) => sum + item.bytes,0), runtime:Bun.version };
+  return { ok:true, dependencyEntries, deprecations, artifacts:artifacts.size, fixes:fixes.size, packageSeries:series.length, importedBytes:[...artifacts.values()].reduce((sum,item) => sum + item.bytes,0), runtime:Bun.version };
 }
 if (import.meta.main) {
   ensure(process.argv.length === 2, "No arguments supported");

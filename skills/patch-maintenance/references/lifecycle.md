@@ -25,6 +25,14 @@ package manager accepting one patch per package, concatenate an explicitly order
 atomic series and install only that exact bundle. Never use modified dependency
 stores as the durable fix. Retain explicit release holds separately from patches.
 
+Put each maintained atomic package diff in a folder containing its exact
+package version. Bind each version's ordered parts to its own installable bundle
+and digest. Keep both versions selectable while a prior version is deprecated.
+The default target is the latest published release on the declared channel.
+For any hold, record the affected package and versions, the technical reason
+with evidence, and observable conditions for removing the hold and adopting
+the latest release. Recheck the conditions during subsequent updates.
+
 Every tracked package keeps a current summary and history link even after all
 fixes retire. History retains superseded pins, resolved versions/commits, tested
 removals and related active fixes. Consumer upgrade-deferral markers cover every
@@ -39,7 +47,12 @@ affected direct/transitive package until its last active reason is removed.
    the symptom, API/error and platform/runtime. Read review objections; record
    useful findings and the observation date. Prefer a sound matching approach and
    preserve contributor attribution. Do not create duplicate proposals.
-3. When communication is authorized, read previous messages first. A reaction or
+3. A consuming project normally returns a reproducible maintenance prompt
+   for Patches and records any matching fix or proposal. The catalog maintainer
+   resolves the shared defect once, using a package-scoped fixture. Create or
+   update a catalog PR only when the user explicitly requests a PR in Patches.
+   Upstream comments and PRs require their own authorization. When such
+   communication is authorized, read previous messages first. A reaction or
    comment should add useful missing evidence, correction or references. Submit
    an atomic PR only when it fits upstream goals and contribution rules. Explain
    the defect, resulting behavior, approach, compatibility/tradeoffs, reproduction
@@ -73,11 +86,26 @@ other repositories. An unchanged audit need not create a new history entry.
 
 A merged PR, source build, closed discussion or passing patched old version does
 not prove that a published package contains the fix. Test the eligible unpatched
-release against the original regression and real consumer/platform. Remove only
-the resolved part, rebuild the package bundle/lock registration, reinstall and
-rerun affected checks. Preserve independently needed adapters and active holds.
-Record newly introduced defects under separate IDs. Move the complete resolved
-record into history; retain useful fork references and package discovery links.
+release against the original regression and real consumer/platform.
+Publish the new supported package series or verified unpatched release and
+record its reference and UTC effective deprecation date for the old version.
+Rebuild the new selector and bundle as needed, reinstall, and rerun affected
+checks. Maintain independently needed adapters and active holds. Record newly
+introduced defects under separate IDs.
+
+Retain the prior selectable patch files for two calendar months from that
+recorded effective time. Use the same UTC day and time two months later,
+clamping to the final day when the target month is shorter. For example, a
+December 31 deprecation at 12:00 UTC becomes eligible on February 28 at 12:00
+UTC in a non-leap year. Later catalog edits do not restart the clock.
+
+Remove eligible old patch files and selectors only in a dedicated cleanup
+commit. Check for active references and holds and preserve any shared file
+still needed. The history record identifies the former package version, fix ID,
+effective and cleanup dates, replacement, last immutable revision that supplied
+the files, upstream reference, and verification evidence. Preserve published
+history so a pinned old checkout can still reproduce a frozen install. Records
+without a dated, verified replacement are ineligible for age-based cleanup.
 
 After an authorized, nonduplicate follow-up on a fully fixed published release,
 use the tested version's verified GitHub Release link and concise observed results:

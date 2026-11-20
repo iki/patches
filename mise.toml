@@ -1,3 +1,12 @@
+# Install the reviewed project tools explicitly. See TOOLCHAIN.md.
+min_version = "2026.10.7"
+
 [tools]
+## Tools.Runtimes
 bun = "1.4.2"
+
+## Tools.Packages
 aube = "2.5.1"
+
+[settings]
+auto_install = false

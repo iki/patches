@@ -1,0 +1,9 @@
+# Activate together with the Aube-generated root lock after preparing the named members.
+packages:
+  - .cache/dependency-labs/host-runtime-npm
+  - .cache/dependency-labs/web-native-npm
+  - .cache/dependency-labs/mobile-studio-npm
+
+allowBuilds:
+  "@google/genai": false
+  protobufjs: false
