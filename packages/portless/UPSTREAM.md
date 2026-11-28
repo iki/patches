@@ -1,6 +1,8 @@
 # Upstream and fork references
 
-On 2026-11-20 the review confirmed that [#469](https://github.com/vercel-labs/portless/issues/469) and [#470](https://github.com/vercel-labs/portless/pull/470) remain open. The earlier Windows process-window fix shipped through lahfir's [#502](https://github.com/vercel-labs/portless/pull/502) with snomiao credited. The matching [#428](https://github.com/vercel-labs/portless/pull/428) closed without merging and [#222](https://github.com/vercel-labs/portless/issues/222) is closed. The 0.16.0 fork tip and its exported package diff still match the catalog's recorded commit and patch bytes.
+On November 27, 2026, upstream merged lahfir and mliemm's certificate issuer work and documented Bun 1.4.4 or later for HTTPS. That merge closed #469. On November 28, lahfir closed iki's #470 unmerged, citing native SNI support in Bun 1.4.4. The latest published 0.18.1 tag predates the merge by 20 commits. [Merged PR #626](https://github.com/vercel-labs/portless/pull/626) · [Maintainer's closure](https://github.com/vercel-labs/portless/pull/470#issuecomment-7230713835) · [Release comparison](https://github.com/vercel-labs/portless/compare/v0.18.1...e6996b56a26cdee0047f93bfbe141fa27cc9a9be)
+
+The earlier Windows subprocess fix shipped through lahfir's #502 with snomiao credited. The matching #428 closed unmerged and #222 is closed.
 
 - https://registry.npmjs.org/portless/0.18.1
 - https://github.com/vercel-labs/portless/releases/tag/v0.18.1
@@ -30,3 +32,5 @@ On 2026-11-20 the review confirmed that [#469](https://github.com/vercel-labs/po
 - https://github.com/vercel-labs/portless/releases/tag/v0.15.11
 - https://github.com/vercel-labs/portless/releases/tag/v0.15.12
 - https://github.com/vercel-labs/portless/releases/tag/v0.16.0
+- https://github.com/vercel-labs/portless/pull/626
+- https://github.com/vercel-labs/portless/pull/470#issuecomment-7230713835

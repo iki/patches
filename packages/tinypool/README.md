@@ -2,7 +2,7 @@
 
 Related packages: tinypool, oxfmt. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-On 2026-11-20 npm still listed Tinypool 2.2.0 as latest. Oxfmt 0.79.0 installs that exact version. The Windows regression passed with the existing bundle. [Tinypool release](https://registry.npmjs.org/tinypool/2.2.0) · [Oxfmt dependency declaration](https://registry.npmjs.org/oxfmt/0.79.0) · [Test results](HISTORY.md)
+On November 28, 2026, Tinypool 2.2.0 remained the latest release. Oxfmt 0.80.0 selects that exact version. The Windows worker and formatting regressions passed with the existing bundle. [Tinypool release](https://registry.npmjs.org/tinypool/2.2.0) · [Oxfmt dependencies](https://registry.npmjs.org/oxfmt/0.80.0) · [Test results](HISTORY.md#2026-11-28)
 
 ## Process workers
 
@@ -14,7 +14,7 @@ real worker task completion and destruction.
 
 Tinypool process workers can open console windows on Windows. The patch forces windowsHide after the supplied option spread while preserving real worker execution and cleanup.
 
-- Tinypool 2.2.0 package patch, tested through Oxfmt 0.79.0 on Bun 1.4.2 and 1.4.5 for Windows x64.
+- Tinypool 2.2.0 package patch, tested through Oxfmt 0.80.0 on Bun 1.4.2 and 1.4.5 for Windows x64.
 - Prerequisites: none.
 - [PR #146](https://github.com/tinylibs/tinypool/pull/146) is open and mergeable at the fork head below. Both upstream workflows require maintainer approval.
 - Reusable fork: [codex/windows-hide-process-workers-2.2.0](https://github.com/iki/tinypool/tree/codex/windows-hide-process-workers-2.2.0), head [c8bdd12c549d988dafd523d66396ab70f91d6c51](https://github.com/iki/tinypool/commit/c8bdd12c549d988dafd523d66396ab70f91d6c51), comparison base 2ed306417986823e7a7989fd392e9cbfeee1b0c1.

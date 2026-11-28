@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Checked on 2026-11-20. The config loader request #252 remains closed as not planned. PR #256 closed unmerged. PR #372 merged and resolved #207. The Bun module-hooks issue and proposal remain open.
+Reviewed November 28, 2026. The config loader request #252 remains closed as not planned. PR #256 closed unmerged. PR #372 merged and resolved #207. The Bun module-hooks issue and proposal remain open.
 
 - https://github.com/cloudflare/cf
 - https://github.com/cloudflare/cf/issues/207
@@ -25,3 +25,5 @@ Checked on 2026-11-20. The config loader request #252 remains closed as not plan
 - https://github.com/oven-sh/bun/issues/27369
 - https://github.com/oven-sh/bun/pull/35690
 - https://github.com/cloudflare/cf/issues/252#issuecomment-7037363043
+- https://github.com/cloudflare/cf/releases/tag/cf%401.0.0-rc.6
+- https://github.com/cloudflare/cf/commit/60e23d356d6a0a4e1ede5bb9f60e5e761e51f443

@@ -13,3 +13,7 @@ The [retained source patch](history/types-export.patch) is historical, not an in
 ## 2026-11-20
 
 The integrity-verified 0.3.4 npm tarball names `./dist/zstddec.d.mts` in its root `exports.types` entry and contains that exact file. The release tag still resolves to `ff24d680cc36af645d1e06d027f861e16ff79bf0`. The two recorded CI runs passed and PR #77 remains merged. The strict decoder and compiled-WASM results above belong to the original removal test. [Published package](https://www.npmjs.com/package/zstddec/v/0.3.4) · [Release commit](https://github.com/donmccurdy/zstddec-wasm/commit/ff24d680cc36af645d1e06d027f861e16ff79bf0) · [PR #77](https://github.com/donmccurdy/zstddec-wasm/pull/77)
+
+## 2026-11-28
+
+npm still lists 0.3.4 as latest. The fork branch resolves to the final reviewed commit `bcd3ada244140916e4fd95d91119a29e89d78029`, which incorporated the maintainer's request to drop the built-file test. Earlier proposal `ece4515` remains available separately. Version 0.3.4 retains the verified retirement recorded above. [npm dist-tags](https://registry.npmjs.org/-/package/zstddec/dist-tags) · [Final fork commit](https://github.com/iki/zstddec-wasm/commit/bcd3ada244140916e4fd95d91119a29e89d78029) · [Earlier proposal](https://github.com/iki/zstddec-wasm/commit/ece451503f1da5ba5cca020cbb63eb817d630aac)

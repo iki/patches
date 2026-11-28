@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Reviewed November 20, 2026. Bun #36098 and #42084 are closed as duplicates. The resolution request #17799 and shim issues #38840, #39247 and #48972 are open. PR #36102 closed unmerged as stale. PRs #27338, #38855, #39250 and #48985 remain open. The 2024 discussion #14859 is closed and answered. The [package record](README.md) gives the measured behavior.
+Reviewed November 28, 2026. Bun #36098 and #42084 are closed as duplicates. The resolution request #17799 and shim issues #38840, #39247 and #48972 are open. PR #36102 closed unmerged as stale. PRs #27338, #38855, #39250 and #48985 remain open. The 2024 discussion #14859 is closed and answered. The [package record](README.md) gives the measured behavior.
 
 - https://github.com/cloudflare/workers-sdk/issues/15717
 - https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-6451763734

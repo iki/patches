@@ -9,3 +9,7 @@ camc314's fix merged in #28820. shiroyasha9 closed the overlapping #28402 after 
 The [release verification on #28401](https://github.com/oxc-project/oxc/issues/28401#issuecomment-7037430105) records all three runs.
 
 The refreshed Windows x64 web profile paired the held Oxlint and plugins 1.90.0 with oxlint-tsgolint 7.0.2007. On Bun 1.4.5 the same unsuppressed type-aware reproduction reported both intended diagnostics at line 36. Neither callback-local write produced a diagnostic. The package check passed with the newer type checker. The hold still requires the affected application's full lint and review checks. [Issue reproduction](https://github.com/oxc-project/oxc/issues/28401)
+
+## 2026-11-28
+
+On Windows x64, a frozen Aube 2.11.0 installation paired Oxlint and plugins 1.95.0 with oxlint-tsgolint 7.0.2009. Running `oxlint --type-aware -c .oxlintrc.json -f unix repro.ts` produced exactly the two expected diagnostics for the render-scope write on line 36. The callback-local assignments on lines 12 and 25 were clean. The 1.90.0 hold still requires the affected application's unsuppressed lint and review checks. [Original reproduction](https://github.com/oxc-project/oxc/issues/28401) · [Published release](https://registry.npmjs.org/oxlint/1.95.0)

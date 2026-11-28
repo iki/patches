@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Issue, PR and fork references reviewed on 2026-11-20. The [package history](HISTORY.md#2026-11-20) records the release and regression evidence.
+Reviewed November 28, 2026. PR #77 remains merged. The fork branch points to its final reviewed head at `bcd3ada244140916e4fd95d91119a29e89d78029`. The earlier proposal and the release that resolved the defect are recorded in [package history](HISTORY.md#zstddec-types-export).
 
 - https://github.com/donmccurdy/zstddec-wasm
 - https://github.com/donmccurdy/zstddec-wasm/actions/runs/38879077443
@@ -15,3 +15,4 @@ Issue, PR and fork references reviewed on 2026-11-20. The [package history](HIST
 - https://github.com/iki/zstddec-wasm/tree/codex/fix-types-export
 - https://github.com/donmccurdy/zstddec-wasm/commit/ff24d680cc36af645d1e06d027f861e16ff79bf0
 - https://www.npmjs.com/package/zstddec/v/0.3.4
+- https://github.com/iki/zstddec-wasm/commit/bcd3ada244140916e4fd95d91119a29e89d78029

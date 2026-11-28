@@ -1,6 +1,6 @@
 # Upstream and fork references
 
-Reviewed November 20, 2026. Workers SDK #15717 is closed after #15846 merged with an explicit Bun rejection. Miniflare #16644 remains open. Its proposed bundler change #16645 closed unmerged. The upstream policy and maintainer review still apply. The three historical fork branches resolve to their recorded commits. See the [package record](README.md) for the versioned distribution patch and local results.
+Reviewed November 28, 2026. Workers SDK #15717 is closed after #15846 merged with an explicit Bun rejection. Miniflare #16644 remains open. Its proposed bundler change #16645 closed unmerged. The upstream policy and maintainer review still apply. The runtime prerequisite and prior package fork branches resolve to their recorded commits. The 4.169.0 fork starts from the upstream release commit. See the [package record](README.md) for the versioned distribution patch and local results.
 
 - https://github.com/cloudflare/workers-sdk/issues/15717
 - https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-6451763734
@@ -42,3 +42,8 @@ Reviewed November 20, 2026. Workers SDK #15717 is closed after #15846 merged wit
 - https://github.com/iki/workers-sdk/commit/8a26b5b15b17a2e4fd05722994ebe9269b855588
 - https://github.com/iki/workers-sdk/blob/8a26b5b15b17a2e4fd05722994ebe9269b855588/downstream/VERIFIED-BUN-FETCH.md
 - https://github.com/cloudflare/workers-sdk/issues/15717#issuecomment-7037361124
+- https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.169.0
+- https://github.com/cloudflare/workers-sdk/commit/370ea36c3b25414b7ee521238db8cbd54e19e522
+- https://github.com/iki/workers-sdk/commit/e7478dea71b0a0240aa6888099fec83d8b418198
+- https://github.com/iki/workers-sdk/tree/codex/bun-local-fetch-capability-4.169.0
+- https://github.com/iki/workers-sdk/blob/e7478dea71b0a0240aa6888099fec83d8b418198/downstream/VERIFIED-BUN-FETCH.md

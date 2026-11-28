@@ -2,7 +2,7 @@
 
 Related packages: @tauri-apps/cli, bun. [History](HISTORY.md) · [Upstream references](UPSTREAM.md).
 
-On 2026-11-20, npm's stable release was 2.12.6, published November 18. The guarded fixture passed on Windows x64 with Bun 1.4.2 and 1.4.5. Unguarded native command callbacks settled in all 160 launches on each of Bun 1.4.2 and 1.4.5, and both runtimes propagated the command failure. The catalog retains the adapter pending an identified upstream repair and unguarded acceptance in a packaged build. [Release](https://v2.tauri.app/release/) · [Verification](HISTORY.md#2026-11-20)
+On November 28, 2026, npm still selected CLI 2.12.6. Both callback fixtures passed on Windows x64 with Bun 1.4.2 and 1.4.5. The catalog retains the adapter pending an identified upstream repair and unguarded acceptance in a packaged build. [Release](https://v2.tauri.app/release/) · [Verification](HISTORY.md#2026-11-28)
 
 ## tauri-native-lifetime
 

@@ -15,3 +15,7 @@ The 2.12.4 and 2.12.6 source tags have identical `packages/cli/index.js`, `packa
 The [unguarded native callback fixture](tests/2.12.6/native-callbacks.test.mjs) checks the observable promise handlers on success and failure. Run it from the frozen web profile with Bun's per-case timeout set to 120000 ms.
 
 The refreshed Windows x64 profiles ran CLI 2.12.6 on both Bun 1.4.5 and 1.4.2. On each runtime the guard completed all 160 CLI version invocations, preserved the invalid-option failure and released its handle after delayed callback success and rejection. The unguarded completions test also settled all 160 promises, wrote the output, and observed a real write rejection on each runtime. Packaged-build acceptance and identification of a resolving upstream change remain open. [Guarded checks](adapters/native-lifetime.test.mjs) · [Unguarded checks](tests/2.12.6/native-callbacks.test.mjs)
+
+## 2026-11-28
+
+Published CLI 2.12.6 again completed 160 guarded version launches and 160 unguarded completions on each of Bun 1.4.5 and Bun 1.4.2 in the refreshed Windows x64 profiles. Both observed the genuine write rejection, and the guarded fixture also preserved the invalid-option error and released the delayed callback handle. Packaged application acceptance and the upstream change resolving the original intermittent failure remain open. [Unguarded fixture](tests/2.12.6/native-callbacks.test.mjs) · [Guarded fixture](adapters/native-lifetime.test.mjs)
