@@ -41,3 +41,5 @@ removing a catalog mapping alone is not a migration. See the
 
 Catalog relocation does not authorize package upgrades, consumer source changes,
 history rewriting elsewhere, weaker verification, or a change to a shared service.
+
+A Python `environment-release-hold` identifies the PyPI distribution, reproduction profile, platforms, supported and blocked versions, package record and switch condition. The inventory links the hold to that distribution and checks that the profile selects the supported version. Existing npm records use their original release-hold fields.

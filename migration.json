@@ -1,10 +1,10 @@
 {
   "format": "patch-migration-v1",
   "repository": "https://github.com/iki/patches",
-  "recordedDate": "2026-11-20",
+  "recordedDate": "2026-11-28",
   "authorization": "The user authorized consumer-neutral catalog curation and exceptional replacement of this repository history only. Genuine upstream attribution and notices remain.",
   "sourceTransferSha256": "87cae8b4ce45a11f351073225442ba75bbf47c4d9bf879bb0203fa020c69b275",
-  "verification": "The maintained files updated on 2026-11-20 were compared byte for byte with their signed catalog artifact snapshot. Earlier artifacts retain their immediate origins. Package histories record independent runtime results and outstanding checks.",
+  "verification": "Updated catalog records are byte-bound to the signed November 28 source snapshot. The Wrangler 4.169.0 package diff was compared to the published signed contributor fork. Earlier artifacts retain their recorded immediate origins.",
   "normalization": "All maintained snapshot artifacts use UTF8 LF. Original and LF hashes refer to their exact declared immediate source snapshot. Full original transfer evidence and transformation mapping are retained privately outside this public catalog.",
   "maintainedPaths": [
     "skills/dependency-patches/SKILL.md",
@@ -13,17 +13,17 @@
   "artifacts": [
     {
       "path": "packages/bun/HISTORY.md",
-      "bytes": 3341,
-      "sha256": "0e020a02ed0b607631f096246ea506fe67bc9abeffdb2aa241812aafe1b4d1df",
-      "originalSha256": "0e020a02ed0b607631f096246ea506fe67bc9abeffdb2aa241812aafe1b4d1df",
-      "lfSha256": "0e020a02ed0b607631f096246ea506fe67bc9abeffdb2aa241812aafe1b4d1df",
+      "bytes": 4033,
+      "sha256": "271da62bca4c5d22fa64099627837ee8c0cf733dde7c578394229febe171c5b0",
+      "originalSha256": "271da62bca4c5d22fa64099627837ee8c0cf733dde7c578394229febe171c5b0",
+      "lfSha256": "271da62bca4c5d22fa64099627837ee8c0cf733dde7c578394229febe171c5b0",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/bun/HISTORY.md",
-        "gitBlob": "f33c78e5875582e172237b1f2659611ab445143d"
+        "gitBlob": "4570b8a1813ae2f57099cecbe62aa05c9c515dda"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -32,17 +32,17 @@
     },
     {
       "path": "packages/bun/README.md",
-      "bytes": 4732,
-      "sha256": "7bf2154241ee1747969bead85ac8e50bf64aaabc896bbe202fb8747d7372f264",
-      "originalSha256": "7bf2154241ee1747969bead85ac8e50bf64aaabc896bbe202fb8747d7372f264",
-      "lfSha256": "7bf2154241ee1747969bead85ac8e50bf64aaabc896bbe202fb8747d7372f264",
+      "bytes": 4709,
+      "sha256": "90fd3c0bdf39227f2c72f0820c945fc4cc886a0430e3d65c9aa7830a42dade71",
+      "originalSha256": "90fd3c0bdf39227f2c72f0820c945fc4cc886a0430e3d65c9aa7830a42dade71",
+      "lfSha256": "90fd3c0bdf39227f2c72f0820c945fc4cc886a0430e3d65c9aa7830a42dade71",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/bun/README.md",
-        "gitBlob": "003def4e773881c17d8528c66df6238c4696fa10"
+        "gitBlob": "0899c82cb6c147f430483681e0d64e561793bfd4"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -52,16 +52,16 @@
     {
       "path": "packages/bun/UPSTREAM.md",
       "bytes": 3151,
-      "sha256": "87bc3c71b01511e920786ba970903412e5b0af0abcc320bd65dd6317d5237314",
-      "originalSha256": "87bc3c71b01511e920786ba970903412e5b0af0abcc320bd65dd6317d5237314",
-      "lfSha256": "87bc3c71b01511e920786ba970903412e5b0af0abcc320bd65dd6317d5237314",
+      "sha256": "365af367b18a8b30cca0aa00cb8f292217e513420bdac1ea57de7c8765f432ed",
+      "originalSha256": "365af367b18a8b30cca0aa00cb8f292217e513420bdac1ea57de7c8765f432ed",
+      "lfSha256": "365af367b18a8b30cca0aa00cb8f292217e513420bdac1ea57de7c8765f432ed",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/bun/UPSTREAM.md",
-        "gitBlob": "b638678a716d09c5aecb19562d6113dcefd14360"
+        "gitBlob": "ab80a9499d7ba2728ef7ac66fd7f9840b5c527f6"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -150,17 +150,17 @@
     },
     {
       "path": "packages/cf/HISTORY.md",
-      "bytes": 3592,
-      "sha256": "f4f89fbcd5e8953060c3655c0daea2f6d8addd304dc8eb84b9094ceb7cfdc235",
-      "originalSha256": "f4f89fbcd5e8953060c3655c0daea2f6d8addd304dc8eb84b9094ceb7cfdc235",
-      "lfSha256": "f4f89fbcd5e8953060c3655c0daea2f6d8addd304dc8eb84b9094ceb7cfdc235",
+      "bytes": 4307,
+      "sha256": "cbf11f06ced92c3114cd9db867afcc3fd12a3232cbf7afa546d07ccac4d9daf8",
+      "originalSha256": "cbf11f06ced92c3114cd9db867afcc3fd12a3232cbf7afa546d07ccac4d9daf8",
+      "lfSha256": "cbf11f06ced92c3114cd9db867afcc3fd12a3232cbf7afa546d07ccac4d9daf8",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/cf/HISTORY.md",
-        "gitBlob": "ee0f603f4113428a1a827de0a468f1ace3090829"
+        "gitBlob": "8f8fc55b5e22f7a226c7409496f5c68f80688d97"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -169,17 +169,17 @@
     },
     {
       "path": "packages/cf/README.md",
-      "bytes": 3122,
-      "sha256": "73d4965278f10a7fca82f60202db6f8a94cd7f4cef0ea3af4673d9d75ffe105d",
-      "originalSha256": "73d4965278f10a7fca82f60202db6f8a94cd7f4cef0ea3af4673d9d75ffe105d",
-      "lfSha256": "73d4965278f10a7fca82f60202db6f8a94cd7f4cef0ea3af4673d9d75ffe105d",
+      "bytes": 3137,
+      "sha256": "4f9b029ce6483ee5a2e8dfe3ae5a2bdbcc56010ec6beccc4c5457299a39a79f3",
+      "originalSha256": "4f9b029ce6483ee5a2e8dfe3ae5a2bdbcc56010ec6beccc4c5457299a39a79f3",
+      "lfSha256": "4f9b029ce6483ee5a2e8dfe3ae5a2bdbcc56010ec6beccc4c5457299a39a79f3",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/cf/README.md",
-        "gitBlob": "07c35b677afdb2fe4805a300e95d7db079e64666"
+        "gitBlob": "20f06f75e5cb7907e211edcddd5c9023ad230ee1"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -188,17 +188,17 @@
     },
     {
       "path": "packages/cf/UPSTREAM.md",
-      "bytes": 1713,
-      "sha256": "c621c236d0f6e62b86ec3303a8d141009e53f1d841bddf8e568289a0135bea59",
-      "originalSha256": "c621c236d0f6e62b86ec3303a8d141009e53f1d841bddf8e568289a0135bea59",
-      "lfSha256": "c621c236d0f6e62b86ec3303a8d141009e53f1d841bddf8e568289a0135bea59",
+      "bytes": 1865,
+      "sha256": "64e9ca49189d356636af22a33fb10278658cd5cdf1593fa885e7c1c67f45f334",
+      "originalSha256": "64e9ca49189d356636af22a33fb10278658cd5cdf1593fa885e7c1c67f45f334",
+      "lfSha256": "64e9ca49189d356636af22a33fb10278658cd5cdf1593fa885e7c1c67f45f334",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/cf/UPSTREAM.md",
-        "gitBlob": "0c5a6576ce169f42a281f8f2b0cdfb8761480760"
+        "gitBlob": "00288f6a0bad3e3efa061dcdb999063f918da7de"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -227,17 +227,17 @@
     },
     {
       "path": "packages/jsquash-avif/HISTORY.md",
-      "bytes": 2297,
-      "sha256": "4b5cd1d1f62607f2157bca4bbd5f8dce2ca4c065a7622e88187883be63cf05a0",
-      "originalSha256": "4b5cd1d1f62607f2157bca4bbd5f8dce2ca4c065a7622e88187883be63cf05a0",
-      "lfSha256": "4b5cd1d1f62607f2157bca4bbd5f8dce2ca4c065a7622e88187883be63cf05a0",
+      "bytes": 2940,
+      "sha256": "a75a1b52295fced3adcc64525bd895aceda8e727492a6f002ad2a4d3b1492dd6",
+      "originalSha256": "a75a1b52295fced3adcc64525bd895aceda8e727492a6f002ad2a4d3b1492dd6",
+      "lfSha256": "a75a1b52295fced3adcc64525bd895aceda8e727492a6f002ad2a4d3b1492dd6",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/jsquash-avif/HISTORY.md",
-        "gitBlob": "458c337c5fba6db28fd2b8c303dc48751f534863"
+        "gitBlob": "7fb2a0586438785b55c3442764a31f7a1f17d2a7"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -266,17 +266,17 @@
     },
     {
       "path": "packages/jsquash-avif/README.md",
-      "bytes": 2459,
-      "sha256": "6341dc758908c038be91a26d3681290c9884b2ea5d36c6100134c3fb58926156",
-      "originalSha256": "6341dc758908c038be91a26d3681290c9884b2ea5d36c6100134c3fb58926156",
-      "lfSha256": "6341dc758908c038be91a26d3681290c9884b2ea5d36c6100134c3fb58926156",
+      "bytes": 2522,
+      "sha256": "cacd538ac1000201f612b3f6881eab7a76e60db3ff5c37133d79f8287281386b",
+      "originalSha256": "cacd538ac1000201f612b3f6881eab7a76e60db3ff5c37133d79f8287281386b",
+      "lfSha256": "cacd538ac1000201f612b3f6881eab7a76e60db3ff5c37133d79f8287281386b",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/jsquash-avif/README.md",
-        "gitBlob": "d51e56b53288264e7515f8a9d6daf9c97a1052a9"
+        "gitBlob": "19727effc01130d8faff1a0eae28fdabdcec7611"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -323,17 +323,17 @@
     },
     {
       "path": "packages/jsquash-avif/UPSTREAM.md",
-      "bytes": 710,
-      "sha256": "ab65f83c32003427c5496e14c6365bca65f63952fe23e3af57c96d55ddd847e5",
-      "originalSha256": "ab65f83c32003427c5496e14c6365bca65f63952fe23e3af57c96d55ddd847e5",
-      "lfSha256": "ab65f83c32003427c5496e14c6365bca65f63952fe23e3af57c96d55ddd847e5",
+      "bytes": 912,
+      "sha256": "9315fe65882bb3f822c6a8dba2054ad54f9ead6094bbc98d8b63edef1e03f212",
+      "originalSha256": "9315fe65882bb3f822c6a8dba2054ad54f9ead6094bbc98d8b63edef1e03f212",
+      "lfSha256": "9315fe65882bb3f822c6a8dba2054ad54f9ead6094bbc98d8b63edef1e03f212",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/jsquash-avif/UPSTREAM.md",
-        "gitBlob": "28ddeff2af8551d87c8addbd59a128e45f35eb2e"
+        "gitBlob": "f3995e73f95bedd31daf09cd9330bdd0b676b9e9"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -342,17 +342,17 @@
     },
     {
       "path": "packages/oxlint/HISTORY.md",
-      "bytes": 2016,
-      "sha256": "c4aaf902ce2b90724c2053ca7129d9174768b4dcdc00cb66fa4300ece79de102",
-      "originalSha256": "c4aaf902ce2b90724c2053ca7129d9174768b4dcdc00cb66fa4300ece79de102",
-      "lfSha256": "c4aaf902ce2b90724c2053ca7129d9174768b4dcdc00cb66fa4300ece79de102",
+      "bytes": 2591,
+      "sha256": "3ac4dea97bf22cfc6ff399bbda0b6755873f292b8a4574e15f3512fba7a86062",
+      "originalSha256": "3ac4dea97bf22cfc6ff399bbda0b6755873f292b8a4574e15f3512fba7a86062",
+      "lfSha256": "3ac4dea97bf22cfc6ff399bbda0b6755873f292b8a4574e15f3512fba7a86062",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/oxlint/HISTORY.md",
-        "gitBlob": "61868481095ddd5f47d2d7e4fb236ce366747339"
+        "gitBlob": "2d63f8e0bf6b86394fae05b94e19601c1385a1b5"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -362,16 +362,16 @@
     {
       "path": "packages/oxlint/README.md",
       "bytes": 1394,
-      "sha256": "95d82970b4e2811077c8dbce2a4f3d0aac9eb7ba16c4e011567081b2dec232b3",
-      "originalSha256": "95d82970b4e2811077c8dbce2a4f3d0aac9eb7ba16c4e011567081b2dec232b3",
-      "lfSha256": "95d82970b4e2811077c8dbce2a4f3d0aac9eb7ba16c4e011567081b2dec232b3",
+      "sha256": "aaccf81b26401f248610825dcd4c87ba334d0f49a802907c1713a2d2ba53a56a",
+      "originalSha256": "aaccf81b26401f248610825dcd4c87ba334d0f49a802907c1713a2d2ba53a56a",
+      "lfSha256": "aaccf81b26401f248610825dcd4c87ba334d0f49a802907c1713a2d2ba53a56a",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/oxlint/README.md",
-        "gitBlob": "74930d8f6a04ae357bc58b0ab1a6069f8fb16ad4"
+        "gitBlob": "b83e15ffaf1c083482c96bd42d50c967c72a7268"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -380,17 +380,17 @@
     },
     {
       "path": "packages/oxlint/UPSTREAM.md",
-      "bytes": 558,
-      "sha256": "7bffed21584f09393eeb0d8f8b64552a044aa5650a5b71a0dace3d5209396d97",
-      "originalSha256": "7bffed21584f09393eeb0d8f8b64552a044aa5650a5b71a0dace3d5209396d97",
-      "lfSha256": "7bffed21584f09393eeb0d8f8b64552a044aa5650a5b71a0dace3d5209396d97",
+      "bytes": 751,
+      "sha256": "53f5ff4c6c704350de7289bfde4ea93dc2de26de59b83b94f9a091edba6d6d40",
+      "originalSha256": "53f5ff4c6c704350de7289bfde4ea93dc2de26de59b83b94f9a091edba6d6d40",
+      "lfSha256": "53f5ff4c6c704350de7289bfde4ea93dc2de26de59b83b94f9a091edba6d6d40",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/oxlint/UPSTREAM.md",
-        "gitBlob": "256f5177401a1bd6a60fbc302ca6d6b6dba6d594"
+        "gitBlob": "2001915d470555eeb3c537482dbd0481d56fc4ed"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -399,17 +399,17 @@
     },
     {
       "path": "packages/portless/HISTORY.md",
-      "bytes": 3964,
-      "sha256": "7aab801d2b8c412f66a36065f969fbbe4d1ebdbd2e0cb6d884abedc1ded7f6d9",
-      "originalSha256": "7aab801d2b8c412f66a36065f969fbbe4d1ebdbd2e0cb6d884abedc1ded7f6d9",
-      "lfSha256": "7aab801d2b8c412f66a36065f969fbbe4d1ebdbd2e0cb6d884abedc1ded7f6d9",
+      "bytes": 5182,
+      "sha256": "d9ee95f0cd5219e0f37b6ce405d8026b242610ec105a14beaa17e711c252b133",
+      "originalSha256": "d9ee95f0cd5219e0f37b6ce405d8026b242610ec105a14beaa17e711c252b133",
+      "lfSha256": "d9ee95f0cd5219e0f37b6ce405d8026b242610ec105a14beaa17e711c252b133",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/portless/HISTORY.md",
-        "gitBlob": "c9e15c9ea2e84c969a6775c495db3ffc35964edc"
+        "gitBlob": "af55a9b30dc1c366b0c951d4dd2b6ae5531685ec"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -418,17 +418,17 @@
     },
     {
       "path": "packages/portless/README.md",
-      "bytes": 3753,
-      "sha256": "4825d88bfd731455c7c5624c1134503ccb1fe50e5d12f6363fe8716f768bb5aa",
-      "originalSha256": "4825d88bfd731455c7c5624c1134503ccb1fe50e5d12f6363fe8716f768bb5aa",
-      "lfSha256": "4825d88bfd731455c7c5624c1134503ccb1fe50e5d12f6363fe8716f768bb5aa",
+      "bytes": 3776,
+      "sha256": "ae9953c794da3e0789d9f66194c50a259aa3518a9349249664791abf451fd80f",
+      "originalSha256": "ae9953c794da3e0789d9f66194c50a259aa3518a9349249664791abf451fd80f",
+      "lfSha256": "ae9953c794da3e0789d9f66194c50a259aa3518a9349249664791abf451fd80f",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/portless/README.md",
-        "gitBlob": "51b52a03cb12ed693c05206865f8c61b69e3db78"
+        "gitBlob": "e0b4e262440e44002c6d48f934fbe5c9d4831f89"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -475,17 +475,17 @@
     },
     {
       "path": "packages/portless/UPSTREAM.md",
-      "bytes": 2447,
-      "sha256": "54d212fa43bad81476955704a55e653c616c8284bddbde7ee5bcc0a871565197",
-      "originalSha256": "54d212fa43bad81476955704a55e653c616c8284bddbde7ee5bcc0a871565197",
-      "lfSha256": "54d212fa43bad81476955704a55e653c616c8284bddbde7ee5bcc0a871565197",
+      "bytes": 2722,
+      "sha256": "00e6c6d0133e589a5aab4871909c4bae2976ba16a987feeae66eae315860c6df",
+      "originalSha256": "00e6c6d0133e589a5aab4871909c4bae2976ba16a987feeae66eae315860c6df",
+      "lfSha256": "00e6c6d0133e589a5aab4871909c4bae2976ba16a987feeae66eae315860c6df",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/portless/UPSTREAM.md",
-        "gitBlob": "ea32cac1f9c2bef70fe3da650ccf36c45f222fea"
+        "gitBlob": "abe1beaf480bd55e4c4c1052c7eb5e27b1c4fb88"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -610,17 +610,17 @@
     },
     {
       "path": "packages/tauri/HISTORY.md",
-      "bytes": 3369,
-      "sha256": "db911ee1fb38a68aa4b41f32499fedc4dc137bc107f53568ecffdf02eab11e69",
-      "originalSha256": "db911ee1fb38a68aa4b41f32499fedc4dc137bc107f53568ecffdf02eab11e69",
-      "lfSha256": "db911ee1fb38a68aa4b41f32499fedc4dc137bc107f53568ecffdf02eab11e69",
+      "bytes": 3933,
+      "sha256": "aefa74dbaee151036725119ac8caf25b477291e435298ed21202749467b37982",
+      "originalSha256": "aefa74dbaee151036725119ac8caf25b477291e435298ed21202749467b37982",
+      "lfSha256": "aefa74dbaee151036725119ac8caf25b477291e435298ed21202749467b37982",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tauri/HISTORY.md",
-        "gitBlob": "cbd5b43422bfcff2d84a0f9f73a8fee7cd06e02e"
+        "gitBlob": "febc3ed3f8a02770b949087ec20d81d37e5390dc"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -629,17 +629,17 @@
     },
     {
       "path": "packages/tauri/README.md",
-      "bytes": 2565,
-      "sha256": "c5749fa049dab4652bc832cebdb142cb3e03ead565e5e2d68fee32ea54cf5a0b",
-      "originalSha256": "c5749fa049dab4652bc832cebdb142cb3e03ead565e5e2d68fee32ea54cf5a0b",
-      "lfSha256": "c5749fa049dab4652bc832cebdb142cb3e03ead565e5e2d68fee32ea54cf5a0b",
+      "bytes": 2405,
+      "sha256": "1b67d04ef1f0077d5b94efe290ec3b32de84150130611f07ebf7f5628202ca5e",
+      "originalSha256": "1b67d04ef1f0077d5b94efe290ec3b32de84150130611f07ebf7f5628202ca5e",
+      "lfSha256": "1b67d04ef1f0077d5b94efe290ec3b32de84150130611f07ebf7f5628202ca5e",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tauri/README.md",
-        "gitBlob": "4208d4102caad6869e240beddd2554bdbdc5ad3e"
+        "gitBlob": "4e91b86b7e0bcdd51c44911e18434e56fea6054f"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -648,17 +648,17 @@
     },
     {
       "path": "packages/tauri/UPSTREAM.md",
-      "bytes": 1077,
-      "sha256": "f19d341ae8181ee12b0535d19f5e14b2d79f47a58dfdd27b2326f4d952c19b62",
-      "originalSha256": "f19d341ae8181ee12b0535d19f5e14b2d79f47a58dfdd27b2326f4d952c19b62",
-      "lfSha256": "f19d341ae8181ee12b0535d19f5e14b2d79f47a58dfdd27b2326f4d952c19b62",
+      "bytes": 1384,
+      "sha256": "31599bbea36d1dca9d75da1ba24314162bc4211461a0d15c4050c225f7dea512",
+      "originalSha256": "31599bbea36d1dca9d75da1ba24314162bc4211461a0d15c4050c225f7dea512",
+      "lfSha256": "31599bbea36d1dca9d75da1ba24314162bc4211461a0d15c4050c225f7dea512",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tauri/UPSTREAM.md",
-        "gitBlob": "afd137f0e978ea03d53573339df69e40c00fd6dd"
+        "gitBlob": "edada636ac9311fe78802f84bda924c9f05c7fb1"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -667,17 +667,17 @@
     },
     {
       "path": "packages/tinypool/HISTORY.md",
-      "bytes": 1553,
-      "sha256": "52de8f2b8e192c2454c4df6c59338fb0d4f1f6c9ad9ba6576fbb6b1ac816c547",
-      "originalSha256": "52de8f2b8e192c2454c4df6c59338fb0d4f1f6c9ad9ba6576fbb6b1ac816c547",
-      "lfSha256": "52de8f2b8e192c2454c4df6c59338fb0d4f1f6c9ad9ba6576fbb6b1ac816c547",
+      "bytes": 2159,
+      "sha256": "3533f9b5be6497fda8da232747169409e2b3ef090352496755bf61087f695f0a",
+      "originalSha256": "3533f9b5be6497fda8da232747169409e2b3ef090352496755bf61087f695f0a",
+      "lfSha256": "3533f9b5be6497fda8da232747169409e2b3ef090352496755bf61087f695f0a",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tinypool/HISTORY.md",
-        "gitBlob": "280e0a90bb7c5ecd869995611e07537079e6ea3b"
+        "gitBlob": "b051a5ba3efd9d53193278f9807ea67e703089da"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -686,17 +686,17 @@
     },
     {
       "path": "packages/tinypool/README.md",
-      "bytes": 2594,
-      "sha256": "56ae6f0c9d9fdc4eb92a267ed9989b8c34d2ae66dd090027393a7e3ac521fff4",
-      "originalSha256": "56ae6f0c9d9fdc4eb92a267ed9989b8c34d2ae66dd090027393a7e3ac521fff4",
-      "lfSha256": "56ae6f0c9d9fdc4eb92a267ed9989b8c34d2ae66dd090027393a7e3ac521fff4",
+      "bytes": 2626,
+      "sha256": "5863250fcdea82157364df74ad9dd52d19eb9479c9266618e3eed26a4f841f3f",
+      "originalSha256": "5863250fcdea82157364df74ad9dd52d19eb9479c9266618e3eed26a4f841f3f",
+      "lfSha256": "5863250fcdea82157364df74ad9dd52d19eb9479c9266618e3eed26a4f841f3f",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tinypool/README.md",
-        "gitBlob": "1a1c2051a11320b016acccb732e1eab0691c2dd1"
+        "gitBlob": "bfc30513e1b386db182a865038bdcff0fec6acd6"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -724,17 +724,17 @@
     },
     {
       "path": "packages/tinypool/UPSTREAM.md",
-      "bytes": 850,
-      "sha256": "335f57720b2f2ebbbd8c5266eed76d16aae211fb6004f46d6a065dfa6f5dffdb",
-      "originalSha256": "335f57720b2f2ebbbd8c5266eed76d16aae211fb6004f46d6a065dfa6f5dffdb",
-      "lfSha256": "335f57720b2f2ebbbd8c5266eed76d16aae211fb6004f46d6a065dfa6f5dffdb",
+      "bytes": 1106,
+      "sha256": "875e0b56f2b2626edfaa0299df4cc1b8d5b4397af3bd29917a53570adfbdbba6",
+      "originalSha256": "875e0b56f2b2626edfaa0299df4cc1b8d5b4397af3bd29917a53570adfbdbba6",
+      "lfSha256": "875e0b56f2b2626edfaa0299df4cc1b8d5b4397af3bd29917a53570adfbdbba6",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/tinypool/UPSTREAM.md",
-        "gitBlob": "839a3f420ac1a293be157825d2d1e30bc012d60a"
+        "gitBlob": "20a0589cf24355e2865282b15df01d764938a396"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -883,17 +883,17 @@
     },
     {
       "path": "packages/workers-sdk/HISTORY.md",
-      "bytes": 4677,
-      "sha256": "fdc5949a5856425af558fc096bea9727106fd5f78aec209796d0bc4273773ad7",
-      "originalSha256": "fdc5949a5856425af558fc096bea9727106fd5f78aec209796d0bc4273773ad7",
-      "lfSha256": "fdc5949a5856425af558fc096bea9727106fd5f78aec209796d0bc4273773ad7",
+      "bytes": 7133,
+      "sha256": "e5de70e3aebc5a616b40bf78d06f3e3f8f1748423ce874d48278c9108d6e9c05",
+      "originalSha256": "e5de70e3aebc5a616b40bf78d06f3e3f8f1748423ce874d48278c9108d6e9c05",
+      "lfSha256": "e5de70e3aebc5a616b40bf78d06f3e3f8f1748423ce874d48278c9108d6e9c05",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/workers-sdk/HISTORY.md",
-        "gitBlob": "934436ac66a8f4a37b10d85ff661db97fd51a0b3"
+        "gitBlob": "2f32db18296632eca483a11e41d8f515555d9ab0"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -902,17 +902,17 @@
     },
     {
       "path": "packages/workers-sdk/README.md",
-      "bytes": 3858,
-      "sha256": "5e0c60f614174623095be56485a8f3787c73bcd766a7dae5694ceaf1814f7e5a",
-      "originalSha256": "5e0c60f614174623095be56485a8f3787c73bcd766a7dae5694ceaf1814f7e5a",
-      "lfSha256": "5e0c60f614174623095be56485a8f3787c73bcd766a7dae5694ceaf1814f7e5a",
+      "bytes": 4376,
+      "sha256": "9c3e749d53ab31d6ea8dafb04728b9a79574411b06f1ca6ddbc4f930b4d28982",
+      "originalSha256": "9c3e749d53ab31d6ea8dafb04728b9a79574411b06f1ca6ddbc4f930b4d28982",
+      "lfSha256": "9c3e749d53ab31d6ea8dafb04728b9a79574411b06f1ca6ddbc4f930b4d28982",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/workers-sdk/README.md",
-        "gitBlob": "c8abd53cfa2ef2820d6798a091b0a1bed1d15792"
+        "gitBlob": "bdb5533ec5d02212ff9d00ad4300aa5214f495fe"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -921,17 +921,17 @@
     },
     {
       "path": "packages/workers-sdk/UPSTREAM.md",
-      "bytes": 3281,
-      "sha256": "95c137083807fdb7bb4337d5122561df1487e438d5dddcd8f241a62fa4b1e86f",
-      "originalSha256": "95c137083807fdb7bb4337d5122561df1487e438d5dddcd8f241a62fa4b1e86f",
-      "lfSha256": "95c137083807fdb7bb4337d5122561df1487e438d5dddcd8f241a62fa4b1e86f",
+      "bytes": 3813,
+      "sha256": "d3b99e9f80db6cc820e19daae4c88d527a0865c2dc444db64bece06577cbb2af",
+      "originalSha256": "d3b99e9f80db6cc820e19daae4c88d527a0865c2dc444db64bece06577cbb2af",
+      "lfSha256": "d3b99e9f80db6cc820e19daae4c88d527a0865c2dc444db64bece06577cbb2af",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/workers-sdk/UPSTREAM.md",
-        "gitBlob": "4ad3398b4a6730d81f88d6b22e3b0781477cc0fa"
+        "gitBlob": "49677abe4f350ca432913db15e892824f7cbbd18"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -940,17 +940,17 @@
     },
     {
       "path": "packages/zstddec/HISTORY.md",
-      "bytes": 2309,
-      "sha256": "48d0c6684e73043a518a59f05ad845a3b24cb291a1c8a3a66840b1d73eec023d",
-      "originalSha256": "48d0c6684e73043a518a59f05ad845a3b24cb291a1c8a3a66840b1d73eec023d",
-      "lfSha256": "48d0c6684e73043a518a59f05ad845a3b24cb291a1c8a3a66840b1d73eec023d",
+      "bytes": 2935,
+      "sha256": "636a833c5badc336c8e8278949d2f85c2d062cede28572a85313997eb6812814",
+      "originalSha256": "636a833c5badc336c8e8278949d2f85c2d062cede28572a85313997eb6812814",
+      "lfSha256": "636a833c5badc336c8e8278949d2f85c2d062cede28572a85313997eb6812814",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/zstddec/HISTORY.md",
-        "gitBlob": "1af6de3848601a97093fa8fa3cf73c5e06685ef9"
+        "gitBlob": "eedd8bc38d246613759d728b3482d702ab544d98"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -979,17 +979,17 @@
     },
     {
       "path": "packages/zstddec/README.md",
-      "bytes": 509,
-      "sha256": "35d290a514970347feaaab680e9e288c20d33ba927ec8f46aa2484865a2ce560",
-      "originalSha256": "35d290a514970347feaaab680e9e288c20d33ba927ec8f46aa2484865a2ce560",
-      "lfSha256": "35d290a514970347feaaab680e9e288c20d33ba927ec8f46aa2484865a2ce560",
+      "bytes": 568,
+      "sha256": "cea9c0b1236b059f87d5069ec98fe489f6bc5f941469f2d0263120b6d5464842",
+      "originalSha256": "cea9c0b1236b059f87d5069ec98fe489f6bc5f941469f2d0263120b6d5464842",
+      "lfSha256": "cea9c0b1236b059f87d5069ec98fe489f6bc5f941469f2d0263120b6d5464842",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/zstddec/README.md",
-        "gitBlob": "453e93cd668265e64652fdb72cb2abc8b1be3056"
+        "gitBlob": "08766991119a3bcb30c00adc4e0848ab21dac00e"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -998,17 +998,17 @@
     },
     {
       "path": "packages/zstddec/UPSTREAM.md",
-      "bytes": 1101,
-      "sha256": "ca798c054d642f79d3a3fa8ed7eded3a8159f9f93312e60c73d001fbd1a7bf06",
-      "originalSha256": "ca798c054d642f79d3a3fa8ed7eded3a8159f9f93312e60c73d001fbd1a7bf06",
-      "lfSha256": "ca798c054d642f79d3a3fa8ed7eded3a8159f9f93312e60c73d001fbd1a7bf06",
+      "bytes": 1321,
+      "sha256": "31a6ae045c99250b33b69f30ae2776919c13adc580afb59e935a7044011a5814",
+      "originalSha256": "31a6ae045c99250b33b69f30ae2776919c13adc580afb59e935a7044011a5814",
+      "lfSha256": "31a6ae045c99250b33b69f30ae2776919c13adc580afb59e935a7044011a5814",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "083a78415760ae72811109b80bbecb291472d7fe",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/zstddec/UPSTREAM.md",
-        "gitBlob": "f1732c8dc1f34a85fb14c734f415dbe2c7d43758"
+        "gitBlob": "5f1030121a475270d569e2895dc654fd5dfd266d"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -1409,17 +1409,17 @@
     },
     {
       "path": "packages/color-space/HISTORY.md",
-      "bytes": 667,
-      "sha256": "83c6811769257695337c833020ea56410ba1b2f9118c28d0fb9e3ada62d51537",
-      "originalSha256": "83c6811769257695337c833020ea56410ba1b2f9118c28d0fb9e3ada62d51537",
-      "lfSha256": "83c6811769257695337c833020ea56410ba1b2f9118c28d0fb9e3ada62d51537",
+      "bytes": 1011,
+      "sha256": "7a89f08553e93778144483bef5ec053a5c0e867425fcafe67402fd0281cef4f1",
+      "originalSha256": "7a89f08553e93778144483bef5ec053a5c0e867425fcafe67402fd0281cef4f1",
+      "lfSha256": "7a89f08553e93778144483bef5ec053a5c0e867425fcafe67402fd0281cef4f1",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/color-space/HISTORY.md",
-        "gitBlob": "25045ad45afa30614390060ec61c496cad870a7f"
+        "gitBlob": "de9eea944ef6042dec5878c37e4f1a6ac15e1b35"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
@@ -1428,20 +1428,98 @@
     },
     {
       "path": "packages/color-space/README.md",
-      "bytes": 355,
-      "sha256": "a18d1a75b9979134ebbe69fcc28782298c6e8658c10cfd66af25a0c041b96edb",
-      "originalSha256": "a18d1a75b9979134ebbe69fcc28782298c6e8658c10cfd66af25a0c041b96edb",
-      "lfSha256": "a18d1a75b9979134ebbe69fcc28782298c6e8658c10cfd66af25a0c041b96edb",
+      "bytes": 366,
+      "sha256": "44c7a508c51f152306594c13eaeff1e2c4ad8ac5d41c3c95a3bef622588f7e11",
+      "originalSha256": "44c7a508c51f152306594c13eaeff1e2c4ad8ac5d41c3c95a3bef622588f7e11",
+      "lfSha256": "44c7a508c51f152306594c13eaeff1e2c4ad8ac5d41c3c95a3bef622588f7e11",
       "gitMode": "100644",
       "lineEndings": "lf",
       "origin": {
         "repository": "https://github.com/iki/patches",
-        "revision": "31b650e755b08e05e41a053cb8f65daee148455d",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
         "path": "packages/color-space/README.md",
-        "gitBlob": "72ef011b46edf7861fc4bb28f90e1a1431b4940d"
+        "gitBlob": "713dd1277cec30d0241903df77ff9972e2912c27"
       },
       "notices": [
         "licenses/catalog-NOTICE.md"
+      ],
+      "licenseStatus": "retained-notices"
+    },
+    {
+      "path": "packages/lxml/HISTORY.md",
+      "bytes": 2401,
+      "sha256": "695fd54462aca345a017a5bac15f75db147ba93dbaf933305051468fb899ada8",
+      "originalSha256": "695fd54462aca345a017a5bac15f75db147ba93dbaf933305051468fb899ada8",
+      "lfSha256": "695fd54462aca345a017a5bac15f75db147ba93dbaf933305051468fb899ada8",
+      "gitMode": "100644",
+      "lineEndings": "lf",
+      "origin": {
+        "repository": "https://github.com/iki/patches",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
+        "path": "packages/lxml/HISTORY.md",
+        "gitBlob": "4ebd51432257621e683473ebf80538ab72b106dc"
+      },
+      "notices": [
+        "licenses/catalog-NOTICE.md"
+      ],
+      "licenseStatus": "retained-notices"
+    },
+    {
+      "path": "packages/lxml/README.md",
+      "bytes": 1896,
+      "sha256": "28e077d0013d46e1d0e11780c1800d9e5b77d4412af5b61a4fcc1f0703d8effc",
+      "originalSha256": "28e077d0013d46e1d0e11780c1800d9e5b77d4412af5b61a4fcc1f0703d8effc",
+      "lfSha256": "28e077d0013d46e1d0e11780c1800d9e5b77d4412af5b61a4fcc1f0703d8effc",
+      "gitMode": "100644",
+      "lineEndings": "lf",
+      "origin": {
+        "repository": "https://github.com/iki/patches",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432",
+        "path": "packages/lxml/README.md",
+        "gitBlob": "806031d8a3918a4646104810e88868787b9a36a9"
+      },
+      "notices": [
+        "licenses/catalog-NOTICE.md"
+      ],
+      "licenseStatus": "retained-notices"
+    },
+    {
+      "path": "patches/wrangler/4.169.0/verified-bun-fetch.patch",
+      "bytes": 2252,
+      "sha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "originalSha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "lfSha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "gitMode": "100644",
+      "lineEndings": "lf",
+      "origin": {
+        "repository": "https://github.com/iki/workers-sdk",
+        "revision": "e7478dea71b0a0240aa6888099fec83d8b418198",
+        "path": "downstream/wrangler-4.169.0.patch",
+        "gitBlob": "7ec9369f5797e1cffa9dc4a2212c061ef8d7f0bb"
+      },
+      "notices": [
+        "licenses/workers-sdk/LICENSE-MIT",
+        "licenses/workers-sdk/LICENSE-APACHE"
+      ],
+      "licenseStatus": "retained-notices"
+    },
+    {
+      "path": "patches/wrangler@4.169.0.patch",
+      "bytes": 2252,
+      "sha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "originalSha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "lfSha256": "43b60f0373204af06655431874acf9e2932c30f29545e428f53da3baee661877",
+      "gitMode": "100644",
+      "lineEndings": "lf",
+      "origin": {
+        "repository": "https://github.com/iki/workers-sdk",
+        "revision": "e7478dea71b0a0240aa6888099fec83d8b418198",
+        "path": "downstream/wrangler-4.169.0.patch",
+        "gitBlob": "7ec9369f5797e1cffa9dc4a2212c061ef8d7f0bb"
+      },
+      "notices": [
+        "licenses/workers-sdk/LICENSE-MIT",
+        "licenses/workers-sdk/LICENSE-APACHE"
       ],
       "licenseStatus": "retained-notices"
     }

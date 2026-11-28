@@ -1,4 +1,11 @@
 {
   "format": "shared-patch-deprecations-v1",
-  "entries": []
+  "entries": [
+    {
+      "selector": "wrangler@4.165.0",
+      "bundle": "patches/wrangler@4.165.0.patch",
+      "sha256": "d044b7020ffc42153fe9e1e8371d3321575d1dcc4a217ff00bf7252c912e15b7",
+      "deprecatedAt": "2026-11-28T13:33:43.000Z"
+    }
+  ]
 }

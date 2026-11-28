@@ -19,12 +19,12 @@ The catalog gate verifies registered artifacts and provenance. Run the package r
 
 ## Upstream fixtures and procedures
 
-The November 20 web profile installs Wrangler 4.165.0, Miniflare
-5.20261118.0-beta and Undici 8.13.0. Stage the same Wrangler fixtures listed
-above. Compare the pristine install with the 4.165.0 bundle and both Bun
+The November 28 web profile installs Wrangler 4.169.0, Miniflare
+5.20261127.0-beta and Undici 8.14.0. Stage the same Wrangler fixtures listed
+above. Compare the pristine install with the 4.169.0 bundle and both Bun
 preloads. The mobile profile retains Wrangler 4.158.0.
 
-For cf 1.0.0-rc.2, stage [the v1 writer and its test](../packages/cf/adapters/1.0.0-rc.2/)
+For cf 1.0.0-rc.6 with direct Config and Build Output Utils rc.5 and CLI-resolved rc.4, stage [the v1 writer and its test](../packages/cf/adapters/1.0.0-rc.2/)
 under the installed web profile. Run `bun test ./regression-fixtures/packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.test.mjs`.
 The historical cf fixture checks the v0 output layout. For Tauri CLI 2.12.6
 stage the guarded fixture and the [unguarded native callback test](../packages/tauri/tests/2.12.6/native-callbacks.test.mjs). Run each in a separate Bun process and check completion, rejection and cleanup. [Verified results](../packages/tauri/HISTORY.md)
@@ -35,7 +35,7 @@ at the release commit for its certificate signer.
 | Catalog entry | Where to run it | Required evidence |
 | --- | --- | --- |
 | [`avif-encoder-types`](../packages/jsquash-avif/README.md#avif-encoder-types) | Use the recorded jSquash fork and its pinned compiler. The [type fixture](../packages/jsquash-avif/tests/types/avif-factory.ts) and [strict config](../packages/jsquash-avif/tests/types/tsconfig.json) belong in upstream `test/types/`, next to its `packages/avif/` tree at the expected relative depth. From upstream `test/` run its installed `tsc -p types/tsconfig.json`. | For @jsquash/avif 2.1.1 test byte-buffer acceptance and rejection of filename strings, with library checking enabled. The [declaration adapter](../packages/jsquash-avif/adapters/encoder.d.ts) and [source proposal](../packages/jsquash-avif/proposals/encoder-types.patch) have different installation layouts. Run a real WASM raster encode against the published candidate without the adapter before retirement. |
-| [`tinypool-windows-hide-process-workers`](../packages/tinypool/README.md#tinypool-windows-hide-process-workers) | Implement the [regression procedure](../packages/tinypool/REGRESSION.md) in the installed formatter environment on Windows. The catalog supplies this procedure. | Resolve the exact transitive Tinypool 2.2.0 from Oxfmt 0.79.0 (earlier profiles used 0.74.0 and 0.76.0). In isolation intercept the fork before starting a process. Require one invocation with `windowsHide: true`, piped stdio and preserved environment. Then run the real 41-to-42 worker task, await worker destruction and run the actual formatter. |
+| [`tinypool-windows-hide-process-workers`](../packages/tinypool/README.md#tinypool-windows-hide-process-workers) | Implement the [regression procedure](../packages/tinypool/REGRESSION.md) in the installed formatter environment on Windows. The catalog supplies this procedure. | Resolve the exact transitive Tinypool 2.2.0 from Oxfmt 0.80.0 (earlier profiles used 0.74.0, 0.76.0 and 0.79.0). In isolation intercept the fork before starting a process. Require one invocation with `windowsHide: true`, piped stdio and preserved environment. Then run the real 41-to-42 worker task, await worker destruction and run the actual formatter. |
 | [`oxlint-immutability-1-91`](../packages/oxlint/README.md#oxlint-immutability-1-91) | Use a representative React source triggering the original immutability rule and its real type-aware configuration. The [hold record](../packages/oxlint/HISTORY.md) supplies the disposition. | Run Oxlint and matching plugins at the held 1.90.0 pin, reproduce the 1.91.0 regression, then run an eligible release containing the fix (first recorded 1.92.0). Require the affected rule with no suppression and the full applicable lint and review checks. |
 
 For a strict consumer test of the AVIF declaration adapter with `@jsquash/avif@2.1.1`, map the exact module name `@jsquash/avif/codec/enc/avif_enc.js` to the catalog's `packages/jsquash-avif/adapters/encoder.d.ts` in the fixture's TypeScript `compilerOptions.paths`. Use a path relative to the fixture configuration and keep `skipLibCheck: false`. With TypeScript 5.8.3, ambient inclusion alone still checks the published declaration and reports two TS2503 diagnostics. The mapped fixture checks byte-buffer acceptance and filename-string rejection. Run the WASM raster encode separately to verify runtime behavior.

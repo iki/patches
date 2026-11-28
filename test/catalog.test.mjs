@@ -15,7 +15,7 @@ async function fixture(action) {
   await mkdir(scratchRoot, { recursive: true });
   const directory = await mkdtemp(join(scratchRoot, "case-"));
   try {
-    for (const name of ["registry.json","migration.json","inventory","packages","licenses","patches","skills"]) {
+    for (const name of ["registry.json","migration.json","inventory","packages","licenses","patches","skills","environments/document-extraction-pypi/requirements.lock"]) {
       await cp(join(root,name), join(directory,name), { recursive:true, errorOnExist:true, force:false });
     }
     return await action(directory);
@@ -30,8 +30,8 @@ test("published catalog validates local provenance, exact artifacts, series and 
   assert.equal(result.ok,true);
   assert.ok(result.dependencyEntries > 0);
   assert.equal(result.fixes,8);
-  assert.equal(result.packageSeries,5);
-  assert.equal(result.artifacts,74);
+  assert.equal(result.packageSeries,6);
+  assert.equal(result.artifacts,78);
 });
 test("rejects corrupt imported bytes", () => fixture(async (directory) => {
   await writeFile(join(directory,"patches/tinypool@2.2.0.patch"),"corrupt\n");
@@ -67,6 +67,27 @@ test("release holds require the evidence for their own kind", () => fixture(asyn
   delete hold.attestedRelease;
   await save(directory,"registry.json",value);
   await assert.rejects(verifyCatalog(directory), /Missing required field/);
+}));
+test("environment holds require their exact ecosystem and an installable pin in the named profile", () => fixture(async (directory) => {
+  const value = await json(directory,"registry.json");
+  const hold = value.releaseHolds.find((entry) => entry.kind === "environment-release-hold");
+  hold.ecosystem = "npm";
+  await save(directory,"registry.json",value);
+  await assert.rejects(verifyCatalog(directory), /Unsupported environment hold ecosystem/);
+  hold.ecosystem = "pypi";
+  hold.profile = "catalog-verifier";
+  await save(directory,"registry.json",value);
+  await assert.rejects(verifyCatalog(directory), /Environment hold lacks/);
+}));
+test("a historical observation cannot satisfy a Python hold when the current lock selects the affected release", () => fixture(async (directory) => {
+  const registry = await json(directory,"registry.json");
+  const hold = registry.releaseHolds.find((entry) => entry.id === "lxml-docx-namespace");
+  const file = join(directory,"environments",hold.profile + "-pypi","requirements.lock");
+  const original = await readFile(file,"utf8");
+  const current = original.replace(/^lxml==[^\n]+$/mu,"lxml==" + hold.affectedRelease);
+  assert.notEqual(current,original);
+  await writeFile(file,current);
+  await assert.rejects(verifyCatalog(directory), /Environment hold lxml-docx-namespace requires its supported lxml pin/);
 }));
 test("rejects malformed external JSON and UTF8", () => fixture(async (directory) => {
   await writeFile(join(directory,"registry.json"),'{"format":');

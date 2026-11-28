@@ -26,7 +26,7 @@ months of deprecation. Refresh all dependency environments and all declared Mise
 unless an explicit hold applies. Default to a maintainer prompt for downstream requests.
 Open a central PR only when the user explicitly requests one.
 
-Bun 1.4.5 runs this dependency-free host verifier. Aube 2.10.1 owns JavaScript
+Bun 1.4.5 runs this dependency-free host verifier. Aube 2.11.0 owns JavaScript
 dependencies and the sole lockfile. Use frozen installation, step:check after a
 completed implementation step and review:check before publication. Normal gates
 remain offline, bounded and separate from upstream/consumer regressions. Preserve

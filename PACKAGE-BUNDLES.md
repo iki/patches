@@ -1,6 +1,6 @@
 # Check package bundles locally
 
-Install the dependency labs and supply the pristine Portless 0.16.0 package from the earlier web profile, as shown below. Run the check from the Patches root. The command verifies the catalog, discovers each registered
+Install the dependency labs and supply pristine Portless 0.16.0 and Wrangler 4.165.0 from the earlier web profiles, as shown below. Run the check from the Patches root. The command verifies the catalog, discovers each registered
 Aube selector, and checks its ordered installable bundle against matching local
 package installations in `.cache/dependency-labs`. Automatic discovery resolves
 symlinks within the generated labs or the project's physical `node_modules` tree.
@@ -13,7 +13,7 @@ copies of that exact package/version. Explicit sources replace lab discovery
 for that selector only. All other registered selectors are still checked.
 
 ```text
-bun app/check-package-bundles.mjs --source portless@0.16.0 <unpacked-portless-0.16.0-directory>
+bun app/check-package-bundles.mjs --source portless@0.16.0 <unpacked-portless-0.16.0-directory> --source wrangler@4.165.0 <unpacked-wrangler-4.165.0-directory>
 bun test/check-package-bundles.mjs
 ```
 
@@ -34,5 +34,5 @@ The report lists the corresponding package regressions. Independently run
 those tests on the relevant published package, runtime and platform. In
 particular, a reversible package diff does not test TLS, actual worker process
 creation/teardown, native callbacks, or TypeScript declaration compatibility.
-The five installable selectors currently cover three independently removable
+The six installable selectors currently cover three independently removable
 package fixes. Host and declaration adapters have their own regression files.

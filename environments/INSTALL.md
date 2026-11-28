@@ -12,6 +12,10 @@ the committed graph with lifecycle scripts disabled.
 
 On POSIX use `"$bun_exe" environments/install.mjs setup`.
 
+## Refresh an existing checkout
+
+After changing dependency manifests, setup checks the generated member manifests against the new inputs. If it reports that a workbench manifest differs, finish any running workspace installation and inspect the three manifests under `.cache/dependency-labs`. Check whether they match the corresponding files under `environments` at the previous catalog revision. Preserve any local investigation separately. Once the previous workbench is idle and its `.workspace-install.lock` is absent, rename the entire `.cache/dependency-labs` directory to an unused sibling under `.cache`. Run frozen setup again from the checkout root. The earlier workbench remains available for comparison.
+
 ## First solve and activation
 
 In a registered maintenance checkout, use the physical Bun selected by the offline, no-config lookup in [TOOLCHAIN.md](../TOOLCHAIN.md). Once the root pins are installed and that command has set `$bunExe`, run the following PowerShell command. It prepares the three JavaScript members, resolves their combined lock in a unique temporary directory and runs Aube's frozen install there. It prints the candidate directory for inspection. Network access to the configured registry is required for a cold solve.
@@ -47,7 +51,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Patched lock resolution failed.' }
 & $bunExe environments/install.mjs setup
 ```
 
-Web selects pristine Portless 0.18.1 with Bun 1.4.5. Mobile retains the 0.15.12 selector for its Bun 1.4.2 baseline. Select the matching Wrangler bundle in each patched profile and the Tinypool 2.2.0 bundle for formatter tests. The retained Portless 0.16.0 bundle requires a separate 0.16.0 installation. Register only selectors with a direct edge in the workspace under test.
+Web selects pristine Portless 0.18.1 with Bun 1.4.5. Mobile retains the 0.15.12 selector for its Bun 1.4.2 baseline. Select the matching Wrangler bundle in each patched profile and the Tinypool 2.2.0 bundle for formatter tests. The retained Portless 0.16.0 and Wrangler 4.165.0 bundles require separate pristine installations at those versions. Register only selectors with a direct edge in the workspace under test.
 
 | Exact selector | Registered bundle |
 | --- | --- |
@@ -56,5 +60,6 @@ Web selects pristine Portless 0.18.1 with Bun 1.4.5. Mobile retains the 0.15.12 
 | `tinypool@2.2.0` | `patches/tinypool@2.2.0.patch` |
 | `wrangler@4.158.0` | `patches/wrangler@4.158.0.patch` |
 | `wrangler@4.165.0` | `patches/wrangler@4.165.0.patch` |
+| `wrangler@4.169.0` | `patches/wrangler@4.169.0.patch` |
 
 The solve copies each selected bundle after checking its canonical registration and migration SHA-256. Aube generates the root lock and patch hashes. The command verifies each selected direct edge, its snapshot and the fresh `node_modules/.aube-applied-patches.json` marker. Compare the same package regressions on the pristine and patched installations. Native, browser and upstream behavior require their respective tests.

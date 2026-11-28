@@ -148,8 +148,8 @@ function inventoryVersion(ecosystem, role, value) {
 function inventoryReferences(entry, field, records) {
   const ids = array(entry[field]);
   unique(ids,"inventory " + field);
-  const related = entry.ecosystem === "npm" ? records.filter((item) =>
-    item.packages.some((pkg) => pkg.name === entry.name)) : [];
+  const related = records.filter((item) => (item.ecosystem ?? "npm") === entry.ecosystem &&
+    item.packages.some((pkg) => pkg.name === entry.name));
   ensure(related.length === ids.length && related.every((item) => ids.includes(item.id)),
     "Inventory " + field + " package mismatch");
   for (const record of related) {
@@ -157,6 +157,13 @@ function inventoryReferences(entry, field, records) {
     ensure(pkg.versions.every((pin) =>
       entry.uses.some((use) => use.role === "patch-evidence" && use.version === pin)),
       "Inventory omits canonical package version evidence");
+    if (record.kind === "environment-release-hold") {
+      for (const pin of pkg.versions) {
+        const uses = entry.uses.filter((use) => use.profile === record.profile && use.role === "environment" && use.version === pin);
+        ensure(record.platforms.every((platform) => uses.some((use) => use.platforms.includes("all") || use.platforms.includes(platform))),
+          "Environment hold lacks the selected package in its profile and platform");
+      }
+    }
   }
 }
 
@@ -215,7 +222,7 @@ export function verifyDependencyInventory(source, registry) {
     inventoryReferences(entry,"holdIds",registry.releaseHolds);
   }
   for (const record of [...registry.fixes,...registry.releaseHolds]) {
-    for (const pkg of record.packages) ensure(entryIds.has("npm:" + pkg.name), "Missing canonical inventory package");
+    for (const pkg of record.packages) ensure(entryIds.has((record.ecosystem ?? "npm") + ":" + pkg.name), "Missing canonical inventory package");
   }
   const groups = new Set();
   for (const group of array(data.installGroups,true)) {
@@ -237,6 +244,21 @@ export function verifyDependencyInventory(source, registry) {
   }
   ensure(groups.size === selectors.size,"Missing inventory install group");
   return data.entries.length;
+}
+
+function pythonLockPins(source) {
+  const pins = new Map();
+  for (const line of source.split("\n")) {
+    const row = line.replace(/(?:^|\s)#.*$/u, "").trim();
+    if (!row) continue;
+    const match = /^([a-z0-9._-]+)\s*==\s*(\S+)$/iu.exec(row);
+    ensure(match, "Expected an exact package pin in the Python environment lock");
+    const name = inventoryName("pypi",match[1]);
+    inventoryVersion("pypi","environment",match[2]);
+    ensure(!pins.has(name), "Duplicate package in the Python environment lock");
+    pins.set(name,match[2]);
+  }
+  return pins;
 }
 
 export async function verifyCatalog(directory) {
@@ -443,11 +465,29 @@ export async function verifyCatalog(directory) {
   }), "package selector");
   for (const fix of fixes.values()) ensure(fix.kind !== "package-patch" || coveredFixes.has(fix.id), "Uncovered package-patch fix");
   for (const hold of array(registry.releaseHolds)) {
-    const provenance = hold.kind === "publication-provenance-hold";
-    const evidence = provenance ? "attestedRelease" : "fixedReleaseRecorded";
-    object(hold, ["id","kind","packages","affectedRelease",evidence,"record","removal","upstream"]);
-    text(hold.id); ensure((provenance || hold.kind === "unmodified-release-hold") && !fixes.has(hold.id), "Invalid release hold");
-    packages(hold.packages); version(hold.affectedRelease); version(hold[evidence]);
+    const fields = ["id","kind","packages","affectedRelease","record","removal","upstream"];
+    if (hold.kind === "environment-release-hold") {
+      object(hold, [...fields,"ecosystem","profile","platforms"]);
+      ensure(hold.ecosystem === "pypi", "Unsupported environment hold ecosystem");
+      text(hold.profile,inventoryId);
+      platformsOf(hold);
+      inventoryVersion(hold.ecosystem,"reference",hold.affectedRelease);
+      unique(array(hold.packages,true).map((pkg) => {
+        object(pkg,["name","versions"]);
+        ensure(inventoryName(hold.ecosystem,pkg.name) === pkg.name, "Expected canonical hold package name");
+        const pins = array(pkg.versions,true);
+        unique(pins,"package version");
+        for (const pin of pins) inventoryVersion(hold.ecosystem,"environment",pin);
+        return pkg.name;
+      }),"package");
+    } else {
+      const provenance = hold.kind === "publication-provenance-hold";
+      const evidence = provenance ? "attestedRelease" : "fixedReleaseRecorded";
+      object(hold, [...fields,evidence]);
+      ensure(provenance || hold.kind === "unmodified-release-hold", "Invalid release hold");
+      packages(hold.packages); version(hold.affectedRelease); version(hold[evidence]);
+    }
+    text(hold.id); ensure(!fixes.has(hold.id), "Invalid release hold");
     reference(hold.record,true); text(hold.removal); url(hold.upstream);
   }
   unique(registry.releaseHolds.map((hold) => hold.id),"release hold");
@@ -463,12 +503,24 @@ export async function verifyCatalog(directory) {
   const deprecations = reviewDeprecations(inventoryJson((await read(deprecationPath)).decoded),series,reference,new Date().toISOString());
   const dependencyPath = "inventory/dependencies.json";
   const dependencyEntries = verifyDependencyInventory((await read(dependencyPath)).decoded,registry);
+  const heldLocks = new Map();
+  for (const hold of registry.releaseHolds) {
+    if (hold.kind !== "environment-release-hold") continue;
+    const lockPath = `environments/${hold.profile}-pypi/requirements.lock`;
+    if (!heldLocks.has(lockPath)) heldLocks.set(lockPath,pythonLockPins((await read(lockPath)).decoded));
+    const pins = heldLocks.get(lockPath);
+    for (const pkg of hold.packages) {
+      const selected = pins.get(pkg.name);
+      ensure(pkg.versions.includes(selected) && selected !== hold.affectedRelease,
+        `Environment hold ${hold.id} requires its supported ${pkg.name} pin in ${lockPath}`);
+    }
+  }
   for (const name of inventory.values()) {
     ensure(name.split("/").at(-1)?.toLowerCase() !== "skill.md" || maintained.includes(name), "Unexpected discoverable skill");
     if (importedRoots.includes(name.split("/")[0])) {
       ensure(artifacts.get(name.toLowerCase())?.path === name, "Unregistered imported file: " + name);
       ensure(!name.endsWith("/SKILL.md"), "Historical skill must not be discoverable");
-    } else if (!["registry.json","migration.json",dependencyPath,deprecationPath].includes(name)) await read(name);
+    } else if (!heldLocks.has(name) && !["registry.json","migration.json",dependencyPath,deprecationPath].includes(name)) await read(name);
   }
   for (const name of maintained) {
     const skill = (await read(name)).decoded;

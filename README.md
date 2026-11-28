@@ -14,6 +14,7 @@ consumer; retain their prerequisites, exact versions, notices and local checks.
 | jSquash | AVIF | [Current](packages/jsquash-avif/README.md) · [History](packages/jsquash-avif/HISTORY.md) |
 | Tinypool | Oxfmt | [Current](packages/tinypool/README.md) · [History](packages/tinypool/HISTORY.md) |
 | Oxc | Oxlint, plugins | [Release hold](packages/oxlint/README.md) · [History](packages/oxlint/HISTORY.md) |
+| lxml | MarkItDown DOCX extraction | [Release hold](packages/lxml/README.md) · [History](packages/lxml/HISTORY.md) |
 | color-space | npm publication provenance | [Release hold](packages/color-space/README.md) · [History](packages/color-space/HISTORY.md) |
 | zstddec | declaration exports | [Current](packages/zstddec/README.md) · [History](packages/zstddec/HISTORY.md) |
 
@@ -37,6 +38,4 @@ Use the [project tool setup](TOOLCHAIN.md) for a frozen Aube installation and
 the Bun step and review checks. Catalog verification is offline. Package
 and platform regressions require separate execution.
 
-The 2026-11-20 refresh checked upstream threads and release channels for all
-nine groups then on record. The dependency refresh also recorded the color-space publication hold. Each package history identifies the versions exercised on Windows
-x64 and any outstanding removal criteria. [Verification boundaries](VERIFICATION.md)
+The 2026-11-28 refresh reviewed 39 linked upstream issues and pull requests. Package histories record published versions, Windows regression results and the conditions for removing each hold or patch. [Verification boundaries](VERIFICATION.md)

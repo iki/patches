@@ -6,7 +6,7 @@ min_version = "2026.10.7"
 bun = "1.4.5"
 
 ## Tools.Packages
-aube = "2.10.1"
+aube = "2.11.0"
 
 [settings]
 auto_install = false

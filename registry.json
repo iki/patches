@@ -3,8 +3,8 @@
   "repository": "https://github.com/iki/patches",
   "migration": "migration.json",
   "observation": {
-    "recordedDate": "2026-11-20",
-    "basis": "GitHub issues, PRs, forks and npm release channels reviewed on 2026-11-20. Package histories identify the exact Windows package regressions and outstanding acceptance checks. Earlier source observations and original license notices remain bound to their recorded revisions. The dependency refresh also tested the documented release and runtime pairs on Bun 1.4.5. Supported pairs and historical controls are identified in the package histories.",
+    "recordedDate": "2026-11-28",
+    "basis": "Reviewed 39 linked GitHub issues and pull requests on November 28, 2026, including prior comments, contributor branch heads and replacement changes. Package histories identify the published releases tested on Windows, the independent compatibility controls and outstanding acceptance checks.",
     "sources": [
       {
         "repository": "https://github.com/donmccurdy/zstddec-wasm",
@@ -53,6 +53,14 @@
       {
         "repository": "https://github.com/iki/patches",
         "revision": "31b650e755b08e05e41a053cb8f65daee148455d"
+      },
+      {
+        "repository": "https://github.com/iki/patches",
+        "revision": "c4b1717b0be0a7d1b6ce215285cabcea998f4432"
+      },
+      {
+        "repository": "https://github.com/iki/workers-sdk",
+        "revision": "e7478dea71b0a0240aa6888099fec83d8b418198"
       }
     ]
   },
@@ -85,7 +93,7 @@
       ],
       "upstream": {
         "repository": "https://github.com/vercel-labs/portless",
-        "disposition": "own-pr-open",
+        "disposition": "own-pr-closed-unmerged",
         "url": "https://github.com/vercel-labs/portless/pull/470",
         "reviewedHead": "0c0ff893a5a481d3d1b53d0b4766e32cd35dd5e3"
       },
@@ -102,7 +110,7 @@
         "packages/portless/tests/0.18.1/verify-native.mjs"
       ],
       "removal": "An unpatched published Portless or Bun release passes verified certificates, registered names, refresh/retry, pooling/cleanup and loopback-only rejection.",
-      "limitations": "Two distinct package series are retained. The portable package verifier targets 0.16.0 and requires Bun 1.4.2 and OpenSSL. HTTP/1.1 only; unregistered TLS names and plain HTTP on the TLS port are unsupported. Bun HTTPS rejects loopbackOnly before allocation. The source-record Node run had 15 matching baseline CLI failures and frozen upstream installation had trust-downgrade blockers. No new full upstream or consumer acceptance is claimed. The 0.18.1 unpatched native regression passed on Bun 1.4.5 and failed hostname verification on Bun 1.4.2. No 0.18.1 package patch is registered."
+      "limitations": "Two distinct package series are retained. The portable package verifier targets 0.16.0 and requires Bun 1.4.2 and OpenSSL. HTTP/1.1 only; unregistered TLS names and plain HTTP on the TLS port are unsupported. Bun HTTPS rejects loopbackOnly before allocation. The source-record Node run had 15 matching baseline CLI failures and frozen upstream installation had trust-downgrade blockers. No new full upstream or consumer acceptance is claimed. The 0.18.1 unpatched native regression passed on Bun 1.4.5 and failed hostname verification on Bun 1.4.2. No 0.18.1 package patch is registered. Upstream closed #470 and documented Bun 1.4.4 or newer in #626. That change follows the 0.18.1 release."
     },
     {
       "id": "wrangler-verified-bun-fetch",
@@ -112,21 +120,24 @@
           "name": "wrangler",
           "versions": [
             "4.158.0",
-            "4.165.0"
+            "4.165.0",
+            "4.169.0"
           ]
         },
         {
           "name": "undici",
           "versions": [
             "8.12.4",
-            "8.13.0"
+            "8.13.0",
+            "8.14.0"
           ]
         },
         {
           "name": "miniflare",
           "versions": [
             "5.20261104.0-beta",
-            "5.20261118.0-beta"
+            "5.20261118.0-beta",
+            "5.20261127.0-beta"
           ]
         }
       ],
@@ -147,7 +158,9 @@
         "packages/workers-sdk/adapters/verified-bun-fetch.test.mjs",
         "packages/workers-sdk/adapters/wrangler-local.test.mjs",
         "patches/wrangler/4.165.0/verified-bun-fetch.patch",
-        "patches/wrangler@4.165.0.patch"
+        "patches/wrangler@4.165.0.patch",
+        "patches/wrangler/4.169.0/verified-bun-fetch.patch",
+        "patches/wrangler@4.169.0.patch"
       ],
       "upstream": {
         "repository": "https://github.com/cloudflare/workers-sdk",
@@ -156,9 +169,9 @@
       },
       "fork": {
         "repository": "https://github.com/iki/workers-sdk",
-        "branch": "codex/bun-local-fetch-capability-4.165.0",
-        "base": "5b44e5e2f9df23b38b17903d6f4194919042828e",
-        "head": "8a26b5b15b17a2e4fd05722994ebe9269b855588"
+        "branch": "codex/bun-local-fetch-capability-4.169.0",
+        "base": "370ea36c3b25414b7ee521238db8cbd54e19e522",
+        "head": "e7478dea71b0a0240aa6888099fec83d8b418198"
       },
       "record": "packages/workers-sdk/README.md#wrangler-verified-bun-fetch",
       "regressions": [
@@ -176,14 +189,16 @@
           "name": "undici",
           "versions": [
             "8.12.4",
-            "8.13.0"
+            "8.13.0",
+            "8.14.0"
           ]
         },
         {
           "name": "wrangler",
           "versions": [
             "4.158.0",
-            "4.165.0"
+            "4.165.0",
+            "4.169.0"
           ]
         }
       ],
@@ -225,14 +240,16 @@
           "name": "undici",
           "versions": [
             "8.12.4",
-            "8.13.0"
+            "8.13.0",
+            "8.14.0"
           ]
         },
         {
           "name": "wrangler",
           "versions": [
             "4.158.0",
-            "4.165.0"
+            "4.165.0",
+            "4.169.0"
           ]
         }
       ],
@@ -276,21 +293,24 @@
           "name": "cf",
           "versions": [
             "1.0.0-beta.27",
-            "1.0.0-rc.2"
+            "1.0.0-rc.2",
+            "1.0.0-rc.6"
           ]
         },
         {
           "name": "@cloudflare/config",
           "versions": [
             "0.30.2",
-            "1.0.0-rc.2"
+            "1.0.0-rc.2",
+            "1.0.0-rc.5"
           ]
         },
         {
           "name": "@cloudflare/build-output-utils",
           "versions": [
             "0.9.10",
-            "1.0.0-rc.2"
+            "1.0.0-rc.2",
+            "1.0.0-rc.5"
           ]
         }
       ],
@@ -324,7 +344,7 @@
         "packages/cf/adapters/1.0.0-rc.2/bun-prebuilt.test.mjs"
       ],
       "removal": "Pinned upstream supports validated object/function configs, modes, Windows file URLs/spaces and upward search under Bun. Retain the supported prebuilt interface independently if useful.",
-      "limitations": "The rc.2 adapter covers explicit object/function configs, one compiled Worker and assets in v1 Build Output. The retained beta.27 variant writes v0. Native module-hook loading remains declined and full application integration stays with the caller."
+      "limitations": "The rc.2 adapter covers explicit object/function configs, one compiled Worker and assets in v1 Build Output. The retained beta.27 variant writes v0. Native module-hook loading remains declined and full application integration stays with the caller. The same v1 adapter passed with cf rc.6, directly selected companions rc.5 and the CLI-owned rc.4 reader. Package history records the tested combinations."
     },
     {
       "id": "tauri-native-lifetime",
@@ -454,7 +474,7 @@
         "packages/tinypool/REGRESSION.md"
       ],
       "removal": "Unpatched published Tinypool contains windowsHide; exact transitive Oxfmt resolution, fork interception, real worker task/teardown and formatting checks pass.",
-      "limitations": "The source fork uses a typed options object while the installed 2.2.0 diff adds the same hiding flag after the option spread. They are not byte-identical source expressions. Recorded consumers used Oxfmt 0.74.0 and 0.76.0; each must verify its actual transitive resolution and real process worker cleanup. Oxfmt 0.79.0's transitive Tinypool 2.2.0 was verified on Windows x64 with intercepted fork options, a real task and joined child exit, and formatter output."
+      "limitations": "The source fork uses a typed options object while the installed 2.2.0 diff adds the same hiding flag after the option spread. They are not byte-identical source expressions. Recorded consumers used Oxfmt 0.74.0 and 0.76.0; each must verify its actual transitive resolution and real process worker cleanup. Oxfmt 0.79.0's transitive Tinypool 2.2.0 was verified on Windows x64 with intercepted fork options, a real task and joined child exit, and formatter output. Oxfmt 0.80.0 selected the same Tinypool version in the November 28 fork-option and worker-lifecycle checks."
     }
   ],
   "aliases": [],
@@ -476,6 +496,16 @@
         {
           "id": "portless-bun-tls",
           "path": "patches/portless/0.15.12/bun-tls-contexts.patch"
+        }
+      ]
+    },
+    {
+      "selector": "wrangler@4.169.0",
+      "bundle": "patches/wrangler@4.169.0.patch",
+      "parts": [
+        {
+          "id": "wrangler-verified-bun-fetch",
+          "path": "patches/wrangler/4.169.0/verified-bun-fetch.patch"
         }
       ]
     },
@@ -550,6 +580,27 @@
       "record": "packages/color-space/README.md#color-space-publication-provenance",
       "removal": "Select a release accepted by Aube under its default provenance policy and complete the web-native workspace solve and frozen install.",
       "upstream": "https://github.com/colorjs/color-space"
+    },
+    {
+      "id": "lxml-docx-namespace",
+      "kind": "environment-release-hold",
+      "ecosystem": "pypi",
+      "profile": "document-extraction",
+      "platforms": [
+        "windows"
+      ],
+      "packages": [
+        {
+          "name": "lxml",
+          "versions": [
+            "6.1.3"
+          ]
+        }
+      ],
+      "affectedRelease": "6.2.0",
+      "record": "packages/lxml/README.md#lxml-docx-namespace",
+      "removal": "Update the isolated Windows document extraction lock after a compatible published combination preserves OOXML namespaces and passes the generated DOCX, XLSX, PDF and PPTX conversions in a clean environment.",
+      "upstream": "https://github.com/lxml/lxml"
     }
   ],
   "history": [
@@ -600,6 +651,10 @@
     {
       "record": "packages/color-space/HISTORY.md",
       "summary": "Aube rejected the latest release under its default publication provenance policy."
+    },
+    {
+      "record": "packages/lxml/HISTORY.md",
+      "summary": "Python XML namespace regression and Windows document-extraction compatibility hold."
     }
   ],
   "consumerSelection": {
@@ -765,6 +820,22 @@
       "fixes": [],
       "record": "packages/zstddec/README.md",
       "history": "packages/zstddec/HISTORY.md"
+    },
+    {
+      "id": "lxml",
+      "title": "lxml XML namespace compatibility",
+      "relatedPackages": [
+        "lxml",
+        "beautifulsoup4",
+        "markitdown",
+        "mammoth"
+      ],
+      "upstreamRepositories": [
+        "https://github.com/lxml/lxml"
+      ],
+      "fixes": [],
+      "record": "packages/lxml/README.md",
+      "history": "packages/lxml/HISTORY.md"
     }
   ]
 }
